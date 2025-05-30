@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreakingGymDAL", "BreakingG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreakingGymBL", "BreakingGymBL\BreakingGymBL.csproj", "{17155193-4DC9-455D-936B-D9C2CEE249BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreakingGymUI", "BreakingGymUI\BreakingGymUI.csproj", "{8243797F-72AF-4487-8E7B-3B5138B79B6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{17155193-4DC9-455D-936B-D9C2CEE249BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17155193-4DC9-455D-936B-D9C2CEE249BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17155193-4DC9-455D-936B-D9C2CEE249BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8243797F-72AF-4487-8E7B-3B5138B79B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8243797F-72AF-4487-8E7B-3B5138B79B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8243797F-72AF-4487-8E7B-3B5138B79B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8243797F-72AF-4487-8E7B-3B5138B79B6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
