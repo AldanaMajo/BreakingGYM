@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CredencialEN.cs" />
+    <Compile Include="EstadoEN.cs" />
     <Compile Include="InscripcionEN.cs" />
     <Compile Include="MembresiaEN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
