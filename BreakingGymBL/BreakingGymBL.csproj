@@ -45,6 +45,7 @@
     <Compile Include="InscripcionBL.cs" />
     <Compile Include="MembresiaBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RolBL.cs" />
     <Compile Include="UsuarioBL.cs" />
   </ItemGroup>
   <ItemGroup>
