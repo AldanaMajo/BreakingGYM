@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ClienteDAL.cs" />
     <Compile Include="ComunBD.cs" />
+    <Compile Include="CredencialDAL.cs" />
     <Compile Include="EstadoDAL.cs" />
     <Compile Include="InscripcionDAL.cs" />
     <Compile Include="MembresiaDAL.cs" />
