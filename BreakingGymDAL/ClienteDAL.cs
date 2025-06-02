@@ -27,9 +27,11 @@ namespace BreakingGymDAL
                     {
                         Id = _reader.GetInt32(0),
                         IdRol = _reader.GetInt32(1),
-                        Nombre = _reader.GetString(2),
-                        Apellido = _reader.GetString(3),
-                        Celular = _reader.GetString(4)
+                        IdTipoDocumento = _reader.GetInt32(2),
+                        Documento = _reader.GetString(3),
+                        Nombre = _reader.GetString(4),
+                        Apellido = _reader.GetString(5),
+                        Celular = _reader.GetString(6)
                     });
                 }
                 _conn.Close();
@@ -45,6 +47,8 @@ namespace BreakingGymDAL
                 SqlCommand _comando = new SqlCommand("GuardarCliente", _conn as SqlConnection);
                 _comando.CommandType = CommandType.StoredProcedure;
                 _comando.Parameters.Add(new SqlParameter("@IdRol", pclienteEN.IdRol));
+                _comando.Parameters.Add(new SqlParameter("@IdTipoDocumento", pclienteEN.IdTipoDocumento));
+                _comando.Parameters.Add(new SqlParameter("@Documento", pclienteEN.Documento));
                 _comando.Parameters.Add(new SqlParameter("@Nombre", pclienteEN.Nombre));
                 _comando.Parameters.Add(new SqlParameter("@Apellido", pclienteEN.Apellido));
                 _comando.Parameters.Add(new SqlParameter("@Celular", pclienteEN.Celular));
@@ -80,6 +84,8 @@ namespace BreakingGymDAL
                 _comando.CommandType = CommandType.StoredProcedure;
                 _comando.Parameters.Add(new SqlParameter("@Id", pclienteEN.Id));
                 _comando.Parameters.Add(new SqlParameter("@IdRol", pclienteEN.IdRol));
+                _comando.Parameters.Add(new SqlParameter("@IdTipoDocumento", pclienteEN.IdTipoDocumento));
+                _comando.Parameters.Add(new SqlParameter("@Documento", pclienteEN.Documento));
                 _comando.Parameters.Add(new SqlParameter("@Nombre", pclienteEN.Nombre));
                 _comando.Parameters.Add(new SqlParameter("@Apellido", pclienteEN.Apellido));
                 _comando.Parameters.Add(new SqlParameter("@Celular", pclienteEN.Celular));
