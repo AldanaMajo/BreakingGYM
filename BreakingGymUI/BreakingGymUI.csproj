@@ -52,10 +52,19 @@
     <Compile Include="CRUDEstado.Designer.cs">
       <DependentUpon>CRUDEstado.cs</DependentUpon>
     </Compile>
+    <Compile Include="CRUDRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDRol.Designer.cs">
+      <DependentUpon>CRUDRol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CRUDEstado.resx">
       <DependentUpon>CRUDEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDRol.resx">
+      <DependentUpon>CRUDRol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
