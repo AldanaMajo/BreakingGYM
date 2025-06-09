@@ -61,5 +61,14 @@ namespace BreakingGymUI
 
             MessageBox.Show("Estado guardado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void dgMostrarEstado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgMostrarEstado.SelectedRows.Count > 0)
+            {
+                txtId.Text = dgMostrarEstado.CurrentRow.Cells["Id"].Value.ToString();
+                txtEstado.Text = dgMostrarEstado.CurrentRow.Cells["Nombre"].Value.ToString();
+            }
+        }
     }
 }

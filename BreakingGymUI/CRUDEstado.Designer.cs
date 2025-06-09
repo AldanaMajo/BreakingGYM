@@ -101,6 +101,7 @@
             this.dgMostrarEstado.RowHeadersWidth = 51;
             this.dgMostrarEstado.Size = new System.Drawing.Size(263, 140);
             this.dgMostrarEstado.TabIndex = 13;
+            this.dgMostrarEstado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarEstado_CellContentClick);
             // 
             // CRUDEstado
             // 
