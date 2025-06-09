@@ -52,6 +52,12 @@
     <Compile Include="CRUDEstado.Designer.cs">
       <DependentUpon>CRUDEstado.cs</DependentUpon>
     </Compile>
+    <Compile Include="CRUDInscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDInscripcion.Designer.cs">
+      <DependentUpon>CRUDInscripcion.cs</DependentUpon>
+    </Compile>
     <Compile Include="CRUDRol.cs">
       <SubType>Form</SubType>
     </Compile>
