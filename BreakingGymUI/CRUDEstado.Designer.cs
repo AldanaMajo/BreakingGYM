@@ -34,6 +34,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.dgMostrarEstado = new System.Windows.Forms.DataGridView();
+            this.txtId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarEstado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,18 +97,29 @@
             // dgMostrarEstado
             // 
             this.dgMostrarEstado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgMostrarEstado.Location = new System.Drawing.Point(239, 289);
+            this.dgMostrarEstado.Location = new System.Drawing.Point(124, 280);
             this.dgMostrarEstado.Name = "dgMostrarEstado";
             this.dgMostrarEstado.RowHeadersWidth = 51;
             this.dgMostrarEstado.Size = new System.Drawing.Size(263, 140);
             this.dgMostrarEstado.TabIndex = 13;
             this.dgMostrarEstado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarEstado_CellContentClick);
             // 
+            // txtId
+            // 
+            this.txtId.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtId.Location = new System.Drawing.Point(393, 307);
+            this.txtId.MaxLength = 50;
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(366, 32);
+            this.txtId.TabIndex = 14;
+            // 
             // CRUDEstado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.dgMostrarEstado);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);
@@ -130,5 +142,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.DataGridView dgMostrarEstado;
+        private System.Windows.Forms.TextBox txtId;
     }
 }
