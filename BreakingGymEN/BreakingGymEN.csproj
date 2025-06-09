@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClienteEN.cs" />
-    <Compile Include="CredencialEN.cs" />
     <Compile Include="EstadoEN.cs" />
     <Compile Include="InscripcionEN.cs" />
     <Compile Include="MembresiaEN.cs" />
