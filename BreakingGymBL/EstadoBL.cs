@@ -11,21 +11,22 @@ namespace BreakingGymBL
 {
     public class EstadoBL
     {
+        EstadoDAL estadoDAL = new EstadoDAL();
         public List<EstadoEN> MostrarEstado()
         {
-            return EstadoDAL.MostrarEstado();
+            return estadoDAL.MostrarEstado();
         }
         public int GuardarEstado(EstadoEN pestadoEN)
         {
-            return EstadoDAL.AgregarEstado(pestadoEN);
+            return estadoDAL.AgregarEstado(pestadoEN);
         }
         public int EliminarEstado(EstadoEN pestadoEN)
         {
-            return EstadoDAL.EliminarEstado(pestadoEN);
+            return estadoDAL.EliminarEstado(pestadoEN);
         }
         public int ModificarEstado(EstadoEN pestadoEN)
         {
-            return EstadoDAL.ModificarEstado(pestadoEN);
+            return estadoDAL.ModificarEstado(pestadoEN);
         }
     }
 }

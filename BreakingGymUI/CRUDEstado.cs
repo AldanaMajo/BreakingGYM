@@ -18,8 +18,8 @@ namespace BreakingGymUI
         EstadoEN _estadoEN = new EstadoEN();
         public CRUDEstado()
         {
-            CargarGrid();
             InitializeComponent();
+            CargarGrid();
         }
         public void CargarGrid()
         {

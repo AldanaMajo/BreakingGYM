@@ -11,7 +11,7 @@ namespace BreakingGymDAL
 {
     public class EstadoDAL
     {
-        public static List<EstadoEN> MostrarEstado()
+        public List<EstadoEN> MostrarEstado()
         {
             List<EstadoEN> _Lista = new List<EstadoEN>();
             using (IDbConnection _conn = ComunBD.ObtenerConexion(ComunBD.TipoBD.SqlServer))
@@ -34,7 +34,7 @@ namespace BreakingGymDAL
             return _Lista;
         }
 
-        public static int AgregarEstado(EstadoEN pestadoEN)
+        public  int AgregarEstado(EstadoEN pestadoEN)
         {
             using (IDbConnection _conn = ComunBD.ObtenerConexion(ComunBD.TipoBD.SqlServer))
             {
@@ -48,7 +48,7 @@ namespace BreakingGymDAL
             }
         }
 
-        public static int EliminarEstado(EstadoEN pestadoEN)
+        public  int EliminarEstado(EstadoEN pestadoEN)
         {
             using (IDbConnection _conn = ComunBD.ObtenerConexion(ComunBD.TipoBD.SqlServer))
             {
@@ -62,7 +62,7 @@ namespace BreakingGymDAL
             }
         }
 
-        public static int ModificarEstado(EstadoEN pestadoEN)
+        public  int ModificarEstado(EstadoEN pestadoEN)
         {
             using (IDbConnection _conn = ComunBD.ObtenerConexion(ComunBD.TipoBD.SqlServer))
             {
