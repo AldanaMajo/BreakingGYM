@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CRUDCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDCliente.Designer.cs">
+      <DependentUpon>CRUDCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="CRUDEstado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CRUDCliente.resx">
+      <DependentUpon>CRUDCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CRUDEstado.resx">
       <DependentUpon>CRUDEstado.cs</DependentUpon>
     </EmbeddedResource>
