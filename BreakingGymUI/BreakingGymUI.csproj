@@ -103,5 +103,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BreakingGymBL\BreakingGymBL.csproj">
+      <Project>{17155193-4dc9-455d-936b-d9c2cee249bf}</Project>
+      <Name>BreakingGymBL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BreakingGymEN\BreakingGymEN.csproj">
+      <Project>{44a675e5-d743-4f20-83e6-d5d86241d1d5}</Project>
+      <Name>BreakingGymEN</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
