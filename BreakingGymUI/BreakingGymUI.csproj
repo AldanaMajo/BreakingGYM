@@ -78,6 +78,9 @@
     <EmbeddedResource Include="CRUDEstado.resx">
       <DependentUpon>CRUDEstado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CRUDInscripcion.resx">
+      <DependentUpon>CRUDInscripcion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CRUDRol.resx">
       <DependentUpon>CRUDRol.cs</DependentUpon>
     </EmbeddedResource>
