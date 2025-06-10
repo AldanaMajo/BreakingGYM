@@ -11,7 +11,7 @@ namespace BreakingGymDAL
 {
     public class ServicioDAL
     {
-        public static List<ServicioEN> MostrarServicio()
+        public List<ServicioEN> MostrarServicio()
         {
             List<ServicioEN> _Lista = new List<ServicioEN>();
             using (IDbConnection _conn = ComunBD.ObtenerConexion(ComunBD.TipoBD.SqlServer))

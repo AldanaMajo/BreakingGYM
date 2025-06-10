@@ -11,7 +11,7 @@ namespace BreakingGymDAL
 {
     public class InscripcionDAL
     {
-        public static List<InscripcionEN> MostrarInscripcion()
+        public  List<InscripcionEN> MostrarInscripcion()
         {
             List<InscripcionEN> _Lista = new List<InscripcionEN>();
             using (IDbConnection _conn = ComunBD.ObtenerConexion(ComunBD.TipoBD.SqlServer))
