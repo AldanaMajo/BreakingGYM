@@ -55,7 +55,7 @@
             // 
             this.btnRegresar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(788, 12);
+            this.btnRegresar.Location = new System.Drawing.Point(749, 186);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(109, 77);
             this.btnRegresar.TabIndex = 17;
@@ -64,10 +64,10 @@
             // dgMostrarRol
             // 
             this.dgMostrarRol.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgMostrarRol.Location = new System.Drawing.Point(145, 278);
+            this.dgMostrarRol.Location = new System.Drawing.Point(257, 351);
             this.dgMostrarRol.Name = "dgMostrarRol";
             this.dgMostrarRol.RowHeadersWidth = 51;
-            this.dgMostrarRol.Size = new System.Drawing.Size(387, 88);
+            this.dgMostrarRol.Size = new System.Drawing.Size(383, 144);
             this.dgMostrarRol.TabIndex = 16;
             // 
             // btnModificar
@@ -141,7 +141,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Fondo;
+            this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Fondoo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(918, 520);
             this.Controls.Add(this.label1);
