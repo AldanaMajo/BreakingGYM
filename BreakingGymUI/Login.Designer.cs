@@ -34,9 +34,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Loginn;
+            this.BackgroundImage = global::BreakingGymUI.Properties.Resources.LoginGod;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(358, 655);
+            this.ClientSize = new System.Drawing.Size(1200, 650);
             this.DoubleBuffered = true;
             this.Name = "Login";
             this.Text = "Login";
