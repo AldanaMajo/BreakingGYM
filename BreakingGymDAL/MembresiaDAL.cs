@@ -11,7 +11,7 @@ namespace BreakingGymDAL
 {
     public class MembresiaDAL
     {
-        public  List<MembresiaEN> MostrarMembresia()
+        public static  List<MembresiaEN> MostrarMembresia()
         {
             List<MembresiaEN> _Lista = new List<MembresiaEN>();
             using (IDbConnection _conn = ComunBD.ObtenerConexion(ComunBD.TipoBD.SqlServer))

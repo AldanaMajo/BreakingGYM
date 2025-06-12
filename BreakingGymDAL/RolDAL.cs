@@ -11,7 +11,7 @@ namespace BreakingGymDAL
 {
     public class RolDAL
     {
-        public List<RolEN> MostrarRol()
+        public static List<RolEN> MostrarRol()
         {
             List<RolEN> _Lista = new List<RolEN>();
             using (IDbConnection _conn = ComunBD.ObtenerConexion(ComunBD.TipoBD.SqlServer))

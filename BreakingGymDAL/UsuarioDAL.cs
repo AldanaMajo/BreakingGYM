@@ -12,7 +12,7 @@ namespace BreakingGymDAL
     public class UsuarioDAL
     {
 
-        public int VerificarUsuarioLogin(UsuarioEN pusuarioEN)
+        public static int VerificarUsuarioLogin(UsuarioEN pusuarioEN)
         {
             using (IDbConnection _conn = ComunBD.ObtenerConexion(ComunBD.TipoBD.SqlServer))
             {
@@ -28,7 +28,7 @@ namespace BreakingGymDAL
                 return userExiste;
             }
         }
-        public List<UsuarioEN> MostrarUsuario()
+        public static List<UsuarioEN> MostrarUsuario()
         {
             List<UsuarioEN> _Lista = new List<UsuarioEN>();
             using (IDbConnection _conn = ComunBD.ObtenerConexion(ComunBD.TipoBD.SqlServer))
