@@ -39,9 +39,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ModificarCliente = new System.Windows.Forms.Button();
-            this.EliminarCliente = new System.Windows.Forms.Button();
-            this.GuardarCliente = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.txtGuardar = new System.Windows.Forms.Button();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.cbxIdRol = new System.Windows.Forms.ComboBox();
@@ -177,41 +177,47 @@
             this.label1.TabIndex = 33;
             this.label1.Text = "Id Rol";
             // 
-            // ModificarCliente
+            // btnModificar
             // 
-            this.ModificarCliente.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModificarCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ModificarCliente.Location = new System.Drawing.Point(510, 294);
-            this.ModificarCliente.Margin = new System.Windows.Forms.Padding(2);
-            this.ModificarCliente.Name = "ModificarCliente";
-            this.ModificarCliente.Size = new System.Drawing.Size(94, 60);
-            this.ModificarCliente.TabIndex = 32;
-            this.ModificarCliente.Text = "Modificar";
-            this.ModificarCliente.UseVisualStyleBackColor = true;
+            this.btnModificar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnModificar.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnModificar.Location = new System.Drawing.Point(510, 294);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(94, 60);
+            this.btnModificar.TabIndex = 32;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
-            // EliminarCliente
+            // btnEliminar
             // 
-            this.EliminarCliente.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EliminarCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.EliminarCliente.Location = new System.Drawing.Point(328, 294);
-            this.EliminarCliente.Margin = new System.Windows.Forms.Padding(2);
-            this.EliminarCliente.Name = "EliminarCliente";
-            this.EliminarCliente.Size = new System.Drawing.Size(94, 60);
-            this.EliminarCliente.TabIndex = 31;
-            this.EliminarCliente.Text = "Eliminar";
-            this.EliminarCliente.UseVisualStyleBackColor = true;
+            this.btnEliminar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnEliminar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEliminar.Location = new System.Drawing.Point(328, 294);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(94, 60);
+            this.btnEliminar.TabIndex = 31;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // GuardarCliente
+            // txtGuardar
             // 
-            this.GuardarCliente.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GuardarCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.GuardarCliente.Location = new System.Drawing.Point(151, 294);
-            this.GuardarCliente.Margin = new System.Windows.Forms.Padding(2);
-            this.GuardarCliente.Name = "GuardarCliente";
-            this.GuardarCliente.Size = new System.Drawing.Size(94, 60);
-            this.GuardarCliente.TabIndex = 30;
-            this.GuardarCliente.Text = "Guardar";
-            this.GuardarCliente.UseVisualStyleBackColor = true;
+            this.txtGuardar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtGuardar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtGuardar.Location = new System.Drawing.Point(151, 294);
+            this.txtGuardar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtGuardar.Name = "txtGuardar";
+            this.txtGuardar.Size = new System.Drawing.Size(94, 60);
+            this.txtGuardar.TabIndex = 30;
+            this.txtGuardar.Text = "Guardar";
+            this.txtGuardar.UseVisualStyleBackColor = false;
+            this.txtGuardar.Click += new System.EventHandler(this.txtGuardar_Click);
             // 
             // txtApellido
             // 
@@ -255,6 +261,7 @@
             this.dgMostrarCliente.RowTemplate.Height = 24;
             this.dgMostrarCliente.Size = new System.Drawing.Size(528, 266);
             this.dgMostrarCliente.TabIndex = 26;
+            this.dgMostrarCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarCliente_CellContentClick);
             // 
             // CRUDCliente
             // 
@@ -274,15 +281,16 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ModificarCliente);
-            this.Controls.Add(this.EliminarCliente);
-            this.Controls.Add(this.GuardarCliente);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.txtGuardar);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.cbxIdRol);
             this.Controls.Add(this.dgMostrarCliente);
             this.Name = "CRUDCliente";
             this.Text = "CRUDCliente";
+            this.Load += new System.EventHandler(this.CRUDCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -302,9 +310,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button ModificarCliente;
-        private System.Windows.Forms.Button EliminarCliente;
-        private System.Windows.Forms.Button GuardarCliente;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button txtGuardar;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.ComboBox cbxIdRol;
