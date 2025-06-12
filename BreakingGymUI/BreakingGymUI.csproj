@@ -70,6 +70,42 @@
     <Compile Include="CRUDMembresia.Designer.cs">
       <DependentUpon>CRUDMembresia.cs</DependentUpon>
     </Compile>
+    <Compile Include="CRUDRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDRol.Designer.cs">
+      <DependentUpon>CRUDRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDServicio.Designer.cs">
+      <DependentUpon>CRUDServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDTipoDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDTipoDocumento.Designer.cs">
+      <DependentUpon>CRUDTipoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDUsuario.Designer.cs">
+      <DependentUpon>CRUDUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioAdministrador.Designer.cs">
+      <DependentUpon>InicioAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioEmpleado.Designer.cs">
+      <DependentUpon>InicioEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +125,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CRUDMembresia.resx">
       <DependentUpon>CRUDMembresia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDRol.resx">
+      <DependentUpon>CRUDRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDServicio.resx">
+      <DependentUpon>CRUDServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDTipoDocumento.resx">
+      <DependentUpon>CRUDTipoDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDUsuario.resx">
+      <DependentUpon>CRUDUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioAdministrador.resx">
+      <DependentUpon>InicioAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioEmpleado.resx">
+      <DependentUpon>InicioEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
