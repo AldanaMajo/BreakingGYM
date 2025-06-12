@@ -70,5 +70,81 @@ namespace BreakingGymUI
                 txtEstado.Text = dgMostrarEstado.CurrentRow.Cells["Nombre"].Value.ToString();
             }
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtId.Text))
+            {
+                MessageBox.Show("Por favor, selecciona un ID.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtId.Focus();
+                return;
+            }
+            var est = new EstadoEN
+            {
+                Id = Convert.ToByte(txtId.Text),
+            };
+            if (est.Id <= 0)
+            {
+                MessageBox.Show("Por favor, Seleccione un Id.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            var confirmResult = MessageBox.Show("¿Estás seguro que deseas eliminar este Estado?",
+                                               "Confirmar modificación",
+                                               MessageBoxButtons.YesNo,
+                                               MessageBoxIcon.Question);
+
+            if (confirmResult == DialogResult.No)
+                return;
+            else
+            {
+                _mostrarEstado.EliminarEstado(est);
+                txtId.Clear();
+                txtId.Clear();
+                txtEstado.Clear();
+                CargarGrid();
+                MessageBox.Show("Estado eliminado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtId.Text))
+            {
+                MessageBox.Show("Por favor, selecciona un Id", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtId.Focus();
+                return;
+            }
+            var estado = new EstadoEN
+            {
+                Id = Convert.ToByte(txtId.Text),
+                Nombre = txtEstado.Text,
+            };
+            if (estado.Id <= 0 || string.IsNullOrEmpty(estado.Nombre))
+            {
+                MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            var confirmResult = MessageBox.Show("¿Estás seguro que deseas modificar este Estado?",
+                                               "Confirmar modificación",
+                                               MessageBoxButtons.YesNo,
+                                               MessageBoxIcon.Question);
+
+            if (confirmResult == DialogResult.No)
+                return;
+            else
+            {
+                _mostrarEstado.ModificarEstado(estado);
+                txtId.Clear();
+                txtEstado.Clear();
+                CargarGrid();
+                MessageBox.Show("Estado modificado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void CRUDEstado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
