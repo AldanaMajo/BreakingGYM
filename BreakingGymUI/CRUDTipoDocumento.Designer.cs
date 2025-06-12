@@ -80,6 +80,7 @@
             this.btnEliminar.TabIndex = 23;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -91,6 +92,7 @@
             this.btnModificar.TabIndex = 22;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // dgMostrarTipoDocumento
             // 
@@ -100,6 +102,7 @@
             this.dgMostrarTipoDocumento.RowHeadersWidth = 51;
             this.dgMostrarTipoDocumento.Size = new System.Drawing.Size(510, 289);
             this.dgMostrarTipoDocumento.TabIndex = 21;
+            this.dgMostrarTipoDocumento.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarTipoDocumento_CellContentClick);
             // 
             // label1
             // 
@@ -123,6 +126,7 @@
             this.btnGuardar.TabIndex = 19;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // CRUDTipoDocumento
             // 
