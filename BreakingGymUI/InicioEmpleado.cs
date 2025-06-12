@@ -16,5 +16,17 @@ namespace BreakingGymUI
         {
             InitializeComponent();
         }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+            CRUDCliente cRUDCliente = new CRUDCliente();
+            cRUDCliente.ShowDialog();
+        }
+
+        private void toolStripLabel2_Click(object sender, EventArgs e)
+        {
+            CRUDInscripcion cRUDInscripcion = new CRUDInscripcion();
+            cRUDInscripcion.ShowDialog();
+        }
     }
 }

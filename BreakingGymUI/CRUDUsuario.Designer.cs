@@ -154,7 +154,7 @@
             // 
             this.txtId.Enabled = false;
             this.txtId.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(964, 514);
+            this.txtId.Location = new System.Drawing.Point(973, 541);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 33);
             this.txtId.TabIndex = 36;
@@ -164,7 +164,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(935, 526);
+            this.label5.Location = new System.Drawing.Point(1021, 514);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(16, 13);
             this.label5.TabIndex = 35;
@@ -231,7 +231,7 @@
             this.txtApellido.Location = new System.Drawing.Point(198, 231);
             this.txtApellido.MaxLength = 50;
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(170, 29);
+            this.txtApellido.Size = new System.Drawing.Size(192, 29);
             this.txtApellido.TabIndex = 30;
             // 
             // txtNombre
