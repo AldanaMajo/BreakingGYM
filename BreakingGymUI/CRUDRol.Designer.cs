@@ -139,7 +139,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Fondoo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(928, 614);
+            this.ClientSize = new System.Drawing.Size(1008, 624);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.dgMostrarRol);
