@@ -75,7 +75,7 @@
             this.btnModificar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnModificar.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModificar.Location = new System.Drawing.Point(412, 89);
+            this.btnModificar.Location = new System.Drawing.Point(427, 135);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(94, 60);
             this.btnModificar.TabIndex = 15;
@@ -87,7 +87,7 @@
             this.btnEliminar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnEliminar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEliminar.Location = new System.Drawing.Point(206, 89);
+            this.btnEliminar.Location = new System.Drawing.Point(230, 135);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(94, 60);
             this.btnEliminar.TabIndex = 14;
@@ -99,7 +99,7 @@
             this.btnGuardar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGuardar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardar.Location = new System.Drawing.Point(12, 89);
+            this.btnGuardar.Location = new System.Drawing.Point(21, 135);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(94, 60);
             this.btnGuardar.TabIndex = 13;

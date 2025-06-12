@@ -11,7 +11,7 @@ namespace BreakingGymDAL
 {
     public class ClienteDAL
     {
-        public List<ClienteEN> MostrarCliente()
+        public static List<ClienteEN> MostrarCliente()
         {
             List<ClienteEN> _Lista = new List<ClienteEN>();
             using (IDbConnection _conn = ComunBD.ObtenerConexion(ComunBD.TipoBD.SqlServer))
