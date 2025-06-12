@@ -201,5 +201,23 @@
   <ItemGroup>
     <None Include="Resources\Musculoso.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inscripcion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarjeta-de-membresia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rutina-de-ejercicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-de-cuenta-redonda-con-usuario-dentro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\otros.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

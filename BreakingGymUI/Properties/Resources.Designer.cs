@@ -63,9 +63,29 @@ namespace BreakingGymUI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap boton_de_cuenta_redonda_con_usuario_dentro {
+            get {
+                object obj = ResourceManager.GetObject("boton-de-cuenta-redonda-con-usuario-dentro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bra {
             get {
                 object obj = ResourceManager.GetObject("bra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cliente {
+            get {
+                object obj = ResourceManager.GetObject("cliente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,6 +123,16 @@ namespace BreakingGymUI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap inscripcion {
+            get {
+                object obj = ResourceManager.GetObject("inscripcion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LoginGod {
             get {
                 object obj = ResourceManager.GetObject("LoginGod", resourceCulture);
@@ -126,6 +156,36 @@ namespace BreakingGymUI.Properties {
         internal static System.Drawing.Bitmap Musculoso {
             get {
                 object obj = ResourceManager.GetObject("Musculoso", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap otros {
+            get {
+                object obj = ResourceManager.GetObject("otros", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rutina_de_ejercicio {
+            get {
+                object obj = ResourceManager.GetObject("rutina-de-ejercicio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tarjeta_de_membresia {
+            get {
+                object obj = ResourceManager.GetObject("tarjeta-de-membresia", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
