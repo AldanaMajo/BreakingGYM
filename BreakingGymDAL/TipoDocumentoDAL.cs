@@ -11,7 +11,7 @@ namespace BreakingGymDAL
 {
     public class TipoDocumentoDAL
     {
-        public  List<TipoDocumentoEN> MostrarTipoDocumento()
+        public static List<TipoDocumentoEN> MostrarTipoDocumento()
         {
             List<TipoDocumentoEN> _Lista = new List<TipoDocumentoEN>();
             using (IDbConnection _conn = ComunBD.ObtenerConexion(ComunBD.TipoBD.SqlServer))
