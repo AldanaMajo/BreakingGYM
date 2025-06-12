@@ -54,16 +54,16 @@
             // btnRegresar
             // 
             this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(692, 12);
+            this.btnRegresar.Location = new System.Drawing.Point(857, 454);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(109, 77);
+            this.btnRegresar.Size = new System.Drawing.Size(109, 80);
             this.btnRegresar.TabIndex = 17;
             this.btnRegresar.UseVisualStyleBackColor = true;
             // 
             // dgMostrarRol
             // 
             this.dgMostrarRol.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgMostrarRol.Location = new System.Drawing.Point(351, 359);
+            this.dgMostrarRol.Location = new System.Drawing.Point(192, 335);
             this.dgMostrarRol.Name = "dgMostrarRol";
             this.dgMostrarRol.RowHeadersWidth = 51;
             this.dgMostrarRol.Size = new System.Drawing.Size(565, 256);
@@ -73,34 +73,37 @@
             // 
             this.btnModificar.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnModificar.Location = new System.Drawing.Point(749, 293);
+            this.btnModificar.Location = new System.Drawing.Point(589, 230);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(94, 60);
             this.btnModificar.TabIndex = 15;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEliminar.Location = new System.Drawing.Point(596, 293);
+            this.btnEliminar.Location = new System.Drawing.Point(425, 230);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(94, 60);
             this.btnEliminar.TabIndex = 14;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGuardar.Location = new System.Drawing.Point(435, 293);
+            this.btnGuardar.Location = new System.Drawing.Point(235, 230);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(94, 60);
             this.btnGuardar.TabIndex = 13;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtId
             // 
