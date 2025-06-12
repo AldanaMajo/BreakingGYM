@@ -32,10 +32,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.cbxIdMembresia = new System.Windows.Forms.ComboBox();
             this.cbxIdEstado = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtInscripcion = new System.Windows.Forms.DateTimePicker();
+            this.dtVencimiento = new System.Windows.Forms.DateTimePicker();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgMostrarInscripcion = new System.Windows.Forms.DataGridView();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -49,7 +49,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgMostrarInscripcion)).BeginInit();
             this.SuspendLayout();
             // 
             // cbIdCliente
@@ -85,19 +85,19 @@
             this.cbxIdEstado.Size = new System.Drawing.Size(121, 21);
             this.cbxIdEstado.TabIndex = 8;
             // 
-            // dateTimePicker1
+            // dtInscripcion
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(498, 43);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 9;
+            this.dtInscripcion.Location = new System.Drawing.Point(498, 43);
+            this.dtInscripcion.Name = "dtInscripcion";
+            this.dtInscripcion.Size = new System.Drawing.Size(200, 20);
+            this.dtInscripcion.TabIndex = 9;
             // 
-            // dateTimePicker2
+            // dtVencimiento
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(500, 91);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 10;
+            this.dtVencimiento.Location = new System.Drawing.Point(500, 91);
+            this.dtVencimiento.Name = "dtVencimiento";
+            this.dtVencimiento.Size = new System.Drawing.Size(200, 20);
+            this.dtVencimiento.TabIndex = 10;
             // 
             // btnGuardar
             // 
@@ -109,13 +109,14 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // dataGridView2
+            // dgMostrarInscripcion
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(64, 271);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(470, 150);
-            this.dataGridView2.TabIndex = 13;
+            this.dgMostrarInscripcion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgMostrarInscripcion.Location = new System.Drawing.Point(64, 271);
+            this.dgMostrarInscripcion.Name = "dgMostrarInscripcion";
+            this.dgMostrarInscripcion.Size = new System.Drawing.Size(470, 150);
+            this.dgMostrarInscripcion.TabIndex = 13;
+            this.dgMostrarInscripcion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarInscripcion_CellContentClick);
             // 
             // btnEliminar
             // 
@@ -125,6 +126,7 @@
             this.btnEliminar.TabIndex = 14;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -134,6 +136,7 @@
             this.btnModificar.TabIndex = 15;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // label7
             // 
@@ -163,6 +166,7 @@
             this.btnBuscar.TabIndex = 23;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnRefrescar
             // 
@@ -172,6 +176,7 @@
             this.btnRefrescar.TabIndex = 24;
             this.btnRefrescar.Text = "Refrescar";
             this.btnRefrescar.UseVisualStyleBackColor = true;
+            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
             // txtId
             // 
@@ -260,7 +265,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Fondoo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(930, 522);
+            this.ClientSize = new System.Drawing.Size(918, 495);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -274,17 +279,18 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dgMostrarInscripcion);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtVencimiento);
+            this.Controls.Add(this.dtInscripcion);
             this.Controls.Add(this.cbxIdEstado);
             this.Controls.Add(this.cbxIdMembresia);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cbIdCliente);
             this.Name = "CRUDInscripcion";
             this.Text = "CRUDInscripcion";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.Load += new System.EventHandler(this.CRUDInscripcion_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgMostrarInscripcion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,10 +301,10 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbxIdMembresia;
         private System.Windows.Forms.ComboBox cbxIdEstado;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtInscripcion;
+        private System.Windows.Forms.DateTimePicker dtVencimiento;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgMostrarInscripcion;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Label label7;
