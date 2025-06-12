@@ -115,6 +115,7 @@
             this.btnRefrescar.TabIndex = 40;
             this.btnRefrescar.Text = "Refrescar";
             this.btnRefrescar.UseVisualStyleBackColor = true;
+            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
             // btnBuscar
             // 
@@ -127,6 +128,7 @@
             this.btnBuscar.TabIndex = 39;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // lblBuscarNombre
             // 
@@ -177,6 +179,7 @@
             this.dgMostrarUsuario.RowHeadersWidth = 51;
             this.dgMostrarUsuario.Size = new System.Drawing.Size(567, 258);
             this.dgMostrarUsuario.TabIndex = 34;
+            this.dgMostrarUsuario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarUsuario_CellContentClick);
             // 
             // btnModificar
             // 
@@ -190,6 +193,7 @@
             this.btnModificar.TabIndex = 33;
             this.btnModificar.Text = "Modifcar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
@@ -203,6 +207,7 @@
             this.btnEliminar.TabIndex = 32;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnGuardar
             // 
@@ -218,6 +223,7 @@
             this.btnGuardar.TabIndex = 31;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtApellido
             // 
@@ -327,6 +333,7 @@
             this.Controls.Add(this.cbxIdRol);
             this.Name = "CRUDUsuario";
             this.Text = "CRUDUsuario";
+            this.Load += new System.EventHandler(this.CRUDUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
