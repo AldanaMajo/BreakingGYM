@@ -70,12 +70,6 @@
     <Compile Include="CRUDMembresia.Designer.cs">
       <DependentUpon>CRUDMembresia.cs</DependentUpon>
     </Compile>
-    <Compile Include="CRUDRol.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CRUDRol.Designer.cs">
-      <DependentUpon>CRUDRol.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,9 +89,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CRUDMembresia.resx">
       <DependentUpon>CRUDMembresia.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CRUDRol.resx">
-      <DependentUpon>CRUDRol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
