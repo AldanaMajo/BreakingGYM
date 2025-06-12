@@ -64,6 +64,12 @@
     <Compile Include="CRUDInscripcion.Designer.cs">
       <DependentUpon>CRUDInscripcion.cs</DependentUpon>
     </Compile>
+    <Compile Include="CRUDMembresia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDMembresia.Designer.cs">
+      <DependentUpon>CRUDMembresia.cs</DependentUpon>
+    </Compile>
     <Compile Include="CRUDRol.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CRUDInscripcion.resx">
       <DependentUpon>CRUDInscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDMembresia.resx">
+      <DependentUpon>CRUDMembresia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CRUDRol.resx">
       <DependentUpon>CRUDRol.cs</DependentUpon>

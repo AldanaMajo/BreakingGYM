@@ -44,9 +44,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(92, 71);
+            this.label1.Location = new System.Drawing.Point(123, 87);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 25);
+            this.label1.Size = new System.Drawing.Size(224, 30);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nombre de estado";
             // 
@@ -54,19 +55,21 @@
             // 
             this.txtEstado.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtEstado.Location = new System.Drawing.Point(330, 64);
+            this.txtEstado.Location = new System.Drawing.Point(440, 79);
+            this.txtEstado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEstado.MaxLength = 50;
             this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(366, 32);
+            this.txtEstado.Size = new System.Drawing.Size(487, 38);
             this.txtEstado.TabIndex = 9;
             // 
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardar.Location = new System.Drawing.Point(132, 177);
+            this.btnGuardar.Location = new System.Drawing.Point(176, 218);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(94, 60);
+            this.btnGuardar.Size = new System.Drawing.Size(125, 74);
             this.btnGuardar.TabIndex = 10;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -76,9 +79,10 @@
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEliminar.Location = new System.Drawing.Point(330, 177);
+            this.btnEliminar.Location = new System.Drawing.Point(440, 218);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(94, 60);
+            this.btnEliminar.Size = new System.Drawing.Size(125, 74);
             this.btnEliminar.TabIndex = 11;
             this.btnEliminar.Text = "Guardar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -87,9 +91,10 @@
             // 
             this.btnModificar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModificar.Location = new System.Drawing.Point(515, 177);
+            this.btnModificar.Location = new System.Drawing.Point(687, 218);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(94, 60);
+            this.btnModificar.Size = new System.Drawing.Size(125, 74);
             this.btnModificar.TabIndex = 12;
             this.btnModificar.Text = "Guardar";
             this.btnModificar.UseVisualStyleBackColor = true;
@@ -97,10 +102,11 @@
             // dgMostrarEstado
             // 
             this.dgMostrarEstado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgMostrarEstado.Location = new System.Drawing.Point(124, 280);
+            this.dgMostrarEstado.Location = new System.Drawing.Point(165, 345);
+            this.dgMostrarEstado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgMostrarEstado.Name = "dgMostrarEstado";
             this.dgMostrarEstado.RowHeadersWidth = 51;
-            this.dgMostrarEstado.Size = new System.Drawing.Size(263, 140);
+            this.dgMostrarEstado.Size = new System.Drawing.Size(351, 172);
             this.dgMostrarEstado.TabIndex = 13;
             this.dgMostrarEstado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarEstado_CellContentClick);
             // 
@@ -108,17 +114,20 @@
             // 
             this.txtId.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtId.Location = new System.Drawing.Point(393, 307);
+            this.txtId.Location = new System.Drawing.Point(524, 378);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtId.MaxLength = 50;
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(366, 32);
+            this.txtId.Size = new System.Drawing.Size(487, 38);
             this.txtId.TabIndex = 14;
             // 
             // CRUDEstado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Fondoo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.dgMostrarEstado);
             this.Controls.Add(this.btnModificar);
@@ -126,6 +135,7 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CRUDEstado";
             this.Text = "CRUDEstado";
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarEstado)).EndInit();
