@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgMostrarServicio = new System.Windows.Forms.DataGridView();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
@@ -38,16 +38,18 @@
             this.lbNombre = new System.Windows.Forms.Label();
             this.lbDescripcion = new System.Windows.Forms.Label();
             this.lbID = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgMostrarServicio)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgMostrarServicio
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(284, 302);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(355, 136);
-            this.dataGridView1.TabIndex = 0;
+            this.dgMostrarServicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgMostrarServicio.Location = new System.Drawing.Point(284, 302);
+            this.dgMostrarServicio.Name = "dgMostrarServicio";
+            this.dgMostrarServicio.Size = new System.Drawing.Size(355, 136);
+            this.dgMostrarServicio.TabIndex = 0;
+            this.dgMostrarServicio.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarServicio_CellContentClick);
+            this.dgMostrarServicio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarServicio_CellContentClick);
             // 
             // txtNombre
             // 
@@ -83,6 +85,7 @@
             this.btnGuardar.TabIndex = 4;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnEliminar
             // 
@@ -93,6 +96,7 @@
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -103,6 +107,7 @@
             this.btnModificar.TabIndex = 6;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // lbNombre
             // 
@@ -154,10 +159,10 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgMostrarServicio);
             this.Name = "CRUDServicio";
             this.Text = "CRUDServicio";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgMostrarServicio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,7 +170,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgMostrarServicio;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtId;
