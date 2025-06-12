@@ -28,52 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.txtCuenta = new System.Windows.Forms.TextBox();
+            this.txtContrasenia = new System.Windows.Forms.TextBox();
+            this.cbIdRol = new System.Windows.Forms.ComboBox();
+            this.pbOcultar = new System.Windows.Forms.PictureBox();
+            this.pbMostrar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbOcultar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMostrar)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.Location = new System.Drawing.Point(812, 481);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLogin.Location = new System.Drawing.Point(792, 483);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(117, 34);
+            this.btnLogin.TabIndex = 0;
+            this.btnLogin.Text = "Ingresar";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // button2
+            // btnSalir
             // 
-            this.button2.Location = new System.Drawing.Point(812, 510);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSalir.Location = new System.Drawing.Point(935, 489);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(73, 28);
+            this.btnSalir.TabIndex = 1;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // textBox1
+            // txtCuenta
             // 
-            this.textBox1.Location = new System.Drawing.Point(801, 372);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtCuenta.ForeColor = System.Drawing.Color.Gray;
+            this.txtCuenta.Location = new System.Drawing.Point(801, 372);
+            this.txtCuenta.Name = "txtCuenta";
+            this.txtCuenta.Size = new System.Drawing.Size(100, 20);
+            this.txtCuenta.TabIndex = 2;
+            this.txtCuenta.Text = "Nombre de cuenta";
+            this.txtCuenta.Enter += new System.EventHandler(this.txtCuenta_Enter);
+            this.txtCuenta.Leave += new System.EventHandler(this.txtCuenta_Leave);
             // 
-            // textBox2
+            // txtContrasenia
             // 
-            this.textBox2.Location = new System.Drawing.Point(801, 443);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtContrasenia.ForeColor = System.Drawing.Color.Gray;
+            this.txtContrasenia.Location = new System.Drawing.Point(801, 443);
+            this.txtContrasenia.Name = "txtContrasenia";
+            this.txtContrasenia.PasswordChar = '*';
+            this.txtContrasenia.Size = new System.Drawing.Size(100, 20);
+            this.txtContrasenia.TabIndex = 3;
+            this.txtContrasenia.Text = "Contraseña";
+            this.txtContrasenia.Enter += new System.EventHandler(this.txtContrasenia_Enter);
+            this.txtContrasenia.Leave += new System.EventHandler(this.txtContrasenia_Leave);
             // 
-            // comboBox1
+            // cbIdRol
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(792, 299);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 4;
+            this.cbIdRol.FormattingEnabled = true;
+            this.cbIdRol.Location = new System.Drawing.Point(792, 299);
+            this.cbIdRol.Name = "cbIdRol";
+            this.cbIdRol.Size = new System.Drawing.Size(121, 21);
+            this.cbIdRol.TabIndex = 4;
+            // 
+            // pbOcultar
+            // 
+            this.pbOcultar.BackgroundImage = global::BreakingGymUI.Properties.Resources.Musculoso;
+            this.pbOcultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbOcultar.Location = new System.Drawing.Point(907, 443);
+            this.pbOcultar.Name = "pbOcultar";
+            this.pbOcultar.Size = new System.Drawing.Size(22, 20);
+            this.pbOcultar.TabIndex = 9;
+            this.pbOcultar.TabStop = false;
+            this.pbOcultar.Click += new System.EventHandler(this.pbOcultar_Click);
+            // 
+            // pbMostrar
+            // 
+            this.pbMostrar.BackgroundImage = global::BreakingGymUI.Properties.Resources.bra;
+            this.pbMostrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbMostrar.Location = new System.Drawing.Point(907, 443);
+            this.pbMostrar.Name = "pbMostrar";
+            this.pbMostrar.Size = new System.Drawing.Size(22, 20);
+            this.pbMostrar.TabIndex = 10;
+            this.pbMostrar.TabStop = false;
+            this.pbMostrar.Click += new System.EventHandler(this.pbMostrar_Click);
             // 
             // Login
             // 
@@ -82,14 +119,19 @@
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources.LoginGod;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1200, 650);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pbOcultar);
+            this.Controls.Add(this.pbMostrar);
+            this.Controls.Add(this.cbIdRol);
+            this.Controls.Add(this.txtContrasenia);
+            this.Controls.Add(this.txtCuenta);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnLogin);
             this.DoubleBuffered = true;
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbOcultar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMostrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,10 +139,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.TextBox txtCuenta;
+        private System.Windows.Forms.TextBox txtContrasenia;
+        private System.Windows.Forms.ComboBox cbIdRol;
+        private System.Windows.Forms.PictureBox pbOcultar;
+        private System.Windows.Forms.PictureBox pbMostrar;
     }
 }
