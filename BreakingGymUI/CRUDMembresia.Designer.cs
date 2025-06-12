@@ -56,30 +56,28 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(1089, 518);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(817, 421);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 16);
+            this.label1.Size = new System.Drawing.Size(16, 13);
             this.label1.TabIndex = 43;
             this.label1.Text = "Id";
             this.label1.Visible = false;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(713, 13);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPrecio.Location = new System.Drawing.Point(535, 11);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPrecio.Mask = "00000";
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(100, 22);
+            this.txtPrecio.Size = new System.Drawing.Size(76, 20);
             this.txtPrecio.TabIndex = 42;
             // 
             // btnRegresar
             // 
             this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(1501, 13);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegresar.Location = new System.Drawing.Point(1126, 11);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(137, 87);
+            this.btnRegresar.Size = new System.Drawing.Size(103, 71);
             this.btnRegresar.TabIndex = 41;
             this.btnRegresar.UseVisualStyleBackColor = true;
             // 
@@ -89,29 +87,30 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(1055, 47);
+            this.label7.Location = new System.Drawing.Point(791, 38);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(317, 27);
+            this.label7.Size = new System.Drawing.Size(251, 21);
             this.label7.TabIndex = 40;
             this.label7.Text = "Buscar (Nombre de membresia)";
             // 
             // txtBuscarMembresia
             // 
             this.txtBuscarMembresia.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarMembresia.Location = new System.Drawing.Point(996, 106);
-            this.txtBuscarMembresia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBuscarMembresia.Location = new System.Drawing.Point(747, 86);
+            this.txtBuscarMembresia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBuscarMembresia.Name = "txtBuscarMembresia";
-            this.txtBuscarMembresia.Size = new System.Drawing.Size(463, 34);
+            this.txtBuscarMembresia.Size = new System.Drawing.Size(348, 29);
             this.txtBuscarMembresia.TabIndex = 39;
             // 
             // btnRefrescar
             // 
             this.btnRefrescar.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefrescar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRefrescar.Location = new System.Drawing.Point(1309, 154);
-            this.btnRefrescar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRefrescar.Location = new System.Drawing.Point(982, 125);
+            this.btnRefrescar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRefrescar.Name = "btnRefrescar";
-            this.btnRefrescar.Size = new System.Drawing.Size(125, 74);
+            this.btnRefrescar.Size = new System.Drawing.Size(94, 60);
             this.btnRefrescar.TabIndex = 38;
             this.btnRefrescar.Text = "Refrescar";
             this.btnRefrescar.UseVisualStyleBackColor = true;
@@ -120,10 +119,10 @@
             // 
             this.btnMembresiaBuscar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMembresiaBuscar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMembresiaBuscar.Location = new System.Drawing.Point(1003, 154);
-            this.btnMembresiaBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMembresiaBuscar.Location = new System.Drawing.Point(752, 125);
+            this.btnMembresiaBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMembresiaBuscar.Name = "btnMembresiaBuscar";
-            this.btnMembresiaBuscar.Size = new System.Drawing.Size(125, 74);
+            this.btnMembresiaBuscar.Size = new System.Drawing.Size(94, 60);
             this.btnMembresiaBuscar.TabIndex = 37;
             this.btnMembresiaBuscar.Text = "Buscar";
             this.btnMembresiaBuscar.UseVisualStyleBackColor = true;
@@ -132,10 +131,10 @@
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEliminar.Location = new System.Drawing.Point(319, 370);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEliminar.Location = new System.Drawing.Point(239, 301);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(125, 74);
+            this.btnEliminar.Size = new System.Drawing.Size(94, 60);
             this.btnEliminar.TabIndex = 36;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -144,10 +143,10 @@
             // 
             this.btnModificar.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModificar.Location = new System.Drawing.Point(567, 370);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnModificar.Location = new System.Drawing.Point(425, 301);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(125, 74);
+            this.btnModificar.Size = new System.Drawing.Size(94, 60);
             this.btnModificar.TabIndex = 35;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
@@ -156,10 +155,10 @@
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardar.Location = new System.Drawing.Point(70, 370);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGuardar.Location = new System.Drawing.Point(52, 301);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(125, 74);
+            this.btnGuardar.Size = new System.Drawing.Size(94, 60);
             this.btnGuardar.TabIndex = 34;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -167,12 +166,12 @@
             // dgMostrarMenbresia
             // 
             this.dgMostrarMenbresia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgMostrarMenbresia.Location = new System.Drawing.Point(421, 512);
-            this.dgMostrarMenbresia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgMostrarMenbresia.Location = new System.Drawing.Point(316, 416);
+            this.dgMostrarMenbresia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgMostrarMenbresia.Name = "dgMostrarMenbresia";
             this.dgMostrarMenbresia.RowHeadersWidth = 51;
             this.dgMostrarMenbresia.RowTemplate.Height = 24;
-            this.dgMostrarMenbresia.Size = new System.Drawing.Size(745, 315);
+            this.dgMostrarMenbresia.Size = new System.Drawing.Size(559, 256);
             this.dgMostrarMenbresia.TabIndex = 33;
             // 
             // label6
@@ -181,9 +180,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(49, 12);
+            this.label6.Location = new System.Drawing.Point(37, 10);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 27);
+            this.label6.Size = new System.Drawing.Size(73, 21);
             this.label6.TabIndex = 32;
             this.label6.Text = "Nombre";
             // 
@@ -193,9 +193,10 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(29, 125);
+            this.label5.Location = new System.Drawing.Point(22, 102);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 27);
+            this.label5.Size = new System.Drawing.Size(88, 21);
             this.label5.TabIndex = 31;
             this.label5.Text = "Id Servicio";
             // 
@@ -205,9 +206,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(602, 12);
+            this.label4.Location = new System.Drawing.Point(452, 10);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 27);
+            this.label4.Size = new System.Drawing.Size(71, 21);
             this.label4.TabIndex = 30;
             this.label4.Text = "Precio $";
             // 
@@ -217,9 +219,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(11, 230);
+            this.label3.Location = new System.Drawing.Point(8, 187);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 27);
+            this.label3.Size = new System.Drawing.Size(98, 21);
             this.label3.TabIndex = 29;
             this.label3.Text = "Descripcion";
             // 
@@ -229,29 +232,30 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(591, 123);
+            this.label2.Location = new System.Drawing.Point(443, 100);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 27);
+            this.label2.Size = new System.Drawing.Size(79, 21);
             this.label2.TabIndex = 28;
             this.label2.Text = "Duracion";
             // 
             // txtDescripcion
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(158, 220);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDescripcion.Location = new System.Drawing.Point(118, 179);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(724, 34);
+            this.txtDescripcion.Size = new System.Drawing.Size(544, 29);
             this.txtDescripcion.TabIndex = 27;
             // 
             // txtDuracion
             // 
             this.txtDuracion.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDuracion.Location = new System.Drawing.Point(713, 113);
-            this.txtDuracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDuracion.Location = new System.Drawing.Point(535, 92);
+            this.txtDuracion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDuracion.MaxLength = 10;
             this.txtDuracion.Name = "txtDuracion";
-            this.txtDuracion.Size = new System.Drawing.Size(187, 34);
+            this.txtDuracion.Size = new System.Drawing.Size(141, 29);
             this.txtDuracion.TabIndex = 26;
             // 
             // cbxIdServicio
@@ -259,40 +263,40 @@
             this.cbxIdServicio.DisplayMember = "Nombre";
             this.cbxIdServicio.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxIdServicio.FormattingEnabled = true;
-            this.cbxIdServicio.Location = new System.Drawing.Point(158, 119);
-            this.cbxIdServicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbxIdServicio.Location = new System.Drawing.Point(118, 97);
+            this.cbxIdServicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbxIdServicio.Name = "cbxIdServicio";
-            this.cbxIdServicio.Size = new System.Drawing.Size(205, 35);
+            this.cbxIdServicio.Size = new System.Drawing.Size(155, 29);
             this.cbxIdServicio.TabIndex = 25;
             this.cbxIdServicio.ValueMember = "Id";
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(158, 7);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNombre.Location = new System.Drawing.Point(118, 6);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.MaxLength = 30;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(205, 34);
+            this.txtNombre.Size = new System.Drawing.Size(155, 29);
             this.txtNombre.TabIndex = 24;
             // 
             // txtId
             // 
             this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(1131, 515);
-            this.txtId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtId.Location = new System.Drawing.Point(848, 418);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(132, 22);
+            this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 23;
             this.txtId.Visible = false;
             // 
             // CRUDMembresia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Fondoo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1668, 838);
+            this.ClientSize = new System.Drawing.Size(1251, 681);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.btnRegresar);
@@ -314,6 +318,7 @@
             this.Controls.Add(this.cbxIdServicio);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtId);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CRUDMembresia";
             this.Text = "CRUDMembresia";
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarMenbresia)).EndInit();
