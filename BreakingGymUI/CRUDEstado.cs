@@ -98,6 +98,7 @@ namespace BreakingGymUI
                 txtId.Clear();
                 txtId.Clear();
                 txtEstado.Clear();
+                btnEliminar.Visible = false; // Ocultar el botón de eliminar después de la eliminación
                 CargarGrid();
                 MessageBox.Show("Estado eliminado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
