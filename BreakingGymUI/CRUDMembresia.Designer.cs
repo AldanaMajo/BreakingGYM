@@ -66,7 +66,7 @@
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(532, 57);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecio.Mask = "00000";
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(76, 20);
@@ -98,7 +98,7 @@
             // 
             this.txtBuscarMembresia.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscarMembresia.Location = new System.Drawing.Point(744, 132);
-            this.txtBuscarMembresia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscarMembresia.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscarMembresia.Name = "txtBuscarMembresia";
             this.txtBuscarMembresia.Size = new System.Drawing.Size(348, 29);
             this.txtBuscarMembresia.TabIndex = 39;
@@ -109,7 +109,7 @@
             this.btnRefrescar.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefrescar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnRefrescar.Location = new System.Drawing.Point(979, 171);
-            this.btnRefrescar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRefrescar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRefrescar.Name = "btnRefrescar";
             this.btnRefrescar.Size = new System.Drawing.Size(94, 60);
             this.btnRefrescar.TabIndex = 38;
@@ -123,7 +123,7 @@
             this.btnMembresiaBuscar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMembresiaBuscar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnMembresiaBuscar.Location = new System.Drawing.Point(749, 171);
-            this.btnMembresiaBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMembresiaBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnMembresiaBuscar.Name = "btnMembresiaBuscar";
             this.btnMembresiaBuscar.Size = new System.Drawing.Size(94, 60);
             this.btnMembresiaBuscar.TabIndex = 37;
@@ -137,7 +137,7 @@
             this.btnEliminar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEliminar.Location = new System.Drawing.Point(236, 347);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(94, 60);
             this.btnEliminar.TabIndex = 36;
@@ -151,7 +151,7 @@
             this.btnModificar.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnModificar.Location = new System.Drawing.Point(422, 347);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(94, 60);
             this.btnModificar.TabIndex = 35;
@@ -165,7 +165,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnGuardar.Location = new System.Drawing.Point(49, 347);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(94, 60);
             this.btnGuardar.TabIndex = 34;
@@ -177,7 +177,7 @@
             // 
             this.dgMostrarMenbresia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgMostrarMenbresia.Location = new System.Drawing.Point(38, 464);
-            this.dgMostrarMenbresia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgMostrarMenbresia.Margin = new System.Windows.Forms.Padding(2);
             this.dgMostrarMenbresia.Name = "dgMostrarMenbresia";
             this.dgMostrarMenbresia.RowHeadersWidth = 51;
             this.dgMostrarMenbresia.RowTemplate.Height = 24;
@@ -254,7 +254,7 @@
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.Location = new System.Drawing.Point(115, 225);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(544, 29);
             this.txtDescripcion.TabIndex = 27;
@@ -263,7 +263,7 @@
             // 
             this.txtDuracion.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuracion.Location = new System.Drawing.Point(532, 138);
-            this.txtDuracion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDuracion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDuracion.MaxLength = 10;
             this.txtDuracion.Name = "txtDuracion";
             this.txtDuracion.Size = new System.Drawing.Size(141, 29);
@@ -275,7 +275,7 @@
             this.cbxIdServicio.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxIdServicio.FormattingEnabled = true;
             this.cbxIdServicio.Location = new System.Drawing.Point(115, 143);
-            this.cbxIdServicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxIdServicio.Margin = new System.Windows.Forms.Padding(2);
             this.cbxIdServicio.Name = "cbxIdServicio";
             this.cbxIdServicio.Size = new System.Drawing.Size(155, 29);
             this.cbxIdServicio.TabIndex = 25;
@@ -285,7 +285,7 @@
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(115, 52);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.MaxLength = 30;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(155, 29);
@@ -295,7 +295,7 @@
             // 
             this.txtId.Enabled = false;
             this.txtId.Location = new System.Drawing.Point(845, 464);
-            this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 23;
@@ -305,7 +305,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Fondoo;
+            this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Cuenta__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1251, 681);
             this.Controls.Add(this.label1);
@@ -329,7 +329,7 @@
             this.Controls.Add(this.cbxIdServicio);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtId);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CRUDMembresia";
             this.Text = "CRUDMembresia";
             this.Load += new System.EventHandler(this.CRUDMembresia_Load);

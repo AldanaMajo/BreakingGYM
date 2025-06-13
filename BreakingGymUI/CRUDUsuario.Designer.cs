@@ -306,9 +306,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Fondoo;
+            this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Cuenta__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1169, 867);
+            this.ClientSize = new System.Drawing.Size(1301, 802);
             this.Controls.Add(this.txtContrasenia);
             this.Controls.Add(this.txtCuenta);
             this.Controls.Add(this.label7);

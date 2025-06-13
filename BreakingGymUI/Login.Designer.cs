@@ -41,9 +41,10 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(792, 483);
+            this.btnLogin.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(689, 483);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(117, 34);
+            this.btnLogin.Size = new System.Drawing.Size(302, 31);
             this.btnLogin.TabIndex = 0;
             this.btnLogin.Text = "Ingresar";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -51,9 +52,10 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(935, 489);
+            this.btnSalir.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(772, 553);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(73, 28);
+            this.btnSalir.Size = new System.Drawing.Size(142, 31);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -61,10 +63,11 @@
             // 
             // txtCuenta
             // 
+            this.txtCuenta.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCuenta.ForeColor = System.Drawing.Color.Gray;
-            this.txtCuenta.Location = new System.Drawing.Point(801, 372);
+            this.txtCuenta.Location = new System.Drawing.Point(761, 301);
             this.txtCuenta.Name = "txtCuenta";
-            this.txtCuenta.Size = new System.Drawing.Size(100, 20);
+            this.txtCuenta.Size = new System.Drawing.Size(175, 26);
             this.txtCuenta.TabIndex = 2;
             this.txtCuenta.Text = "Nombre de cuenta";
             this.txtCuenta.Enter += new System.EventHandler(this.txtCuenta_Enter);
@@ -72,11 +75,12 @@
             // 
             // txtContrasenia
             // 
+            this.txtContrasenia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasenia.ForeColor = System.Drawing.Color.Gray;
-            this.txtContrasenia.Location = new System.Drawing.Point(801, 443);
+            this.txtContrasenia.Location = new System.Drawing.Point(761, 380);
             this.txtContrasenia.Name = "txtContrasenia";
             this.txtContrasenia.PasswordChar = '*';
-            this.txtContrasenia.Size = new System.Drawing.Size(100, 20);
+            this.txtContrasenia.Size = new System.Drawing.Size(137, 27);
             this.txtContrasenia.TabIndex = 3;
             this.txtContrasenia.Text = "Contraseña";
             this.txtContrasenia.Enter += new System.EventHandler(this.txtContrasenia_Enter);
@@ -84,19 +88,20 @@
             // 
             // cbIdRol
             // 
+            this.cbIdRol.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbIdRol.FormattingEnabled = true;
-            this.cbIdRol.Location = new System.Drawing.Point(792, 299);
+            this.cbIdRol.Location = new System.Drawing.Point(761, 221);
             this.cbIdRol.Name = "cbIdRol";
-            this.cbIdRol.Size = new System.Drawing.Size(121, 21);
+            this.cbIdRol.Size = new System.Drawing.Size(175, 29);
             this.cbIdRol.TabIndex = 4;
             // 
             // pbOcultar
             // 
             this.pbOcultar.BackgroundImage = global::BreakingGymUI.Properties.Resources.Musculoso;
             this.pbOcultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbOcultar.Location = new System.Drawing.Point(907, 443);
+            this.pbOcultar.Location = new System.Drawing.Point(904, 382);
             this.pbOcultar.Name = "pbOcultar";
-            this.pbOcultar.Size = new System.Drawing.Size(22, 20);
+            this.pbOcultar.Size = new System.Drawing.Size(32, 24);
             this.pbOcultar.TabIndex = 9;
             this.pbOcultar.TabStop = false;
             this.pbOcultar.Click += new System.EventHandler(this.pbOcultar_Click);
@@ -105,9 +110,9 @@
             // 
             this.pbMostrar.BackgroundImage = global::BreakingGymUI.Properties.Resources.bra;
             this.pbMostrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbMostrar.Location = new System.Drawing.Point(907, 443);
+            this.pbMostrar.Location = new System.Drawing.Point(904, 382);
             this.pbMostrar.Name = "pbMostrar";
-            this.pbMostrar.Size = new System.Drawing.Size(22, 20);
+            this.pbMostrar.Size = new System.Drawing.Size(32, 24);
             this.pbMostrar.TabIndex = 10;
             this.pbMostrar.TabStop = false;
             this.pbMostrar.Click += new System.EventHandler(this.pbMostrar_Click);
@@ -116,7 +121,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BreakingGymUI.Properties.Resources.LoginGod;
+            this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Cuenta__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1200, 650);
             this.Controls.Add(this.pbOcultar);
