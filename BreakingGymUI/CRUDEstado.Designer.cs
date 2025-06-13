@@ -118,6 +118,7 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(106, 32);
             this.txtId.TabIndex = 14;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // CRUDEstado
             // 

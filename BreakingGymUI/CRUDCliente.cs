@@ -20,6 +20,7 @@ namespace BreakingGymUI
         {
             InitializeComponent();
             CargarGrid();
+            btnEliminar.Visible = false;    
         }
         public void CargarGrid()
         {
@@ -94,9 +95,11 @@ namespace BreakingGymUI
         {
             if (string.IsNullOrWhiteSpace(txtId.Text))
             {
+                btnEliminar.Visible = false;
                 MessageBox.Show("Por favor, Seleccione un Id.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             var cli = new ClienteEN
             {
                 Id = Convert.ToByte(txtId.Text),

@@ -20,6 +20,7 @@ namespace BreakingGymUI
         {
             InitializeComponent();
             CargarGrid();
+            btnEliminar.Visible = false;
         }
         public void CargarGrid()
         {
@@ -68,17 +69,13 @@ namespace BreakingGymUI
             {
                 txtId.Text = dgMostrarEstado.CurrentRow.Cells["Id"].Value.ToString();
                 txtEstado.Text = dgMostrarEstado.CurrentRow.Cells["Nombre"].Value.ToString();
+                btnEliminar.Visible = true;
             }
         }
-
+        
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtId.Text))
-            {
-                MessageBox.Show("Por favor, selecciona un ID.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtId.Focus();
-                return;
-            }
+
             var est = new EstadoEN
             {
                 Id = Convert.ToByte(txtId.Text),
@@ -145,6 +142,16 @@ namespace BreakingGymUI
         private void CRUDEstado_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+          
+            if (txtId != null)
+            {
+                btnEliminar.Visible = true;
+            }
+           
         }
     }
 }
