@@ -226,5 +226,10 @@ namespace BreakingGymUI
                 txtPrecio.Text = dgMostrarMenbresia.CurrentRow.Cells["Precio"].Value.ToString();
             }
         }
+
+        private void txtBuscarMembresia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

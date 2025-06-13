@@ -101,12 +101,15 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(89, 219);
+            this.btnGuardar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnGuardar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnGuardar.Location = new System.Drawing.Point(92, 201);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.Size = new System.Drawing.Size(100, 60);
             this.btnGuardar.TabIndex = 11;
             this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // dgMostrarInscripcion
@@ -120,67 +123,79 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(271, 219);
+            this.btnEliminar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnEliminar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEliminar.Location = new System.Drawing.Point(248, 202);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(100, 60);
             this.btnEliminar.TabIndex = 14;
             this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(447, 219);
+            this.btnModificar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnModificar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnModificar.Location = new System.Drawing.Point(406, 201);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(75, 23);
+            this.btnModificar.Size = new System.Drawing.Size(100, 60);
             this.btnModificar.TabIndex = 15;
             this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.UseVisualStyleBackColor = false;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Location = new System.Drawing.Point(640, 221);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(148, 21);
+            this.label7.Size = new System.Drawing.Size(159, 20);
             this.label7.TabIndex = 20;
             this.label7.Text = "Buscar (Id Cliente)";
             // 
             // txtBuscarInscripcion
             // 
-            this.txtBuscarInscripcion.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarInscripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscarInscripcion.Location = new System.Drawing.Point(620, 254);
             this.txtBuscarInscripcion.Name = "txtBuscarInscripcion";
-            this.txtBuscarInscripcion.Size = new System.Drawing.Size(192, 29);
+            this.txtBuscarInscripcion.Size = new System.Drawing.Size(192, 26);
             this.txtBuscarInscripcion.TabIndex = 22;
             // 
             // btnBuscar
             // 
+            this.btnBuscar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnBuscar.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnBuscar.Location = new System.Drawing.Point(599, 313);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.Size = new System.Drawing.Size(90, 50);
             this.btnBuscar.TabIndex = 23;
             this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnRefrescar
             // 
+            this.btnRefrescar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnRefrescar.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefrescar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnRefrescar.Location = new System.Drawing.Point(750, 313);
             this.btnRefrescar.Name = "btnRefrescar";
-            this.btnRefrescar.Size = new System.Drawing.Size(75, 23);
+            this.btnRefrescar.Size = new System.Drawing.Size(90, 50);
             this.btnRefrescar.TabIndex = 24;
             this.btnRefrescar.Text = "Refrescar";
-            this.btnRefrescar.UseVisualStyleBackColor = true;
+            this.btnRefrescar.UseVisualStyleBackColor = false;
             this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
             // txtId
             // 
-            this.txtId.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(704, 383);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(66, 29);
@@ -202,11 +217,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(350, 42);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 21);
+            this.label4.Size = new System.Drawing.Size(151, 20);
             this.label4.TabIndex = 27;
             this.label4.Text = "Fecha Inscripcion";
             // 
@@ -214,11 +229,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(338, 90);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(156, 21);
+            this.label5.Size = new System.Drawing.Size(163, 20);
             this.label5.TabIndex = 28;
             this.label5.Text = "Fecha Vencimiento";
             // 
@@ -226,11 +241,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(44, 39);
+            this.label1.Location = new System.Drawing.Point(49, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 21);
+            this.label1.Size = new System.Drawing.Size(98, 24);
             this.label1.TabIndex = 29;
             this.label1.Text = "Id Cliente";
             // 
@@ -238,11 +253,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(12, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 21);
+            this.label2.Size = new System.Drawing.Size(136, 24);
             this.label2.TabIndex = 30;
             this.label2.Text = "Id Membresia";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -251,11 +266,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(44, 133);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 21);
+            this.label3.Size = new System.Drawing.Size(97, 24);
             this.label3.TabIndex = 31;
             this.label3.Text = "Id Estado";
             // 

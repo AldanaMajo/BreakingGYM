@@ -42,13 +42,14 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(92, 71);
+            this.label1.Location = new System.Drawing.Point(94, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 25);
+            this.label1.Size = new System.Drawing.Size(183, 24);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nombre de estado";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtEstado
             // 
@@ -62,12 +63,12 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGuardar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnGuardar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnGuardar.Location = new System.Drawing.Point(132, 177);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(94, 60);
+            this.btnGuardar.Size = new System.Drawing.Size(100, 60);
             this.btnGuardar.TabIndex = 10;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -75,12 +76,12 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEliminar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnEliminar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEliminar.Location = new System.Drawing.Point(330, 177);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(94, 60);
+            this.btnEliminar.Size = new System.Drawing.Size(100, 60);
             this.btnEliminar.TabIndex = 11;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -88,12 +89,12 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnModificar.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnModificar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnModificar.Location = new System.Drawing.Point(515, 177);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(117, 60);
+            this.btnModificar.Size = new System.Drawing.Size(100, 60);
             this.btnModificar.TabIndex = 12;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -134,6 +135,7 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "CRUDEstado";
             this.Text = "CRUDEstado";
             this.Load += new System.EventHandler(this.CRUDEstado_Load);
@@ -146,11 +148,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.DataGridView dgMostrarEstado;
         private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtEstado;
     }
 }
