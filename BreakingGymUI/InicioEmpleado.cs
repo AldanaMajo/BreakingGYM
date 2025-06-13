@@ -28,5 +28,10 @@ namespace BreakingGymUI
             CRUDInscripcion cRUDInscripcion = new CRUDInscripcion();
             cRUDInscripcion.ShowDialog();
         }
+
+        private void InicioEmpleado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
