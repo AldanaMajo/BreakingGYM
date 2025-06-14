@@ -198,7 +198,7 @@ namespace BreakingGymUI
             List<ClienteEN> listaClientes = clienteBL.MostrarCliente();
 
             cbIdCliente.DataSource = listaClientes;
-            cbIdCliente.DisplayMember = "Nombre";  // Nombre debe ser una propiedad de ClienteEN
+            cbIdCliente.DisplayMember = "Documento";  // Nombre debe ser una propiedad de ClienteEN
             cbIdCliente.ValueMember = "Id";        // Id debe ser una propiedad de RolEN
             cbIdCliente.DropDownStyle = ComboBoxStyle.DropDownList;
             //Mostrar Membresia en Combobox 
