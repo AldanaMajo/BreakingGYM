@@ -116,6 +116,7 @@
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 12;
             this.txtId.Visible = false;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // txtNombre
             // 
@@ -157,6 +158,7 @@
             this.Controls.Add(this.label2);
             this.Name = "CRUDRol";
             this.Text = "CRUDRol";
+            this.Load += new System.EventHandler(this.CRUDRol_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarRol)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -148,5 +148,26 @@ namespace BreakingGymUI
                 return;
             }
         }
+
+        private void CRUDRol_Load(object sender, EventArgs e)
+        {
+            btnEliminar.Enabled = false;//  deshabilitar el botón de eliminar al cargar el formulario
+            btnModificar.Enabled = false; // deshabilitar el botón de modificar al cargar el formulario
+        }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtId.Text))
+            {
+                btnEliminar.Enabled = true; // Habilitar botón eliminar si hay un Id
+                btnModificar.Enabled = true; // Habilitar botón modificar si hay un Id
+            }
+            else
+            {
+                btnEliminar.Enabled = false; // Deshabilitar si no hay Id
+                btnModificar.Enabled = false; // Deshabilitar si no hay Id
+            }
+        }
+    }
     }
 }
