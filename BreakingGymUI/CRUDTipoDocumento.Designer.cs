@@ -69,6 +69,7 @@
             this.txtId.Size = new System.Drawing.Size(100, 29);
             this.txtId.TabIndex = 24;
             this.txtId.Visible = false;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // btnEliminar
             // 
@@ -148,6 +149,7 @@
             this.Controls.Add(this.btnGuardar);
             this.Name = "CRUDTipoDocumento";
             this.Text = "CRUDTipoDocumento";
+            this.Load += new System.EventHandler(this.CRUDTipoDocumento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarTipoDocumento)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

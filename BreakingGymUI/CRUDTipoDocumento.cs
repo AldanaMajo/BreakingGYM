@@ -141,5 +141,25 @@ namespace BreakingGymUI
                 txtNombre.Text = dgMostrarTipoDocumento.CurrentRow.Cells["Nombre"].Value.ToString();
             }
         }
+
+        private void CRUDTipoDocumento_Load(object sender, EventArgs e)
+        {
+            btnModificar.Enabled = false;   //      Deshabilitar el botón de modificar al cargar el formulario  
+            btnEliminar.Enabled = false;    //      Deshabilitar el botón de eliminar al cargar el formulario   
+        }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+            if(!string.IsNullOrWhiteSpace(txtId.Text))
+            {
+                btnModificar.Enabled = true;   //      Habilitar el botón de modificar al ingresar un Id
+                btnEliminar.Enabled = true;    //      Habilitar el botón de eliminar al ingresar un Id
+            }
+            else
+            {
+                btnModificar.Enabled = false;  //      Deshabilitar el botón de modificar si no hay Id
+                btnEliminar.Enabled = false;   //      Deshabilitar el botón de eliminar si no hay Id
+            }
+        }
     }
 }
