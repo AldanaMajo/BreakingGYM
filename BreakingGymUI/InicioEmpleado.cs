@@ -29,9 +29,16 @@ namespace BreakingGymUI
             cRUDInscripcion.ShowDialog();
         }
 
-        private void InicioEmpleado_Load(object sender, EventArgs e)
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();// Cierra el formulario actual, liberando los recursos utilizados por él 
+            this.Dispose();
+        }
+
+        private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
+            Application.Exit(); // Cierra la aplicación y libera todos los recursos utilizados por ella.
         }
     }
 }

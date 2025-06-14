@@ -64,5 +64,17 @@ namespace BreakingGymUI
             CRUDTipoDocumento cRUDTipoDocumento = new CRUDTipoDocumento();
             cRUDTipoDocumento.ShowDialog();
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.Dispose();
+
+        }
+
+        private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
