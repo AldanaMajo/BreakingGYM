@@ -49,7 +49,6 @@
             this.label1.Size = new System.Drawing.Size(183, 24);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nombre de estado";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtEstado
             // 

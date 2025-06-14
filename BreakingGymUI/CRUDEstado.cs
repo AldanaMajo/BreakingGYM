@@ -20,7 +20,7 @@ namespace BreakingGymUI
         {
             InitializeComponent();
             CargarGrid();
-            btnEliminar.Visible = false;
+
         }
         public void CargarGrid()
         {
@@ -69,10 +69,10 @@ namespace BreakingGymUI
             {
                 txtId.Text = dgMostrarEstado.CurrentRow.Cells["Id"].Value.ToString();
                 txtEstado.Text = dgMostrarEstado.CurrentRow.Cells["Nombre"].Value.ToString();
-                btnEliminar.Visible = true;
+
             }
         }
-        
+
         private void btnEliminar_Click(object sender, EventArgs e)
         {
 
@@ -98,7 +98,7 @@ namespace BreakingGymUI
                 txtId.Clear();
                 txtId.Clear();
                 txtEstado.Clear();
-                btnEliminar.Visible = false; // Ocultar el botón de eliminar después de la eliminación
+
                 CargarGrid();
                 MessageBox.Show("Estado eliminado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -142,22 +142,22 @@ namespace BreakingGymUI
 
         private void CRUDEstado_Load(object sender, EventArgs e)
         {
-
+            btnEliminar.Enabled = false;// boton eliminar deshabilitado al inicio
+            btnModificar.Enabled = false; // boton modificar deshabilitado al inicio
         }
 
         private void txtId_TextChanged(object sender, EventArgs e)
         {
-          
-            if (txtId != null)
+            if (!string.IsNullOrEmpty(txtId.Text))
             {
-                btnEliminar.Visible = true;
+                btnEliminar.Enabled = true; // Habilitar botón eliminar si hay un Id
+                btnModificar.Enabled = true; // Habilitar botón modificar si hay un Id
             }
-           
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            else
+            {
+                btnEliminar.Enabled = false; // Deshabilitar si no hay Id
+                btnModificar.Enabled = false; // Deshabilitar si no hay Id
+            }
         }
     }
 }
