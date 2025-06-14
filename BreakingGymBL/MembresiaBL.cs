@@ -10,6 +10,11 @@ namespace BreakingGymBL
 {
     public class MembresiaBL
     {
+        public static MembresiaEN ObtenerMembresiaPorId(int id)
+        {
+            // Llama al método estático de la DAL directamente
+            return MembresiaDAL.ObtenerMembresiaPorId(id);
+        }
         public List<MembresiaEN> MostrarMembresia()
         {
             return MembresiaDAL.MostrarMembresia();
