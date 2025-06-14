@@ -5,20 +5,25 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QRCoder; // Asegúrate de tener instalada la librería QRCoder para generar códigos QR
 
 namespace BreakingGymUI
 {
     public partial class CRUDMembresia: Form
     {
+        public PrintDocument printDocument = new PrintDocument();
+        public MembresiaEN membresiaParaImprimir;
         MembresiaEN _membresiaEN = new MembresiaEN();
         MembresiaBL _mostrarMembresia = new MembresiaBL();
         public CRUDMembresia()
         {
             InitializeComponent();
+            printDocument.PrintPage += printDocument1_PrintPage;
             CargarGrid();
         }
         public void CargarGrid()
@@ -250,7 +255,58 @@ namespace BreakingGymUI
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
+            if (membresiaParaImprimir == null || string.IsNullOrEmpty(membresiaParaImprimir.Nombre))
+            {
+                e.Graphics.DrawString("No hay datos para imprimir.",
+                    new Font("Times New Roman", 12),
+                    Brushes.Black,
+                    e.MarginBounds.Left,
+                    e.MarginBounds.Top);
+                return;
+            }
 
+            Graphics g = e.Graphics;
+            Font font = new Font("Times New Roman", 12);
+            Font titleFont = new Font("Times New Roman", 14, FontStyle.Bold);
+            int y = e.MarginBounds.Top;
+
+            // ----- TÍTULO CENTRADO -----
+            string titulo = "BREAKING GYM - TICKET MEMBRESÍA";
+            SizeF tituloSize = g.MeasureString(titulo, titleFont);
+            float tituloX = e.MarginBounds.Left + (e.MarginBounds.Width - tituloSize.Width) / 2;
+            g.DrawString(titulo, titleFont, Brushes.Black, tituloX, y);
+            y += (int)tituloSize.Height + 20;
+
+            // ----- DATOS CENTRADOS -----
+            string[] datos =
+            {
+        $"Numero de membresia: {membresiaParaImprimir.Id}",
+        $"Membresia: {membresiaParaImprimir.Nombre}",
+        $"Servicio ID: {membresiaParaImprimir.IdServicio}",
+        $"Precio: ${membresiaParaImprimir.Precio}",
+        $"Duración: {membresiaParaImprimir.Duracion}",
+        $"Descripción: {membresiaParaImprimir.Descripcion}"
+    };
+
+            foreach (string linea in datos)
+            {
+                SizeF size = g.MeasureString(linea, font);
+                float x = e.MarginBounds.Left + (e.MarginBounds.Width - size.Width) / 2;
+                g.DrawString(linea, font, Brushes.Black, x, y);
+                y += (int)size.Height + 10;
+            }
+
+            // ----- CÓDIGO QR CENTRADO -----
+            string contenidoQR = string.Join("\n", datos); // Reutiliza los datos para el QR
+
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(contenidoQR, QRCodeGenerator.ECCLevel.Q);
+            QRCode qrCode = new QRCode(qrCodeData);
+            Bitmap qrCodeImage = qrCode.GetGraphic(5); // Escala del QR
+
+            int qrSize = 120; // Tamaño del código QR
+            int qrX = e.MarginBounds.Left + (e.MarginBounds.Width - qrSize) / 2;
+            g.DrawImage(qrCodeImage, new Rectangle(qrX, y, qrSize, qrSize));
         }
     }
     
