@@ -191,6 +191,8 @@ namespace BreakingGymUI
 
         private void CRUDInscripcion_Load(object sender, EventArgs e)
         {
+            btnModificar.Enabled = false;   // boton modificar deshabilitado al inicio
+            btnEliminar.Enabled = false;    // boton eliminar deshabilitado al inicio   
             //Mostrar Cliente en Combobox
             ClienteBL clienteBL = new ClienteBL();
             List<ClienteEN> listaClientes = clienteBL.MostrarCliente();
@@ -214,6 +216,20 @@ namespace BreakingGymUI
             cbxIdEstado.DisplayMember = "Nombre";  // Nombre debe ser una propiedad de EstadoEN
             cbxIdEstado.ValueMember = "Id";        // Id debe ser una propiedad de EstadoEN
             cbxIdEstado.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtId.Text))
+            {
+                btnModificar.Enabled = true;  // Habilitar botón modificar si hay un Id
+                btnEliminar.Enabled = true;   // Habilitar botón eliminar si hay un Id
+            }
+            else
+            {
+                btnModificar.Enabled = false; // Deshabilitar botón modificar si no hay Id
+                btnEliminar.Enabled = false;  // Deshabilitar botón eliminar si no hay Id
+            }
         }
     }
 }
