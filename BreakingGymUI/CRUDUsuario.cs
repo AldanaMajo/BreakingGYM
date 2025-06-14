@@ -235,6 +235,8 @@ namespace BreakingGymUI
 
         private void CRUDUsuario_Load(object sender, EventArgs e)
         {
+            btnEliminar.Enabled = false; // Deshabilitar el botón de eliminar al cargar el formulario
+            btnModificar.Enabled = false; // Deshabilitar el botón de modificar al cargar el formulario
             RolBL rolBL = new RolBL();
             List<RolEN> listaRoles = rolBL.MostrarRol();
 
@@ -242,6 +244,20 @@ namespace BreakingGymUI
             cbxIdRol.DisplayMember = "Nombre";  // Nombre debe ser una propiedad de RolEN
             cbxIdRol.ValueMember = "Id";        // Id debe ser una propiedad de RolEN
             cbxIdRol.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtId.Text))
+            {
+                btnModificar.Enabled = true; // Habilitar el botón de modificar si hay un Id
+                btnEliminar.Enabled = true;  // Habilitar el botón de eliminar si hay un Id
+            }
+            else
+            {
+                btnModificar.Enabled = false; // Deshabilitar el botón de modificar si no hay Id
+                btnEliminar.Enabled = false;  // Deshabilitar el botón de eliminar si no hay Id
+            }
         }
     }
 }

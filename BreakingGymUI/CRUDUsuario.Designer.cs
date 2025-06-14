@@ -161,6 +161,7 @@
             this.txtId.Size = new System.Drawing.Size(100, 33);
             this.txtId.TabIndex = 36;
             this.txtId.Visible = false;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // label5
             // 
