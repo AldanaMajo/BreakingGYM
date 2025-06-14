@@ -49,6 +49,9 @@
             this.cbxIdServicio = new System.Windows.Forms.ComboBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
+            this.btnCargarMembresia = new System.Windows.Forms.Button();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarMenbresia)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +59,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(814, 467);
+            this.label1.Location = new System.Drawing.Point(718, 238);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(16, 13);
             this.label1.TabIndex = 43;
@@ -296,13 +299,35 @@
             // txtId
             // 
             this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(845, 464);
+            this.txtId.Location = new System.Drawing.Point(749, 235);
             this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 23;
             this.txtId.Visible = false;
             this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
+            // 
+            // btnCargarMembresia
+            // 
+            this.btnCargarMembresia.Location = new System.Drawing.Point(958, 367);
+            this.btnCargarMembresia.Name = "btnCargarMembresia";
+            this.btnCargarMembresia.Size = new System.Drawing.Size(75, 23);
+            this.btnCargarMembresia.TabIndex = 45;
+            this.btnCargarMembresia.Text = "Cargar";
+            this.btnCargarMembresia.UseVisualStyleBackColor = true;
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Location = new System.Drawing.Point(762, 367);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(75, 23);
+            this.btnImprimir.TabIndex = 44;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // CRUDMembresia
             // 
@@ -311,6 +336,8 @@
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Cuenta__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1251, 681);
+            this.Controls.Add(this.btnCargarMembresia);
+            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.btnRegresar);
@@ -365,5 +392,8 @@
         private System.Windows.Forms.ComboBox cbxIdServicio;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Button btnCargarMembresia;
+        private System.Windows.Forms.Button btnImprimir;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

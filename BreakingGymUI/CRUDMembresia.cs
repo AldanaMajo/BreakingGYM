@@ -247,6 +247,11 @@ namespace BreakingGymUI
                 btnModificar.Enabled = false; // Deshabilitar si no hay Id
             }
         }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+
+        }
     }
     
 }
