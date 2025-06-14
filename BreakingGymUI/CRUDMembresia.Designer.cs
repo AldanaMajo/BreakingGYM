@@ -188,6 +188,7 @@
             this.dgMostrarMenbresia.RowTemplate.Height = 24;
             this.dgMostrarMenbresia.Size = new System.Drawing.Size(559, 256);
             this.dgMostrarMenbresia.TabIndex = 33;
+            this.dgMostrarMenbresia.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarMenbresia_CellContentClick);
             this.dgMostrarMenbresia.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarMenbresia_CellContentClick);
             // 
             // label6

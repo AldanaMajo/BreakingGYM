@@ -320,6 +320,11 @@ namespace BreakingGymUI
             PrintDialog pd = new PrintDialog();
             pd.Document = printDocument;
 
+            if (pd.ShowDialog() == DialogResult.OK)
+            {
+                printDocument.Print();
+            }
+
         }
 
         private void btnCargarMembresia_Click(object sender, EventArgs e)
