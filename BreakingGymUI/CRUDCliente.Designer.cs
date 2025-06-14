@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label7 = new System.Windows.Forms.Label();
             this.txtDocumento = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -46,7 +47,12 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.cbxIdRol = new System.Windows.Forms.ComboBox();
             this.dgMostrarCliente = new System.Windows.Forms.DataGridView();
+            this.pruebaGymDataSet5 = new BreakingGymUI.PruebaGymDataSet5();
+            this.mostrarTipoDocumentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mostrarTipoDocumentoTableAdapter = new BreakingGymUI.PruebaGymDataSet5TableAdapters.MostrarTipoDocumentoTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarTipoDocumentoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -87,6 +93,7 @@
             // 
             // cbxIdTipoDocumento
             // 
+            this.cbxIdTipoDocumento.DataSource = this.mostrarTipoDocumentoBindingSource;
             this.cbxIdTipoDocumento.DisplayMember = "Nombre";
             this.cbxIdTipoDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxIdTipoDocumento.FormattingEnabled = true;
@@ -264,6 +271,20 @@
             this.dgMostrarCliente.TabIndex = 26;
             this.dgMostrarCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarCliente_CellContentClick);
             // 
+            // pruebaGymDataSet5
+            // 
+            this.pruebaGymDataSet5.DataSetName = "PruebaGymDataSet5";
+            this.pruebaGymDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mostrarTipoDocumentoBindingSource
+            // 
+            this.mostrarTipoDocumentoBindingSource.DataMember = "MostrarTipoDocumento";
+            this.mostrarTipoDocumentoBindingSource.DataSource = this.pruebaGymDataSet5;
+            // 
+            // mostrarTipoDocumentoTableAdapter
+            // 
+            this.mostrarTipoDocumentoTableAdapter.ClearBeforeFill = true;
+            // 
             // CRUDCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -293,6 +314,8 @@
             this.Text = "CRUDCliente";
             this.Load += new System.EventHandler(this.CRUDCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarTipoDocumentoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,5 +341,8 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.ComboBox cbxIdRol;
         private System.Windows.Forms.DataGridView dgMostrarCliente;
+        private System.Windows.Forms.BindingSource mostrarTipoDocumentoBindingSource;
+        private PruebaGymDataSet5 pruebaGymDataSet5;
+        private PruebaGymDataSet5TableAdapters.MostrarTipoDocumentoTableAdapter mostrarTipoDocumentoTableAdapter;
     }
 }

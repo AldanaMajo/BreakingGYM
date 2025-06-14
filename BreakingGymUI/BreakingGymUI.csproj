@@ -120,6 +120,36 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PruebaGymDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PruebaGymDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PruebaGymDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PruebaGymDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PruebaGymDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PruebaGymDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PruebaGymDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PruebaGymDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PruebaGymDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PruebaGymDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PruebaGymDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PruebaGymDataSet5.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CRUDCliente.resx">
       <DependentUpon>CRUDCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +218,72 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="PruebaGymDataSet.xsc">
+      <DependentUpon>PruebaGymDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PruebaGymDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PruebaGymDataSet.xss">
+      <DependentUpon>PruebaGymDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet1.xsc">
+      <DependentUpon>PruebaGymDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PruebaGymDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PruebaGymDataSet1.xss">
+      <DependentUpon>PruebaGymDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet2.xsc">
+      <DependentUpon>PruebaGymDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PruebaGymDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PruebaGymDataSet2.xss">
+      <DependentUpon>PruebaGymDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet3.xsc">
+      <DependentUpon>PruebaGymDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PruebaGymDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PruebaGymDataSet3.xss">
+      <DependentUpon>PruebaGymDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet4.xsc">
+      <DependentUpon>PruebaGymDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PruebaGymDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PruebaGymDataSet4.xss">
+      <DependentUpon>PruebaGymDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet5.xsc">
+      <DependentUpon>PruebaGymDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PruebaGymDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PruebaGymDataSet5.xss">
+      <DependentUpon>PruebaGymDataSet5.xsd</DependentUpon>
+    </None>
     <None Include="Resources\Loginn.png" />
   </ItemGroup>
   <ItemGroup>

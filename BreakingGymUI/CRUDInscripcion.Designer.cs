@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.cbIdCliente = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cbxIdMembresia = new System.Windows.Forms.ComboBox();
@@ -49,16 +50,34 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pruebaGymDataSet2 = new BreakingGymUI.PruebaGymDataSet2();
+            this.mostrarClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mostrarClienteTableAdapter = new BreakingGymUI.PruebaGymDataSet2TableAdapters.MostrarClienteTableAdapter();
+            this.pruebaGymDataSet3 = new BreakingGymUI.PruebaGymDataSet3();
+            this.mostrarMembresiaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mostrarMembresiaTableAdapter = new BreakingGymUI.PruebaGymDataSet3TableAdapters.MostrarMembresiaTableAdapter();
+            this.pruebaGymDataSet4 = new BreakingGymUI.PruebaGymDataSet4();
+            this.mostrarEstadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mostrarEstadoTableAdapter = new BreakingGymUI.PruebaGymDataSet4TableAdapters.MostrarEstadoTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarInscripcion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarClienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarMembresiaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarEstadoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // cbIdCliente
             // 
+            this.cbIdCliente.DataSource = this.mostrarClienteBindingSource;
+            this.cbIdCliente.DisplayMember = "Documento";
             this.cbIdCliente.FormattingEnabled = true;
             this.cbIdCliente.Location = new System.Drawing.Point(139, 42);
             this.cbIdCliente.Name = "cbIdCliente";
             this.cbIdCliente.Size = new System.Drawing.Size(121, 21);
             this.cbIdCliente.TabIndex = 5;
+            this.cbIdCliente.ValueMember = "Id";
             // 
             // label6
             // 
@@ -70,20 +89,26 @@
             // 
             // cbxIdMembresia
             // 
+            this.cbxIdMembresia.DataSource = this.mostrarMembresiaBindingSource;
+            this.cbxIdMembresia.DisplayMember = "Nombre";
             this.cbxIdMembresia.FormattingEnabled = true;
             this.cbxIdMembresia.Location = new System.Drawing.Point(139, 90);
             this.cbxIdMembresia.Name = "cbxIdMembresia";
             this.cbxIdMembresia.Size = new System.Drawing.Size(121, 21);
             this.cbxIdMembresia.TabIndex = 7;
+            this.cbxIdMembresia.ValueMember = "Id";
             this.cbxIdMembresia.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // cbxIdEstado
             // 
+            this.cbxIdEstado.DataSource = this.mostrarEstadoBindingSource;
+            this.cbxIdEstado.DisplayMember = "Nombre";
             this.cbxIdEstado.FormattingEnabled = true;
             this.cbxIdEstado.Location = new System.Drawing.Point(139, 136);
             this.cbxIdEstado.Name = "cbxIdEstado";
             this.cbxIdEstado.Size = new System.Drawing.Size(121, 21);
             this.cbxIdEstado.TabIndex = 8;
+            this.cbxIdEstado.ValueMember = "Id";
             // 
             // dtInscripcion
             // 
@@ -275,6 +300,48 @@
             this.label3.TabIndex = 31;
             this.label3.Text = "Id Estado";
             // 
+            // pruebaGymDataSet2
+            // 
+            this.pruebaGymDataSet2.DataSetName = "PruebaGymDataSet2";
+            this.pruebaGymDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mostrarClienteBindingSource
+            // 
+            this.mostrarClienteBindingSource.DataMember = "MostrarCliente";
+            this.mostrarClienteBindingSource.DataSource = this.pruebaGymDataSet2;
+            // 
+            // mostrarClienteTableAdapter
+            // 
+            this.mostrarClienteTableAdapter.ClearBeforeFill = true;
+            // 
+            // pruebaGymDataSet3
+            // 
+            this.pruebaGymDataSet3.DataSetName = "PruebaGymDataSet3";
+            this.pruebaGymDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mostrarMembresiaBindingSource
+            // 
+            this.mostrarMembresiaBindingSource.DataMember = "MostrarMembresia";
+            this.mostrarMembresiaBindingSource.DataSource = this.pruebaGymDataSet3;
+            // 
+            // mostrarMembresiaTableAdapter
+            // 
+            this.mostrarMembresiaTableAdapter.ClearBeforeFill = true;
+            // 
+            // pruebaGymDataSet4
+            // 
+            this.pruebaGymDataSet4.DataSetName = "PruebaGymDataSet4";
+            this.pruebaGymDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mostrarEstadoBindingSource
+            // 
+            this.mostrarEstadoBindingSource.DataMember = "MostrarEstado";
+            this.mostrarEstadoBindingSource.DataSource = this.pruebaGymDataSet4;
+            // 
+            // mostrarEstadoTableAdapter
+            // 
+            this.mostrarEstadoTableAdapter.ClearBeforeFill = true;
+            // 
             // CRUDInscripcion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,6 +374,12 @@
             this.Text = "CRUDInscripcion";
             this.Load += new System.EventHandler(this.CRUDInscripcion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarInscripcion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarClienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarMembresiaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarEstadoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,5 +407,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.BindingSource mostrarClienteBindingSource;
+        private PruebaGymDataSet2 pruebaGymDataSet2;
+        private System.Windows.Forms.BindingSource mostrarMembresiaBindingSource;
+        private PruebaGymDataSet3 pruebaGymDataSet3;
+        private System.Windows.Forms.BindingSource mostrarEstadoBindingSource;
+        private PruebaGymDataSet4 pruebaGymDataSet4;
+        private PruebaGymDataSet2TableAdapters.MostrarClienteTableAdapter mostrarClienteTableAdapter;
+        private PruebaGymDataSet3TableAdapters.MostrarMembresiaTableAdapter mostrarMembresiaTableAdapter;
+        private PruebaGymDataSet4TableAdapters.MostrarEstadoTableAdapter mostrarEstadoTableAdapter;
     }
 }

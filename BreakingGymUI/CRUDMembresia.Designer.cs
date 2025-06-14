@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.MaskedTextBox();
             this.btnRegresar = new System.Windows.Forms.Button();
@@ -52,7 +53,12 @@
             this.btnCargarMembresia = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.pruebaGymDataSet1 = new BreakingGymUI.PruebaGymDataSet1();
+            this.mostrarServicioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mostrarServicioTableAdapter = new BreakingGymUI.PruebaGymDataSet1TableAdapters.MostrarServicioTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarMenbresia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarServicioBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -277,6 +283,7 @@
             // 
             // cbxIdServicio
             // 
+            this.cbxIdServicio.DataSource = this.mostrarServicioBindingSource;
             this.cbxIdServicio.DisplayMember = "Nombre";
             this.cbxIdServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxIdServicio.FormattingEnabled = true;
@@ -332,6 +339,20 @@
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
+            // pruebaGymDataSet1
+            // 
+            this.pruebaGymDataSet1.DataSetName = "PruebaGymDataSet1";
+            this.pruebaGymDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mostrarServicioBindingSource
+            // 
+            this.mostrarServicioBindingSource.DataMember = "MostrarServicio";
+            this.mostrarServicioBindingSource.DataSource = this.pruebaGymDataSet1;
+            // 
+            // mostrarServicioTableAdapter
+            // 
+            this.mostrarServicioTableAdapter.ClearBeforeFill = true;
+            // 
             // CRUDMembresia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -367,6 +388,8 @@
             this.Text = "CRUDMembresia";
             this.Load += new System.EventHandler(this.CRUDMembresia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarMenbresia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarServicioBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,5 +421,8 @@
         private System.Windows.Forms.Button btnCargarMembresia;
         private System.Windows.Forms.Button btnImprimir;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.BindingSource mostrarServicioBindingSource;
+        private PruebaGymDataSet1 pruebaGymDataSet1;
+        private PruebaGymDataSet1TableAdapters.MostrarServicioTableAdapter mostrarServicioTableAdapter;
     }
 }

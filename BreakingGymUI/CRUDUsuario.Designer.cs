@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtContrasenia = new System.Windows.Forms.TextBox();
             this.txtCuenta = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -50,7 +51,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cbxIdRol = new System.Windows.Forms.ComboBox();
+            this.pruebaGymDataSet = new BreakingGymUI.PruebaGymDataSet();
+            this.mostrarRolBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mostrarRolTableAdapter = new BreakingGymUI.PruebaGymDataSetTableAdapters.MostrarRolTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarUsuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarRolBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtContrasenia
@@ -298,6 +304,7 @@
             // 
             // cbxIdRol
             // 
+            this.cbxIdRol.DataSource = this.mostrarRolBindingSource;
             this.cbxIdRol.DisplayMember = "Nombre";
             this.cbxIdRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxIdRol.FormattingEnabled = true;
@@ -306,6 +313,20 @@
             this.cbxIdRol.Size = new System.Drawing.Size(92, 28);
             this.cbxIdRol.TabIndex = 24;
             this.cbxIdRol.ValueMember = "Id";
+            // 
+            // pruebaGymDataSet
+            // 
+            this.pruebaGymDataSet.DataSetName = "PruebaGymDataSet";
+            this.pruebaGymDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mostrarRolBindingSource
+            // 
+            this.mostrarRolBindingSource.DataMember = "MostrarRol";
+            this.mostrarRolBindingSource.DataSource = this.pruebaGymDataSet;
+            // 
+            // mostrarRolTableAdapter
+            // 
+            this.mostrarRolTableAdapter.ClearBeforeFill = true;
             // 
             // CRUDUsuario
             // 
@@ -340,6 +361,8 @@
             this.Text = "CRUDUsuario";
             this.Load += new System.EventHandler(this.CRUDUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarUsuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarRolBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -369,5 +392,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbxIdRol;
+        private System.Windows.Forms.BindingSource mostrarRolBindingSource;
+        private PruebaGymDataSet pruebaGymDataSet;
+        private PruebaGymDataSetTableAdapters.MostrarRolTableAdapter mostrarRolTableAdapter;
     }
 }
