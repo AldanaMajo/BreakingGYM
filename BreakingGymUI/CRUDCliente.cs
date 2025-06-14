@@ -19,8 +19,7 @@ namespace BreakingGymUI
         public CRUDCliente()
         {
             InitializeComponent();
-            CargarGrid();
-            btnEliminar.Visible = false;    
+            CargarGrid();    
         }
         public void CargarGrid()
         {
@@ -95,7 +94,6 @@ namespace BreakingGymUI
         {
             if (string.IsNullOrWhiteSpace(txtId.Text))
             {
-                btnEliminar.Visible = false;
                 MessageBox.Show("Por favor, Seleccione un Id.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -176,6 +174,8 @@ namespace BreakingGymUI
 
         private void CRUDCliente_Load(object sender, EventArgs e)
         {
+            btnEliminar.Enabled = false;// Deshabilitar el botón de eliminar al cargar el formulario
+            btnModificar.Enabled = false; // Deshabilitar el botón de modificar al cargar el formulario
             RolBL rolBL = new RolBL();
             List<RolEN> listaRoles = rolBL.MostrarRol();
 
@@ -207,30 +207,18 @@ namespace BreakingGymUI
             }
         }
 
-        private void txtCelular_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        private void txtId_TextChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void txtDocumento_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbxIdTipoDocumento_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-
+            if (!string.IsNullOrWhiteSpace(txtId.Text))
+            {
+                btnEliminar.Enabled = true; // Habilitar el botón de eliminar si hay un Id
+                btnModificar.Enabled = true; // Habilitar el botón de modificar si hay un Id
+            }
+            else
+            {
+                btnEliminar.Enabled = false; // Deshabilitar el botón de eliminar si no hay Id
+                btnModificar.Enabled = false; // Deshabilitar el botón de modificar si no hay Id
+            }
         }
     }
 }
