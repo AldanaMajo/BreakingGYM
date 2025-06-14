@@ -205,6 +205,8 @@ namespace BreakingGymUI
 
         private void CRUDMembresia_Load(object sender, EventArgs e)
         {
+            btnModificar.Enabled = false;   //  Deshabilitar botón de modificar al inicio
+            btnEliminar.Enabled = false;    //  Deshabilitar botón de eliminar al inicio    
             ServicioBL servicioBL = new ServicioBL();
             List<ServicioEN> listaServicios = servicioBL.MostrarServicio();
 
@@ -231,5 +233,20 @@ namespace BreakingGymUI
         {
 
         }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtId.Text))
+            {
+                btnEliminar.Enabled = true; // Habilitar botón eliminar si hay un Id
+                btnModificar.Enabled = true; // Habilitar botón modificar si hay un Id
+            }
+            else
+            {
+                btnEliminar.Enabled = false; // Deshabilitar si no hay Id
+                btnModificar.Enabled = false; // Deshabilitar si no hay Id
+            }
+        }
     }
+    
 }
