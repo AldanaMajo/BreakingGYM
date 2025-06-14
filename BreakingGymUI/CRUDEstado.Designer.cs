@@ -67,7 +67,7 @@
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnGuardar.Location = new System.Drawing.Point(132, 177);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(100, 60);
+            this.btnGuardar.Size = new System.Drawing.Size(114, 60);
             this.btnGuardar.TabIndex = 10;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -76,11 +76,11 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnEliminar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEliminar.Location = new System.Drawing.Point(330, 177);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(100, 60);
+            this.btnEliminar.Size = new System.Drawing.Size(114, 60);
             this.btnEliminar.TabIndex = 11;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -89,11 +89,11 @@
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnModificar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnModificar.Location = new System.Drawing.Point(515, 177);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(100, 60);
+            this.btnModificar.Size = new System.Drawing.Size(114, 60);
             this.btnModificar.TabIndex = 12;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;

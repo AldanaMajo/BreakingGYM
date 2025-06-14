@@ -33,6 +33,8 @@
             this.txtDocumento = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cbxIdTipoDocumento = new System.Windows.Forms.ComboBox();
+            this.mostrarTipoDocumentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pruebaGymDataSet5 = new BreakingGymUI.PruebaGymDataSet5();
             this.label5 = new System.Windows.Forms.Label();
             this.txtCelular = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,12 +49,10 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.cbxIdRol = new System.Windows.Forms.ComboBox();
             this.dgMostrarCliente = new System.Windows.Forms.DataGridView();
-            this.pruebaGymDataSet5 = new BreakingGymUI.PruebaGymDataSet5();
-            this.mostrarTipoDocumentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mostrarTipoDocumentoTableAdapter = new BreakingGymUI.PruebaGymDataSet5TableAdapters.MostrarTipoDocumentoTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dgMostrarCliente)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarTipoDocumentoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgMostrarCliente)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -60,8 +60,8 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(593, 216);
+            this.label7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label7.Location = new System.Drawing.Point(621, 208);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(117, 24);
@@ -83,8 +83,8 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(564, 154);
+            this.label6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label6.Location = new System.Drawing.Point(575, 150);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(163, 24);
@@ -103,6 +103,16 @@
             this.cbxIdTipoDocumento.Size = new System.Drawing.Size(147, 32);
             this.cbxIdTipoDocumento.TabIndex = 40;
             this.cbxIdTipoDocumento.ValueMember = "Id";
+            // 
+            // mostrarTipoDocumentoBindingSource
+            // 
+            this.mostrarTipoDocumentoBindingSource.DataMember = "MostrarTipoDocumento";
+            this.mostrarTipoDocumentoBindingSource.DataSource = this.pruebaGymDataSet5;
+            // 
+            // pruebaGymDataSet5
+            // 
+            this.pruebaGymDataSet5.DataSetName = "PruebaGymDataSet5";
+            this.pruebaGymDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label5
             // 
@@ -129,8 +139,8 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(644, 103);
+            this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label4.Location = new System.Drawing.Point(662, 94);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 24);
@@ -151,8 +161,8 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(127, 162);
+            this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label3.Location = new System.Drawing.Point(164, 145);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 24);
@@ -164,8 +174,8 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(135, 53);
+            this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label2.Location = new System.Drawing.Point(164, 47);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 24);
@@ -177,8 +187,8 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(655, 53);
+            this.label1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label1.Location = new System.Drawing.Point(674, 44);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 24);
@@ -188,12 +198,12 @@
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnModificar.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnModificar.Location = new System.Drawing.Point(510, 294);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(100, 60);
+            this.btnModificar.Size = new System.Drawing.Size(105, 60);
             this.btnModificar.TabIndex = 32;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -202,12 +212,12 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnEliminar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEliminar.Location = new System.Drawing.Point(328, 294);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(100, 60);
+            this.btnEliminar.Size = new System.Drawing.Size(105, 60);
             this.btnEliminar.TabIndex = 31;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -221,7 +231,7 @@
             this.txtGuardar.Location = new System.Drawing.Point(151, 294);
             this.txtGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.txtGuardar.Name = "txtGuardar";
-            this.txtGuardar.Size = new System.Drawing.Size(100, 60);
+            this.txtGuardar.Size = new System.Drawing.Size(105, 60);
             this.txtGuardar.TabIndex = 30;
             this.txtGuardar.Text = "Guardar";
             this.txtGuardar.UseVisualStyleBackColor = false;
@@ -230,7 +240,7 @@
             // txtApellido
             // 
             this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellido.Location = new System.Drawing.Point(226, 159);
+            this.txtApellido.Location = new System.Drawing.Point(265, 145);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellido.MaxLength = 8;
             this.txtApellido.Name = "txtApellido";
@@ -240,7 +250,7 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(226, 50);
+            this.txtNombre.Location = new System.Drawing.Point(265, 44);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.MaxLength = 50;
             this.txtNombre.Name = "txtNombre";
@@ -270,16 +280,6 @@
             this.dgMostrarCliente.Size = new System.Drawing.Size(528, 266);
             this.dgMostrarCliente.TabIndex = 26;
             this.dgMostrarCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarCliente_CellContentClick);
-            // 
-            // pruebaGymDataSet5
-            // 
-            this.pruebaGymDataSet5.DataSetName = "PruebaGymDataSet5";
-            this.pruebaGymDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mostrarTipoDocumentoBindingSource
-            // 
-            this.mostrarTipoDocumentoBindingSource.DataMember = "MostrarTipoDocumento";
-            this.mostrarTipoDocumentoBindingSource.DataSource = this.pruebaGymDataSet5;
             // 
             // mostrarTipoDocumentoTableAdapter
             // 
@@ -313,9 +313,9 @@
             this.Name = "CRUDCliente";
             this.Text = "CRUDCliente";
             this.Load += new System.EventHandler(this.CRUDCliente_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgMostrarCliente)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarTipoDocumentoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgMostrarCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -30,9 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.cbIdCliente = new System.Windows.Forms.ComboBox();
+            this.mostrarClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pruebaGymDataSet2 = new BreakingGymUI.PruebaGymDataSet2();
             this.label6 = new System.Windows.Forms.Label();
             this.cbxIdMembresia = new System.Windows.Forms.ComboBox();
+            this.mostrarMembresiaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pruebaGymDataSet3 = new BreakingGymUI.PruebaGymDataSet3();
             this.cbxIdEstado = new System.Windows.Forms.ComboBox();
+            this.mostrarEstadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pruebaGymDataSet4 = new BreakingGymUI.PruebaGymDataSet4();
             this.dtInscripcion = new System.Windows.Forms.DateTimePicker();
             this.dtVencimiento = new System.Windows.Forms.DateTimePicker();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -50,22 +56,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pruebaGymDataSet2 = new BreakingGymUI.PruebaGymDataSet2();
-            this.mostrarClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mostrarClienteTableAdapter = new BreakingGymUI.PruebaGymDataSet2TableAdapters.MostrarClienteTableAdapter();
-            this.pruebaGymDataSet3 = new BreakingGymUI.PruebaGymDataSet3();
-            this.mostrarMembresiaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mostrarMembresiaTableAdapter = new BreakingGymUI.PruebaGymDataSet3TableAdapters.MostrarMembresiaTableAdapter();
-            this.pruebaGymDataSet4 = new BreakingGymUI.PruebaGymDataSet4();
-            this.mostrarEstadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mostrarEstadoTableAdapter = new BreakingGymUI.PruebaGymDataSet4TableAdapters.MostrarEstadoTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dgMostrarInscripcion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarClienteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarMembresiaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarEstadoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgMostrarInscripcion)).BeginInit();
             this.SuspendLayout();
             // 
             // cbIdCliente
@@ -73,11 +73,21 @@
             this.cbIdCliente.DataSource = this.mostrarClienteBindingSource;
             this.cbIdCliente.DisplayMember = "Documento";
             this.cbIdCliente.FormattingEnabled = true;
-            this.cbIdCliente.Location = new System.Drawing.Point(139, 42);
+            this.cbIdCliente.Location = new System.Drawing.Point(323, 43);
             this.cbIdCliente.Name = "cbIdCliente";
             this.cbIdCliente.Size = new System.Drawing.Size(121, 21);
             this.cbIdCliente.TabIndex = 5;
             this.cbIdCliente.ValueMember = "Id";
+            // 
+            // mostrarClienteBindingSource
+            // 
+            this.mostrarClienteBindingSource.DataMember = "MostrarCliente";
+            this.mostrarClienteBindingSource.DataSource = this.pruebaGymDataSet2;
+            // 
+            // pruebaGymDataSet2
+            // 
+            this.pruebaGymDataSet2.DataSetName = "PruebaGymDataSet2";
+            this.pruebaGymDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label6
             // 
@@ -92,34 +102,54 @@
             this.cbxIdMembresia.DataSource = this.mostrarMembresiaBindingSource;
             this.cbxIdMembresia.DisplayMember = "Nombre";
             this.cbxIdMembresia.FormattingEnabled = true;
-            this.cbxIdMembresia.Location = new System.Drawing.Point(139, 90);
+            this.cbxIdMembresia.Location = new System.Drawing.Point(323, 91);
             this.cbxIdMembresia.Name = "cbxIdMembresia";
             this.cbxIdMembresia.Size = new System.Drawing.Size(121, 21);
             this.cbxIdMembresia.TabIndex = 7;
             this.cbxIdMembresia.ValueMember = "Id";
             this.cbxIdMembresia.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
+            // mostrarMembresiaBindingSource
+            // 
+            this.mostrarMembresiaBindingSource.DataMember = "MostrarMembresia";
+            this.mostrarMembresiaBindingSource.DataSource = this.pruebaGymDataSet3;
+            // 
+            // pruebaGymDataSet3
+            // 
+            this.pruebaGymDataSet3.DataSetName = "PruebaGymDataSet3";
+            this.pruebaGymDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // cbxIdEstado
             // 
             this.cbxIdEstado.DataSource = this.mostrarEstadoBindingSource;
             this.cbxIdEstado.DisplayMember = "Nombre";
             this.cbxIdEstado.FormattingEnabled = true;
-            this.cbxIdEstado.Location = new System.Drawing.Point(139, 136);
+            this.cbxIdEstado.Location = new System.Drawing.Point(323, 137);
             this.cbxIdEstado.Name = "cbxIdEstado";
             this.cbxIdEstado.Size = new System.Drawing.Size(121, 21);
             this.cbxIdEstado.TabIndex = 8;
             this.cbxIdEstado.ValueMember = "Id";
             // 
+            // mostrarEstadoBindingSource
+            // 
+            this.mostrarEstadoBindingSource.DataMember = "MostrarEstado";
+            this.mostrarEstadoBindingSource.DataSource = this.pruebaGymDataSet4;
+            // 
+            // pruebaGymDataSet4
+            // 
+            this.pruebaGymDataSet4.DataSetName = "PruebaGymDataSet4";
+            this.pruebaGymDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // dtInscripcion
             // 
-            this.dtInscripcion.Location = new System.Drawing.Point(498, 43);
+            this.dtInscripcion.Location = new System.Drawing.Point(639, 44);
             this.dtInscripcion.Name = "dtInscripcion";
             this.dtInscripcion.Size = new System.Drawing.Size(200, 20);
             this.dtInscripcion.TabIndex = 9;
             // 
             // dtVencimiento
             // 
-            this.dtVencimiento.Location = new System.Drawing.Point(500, 91);
+            this.dtVencimiento.Location = new System.Drawing.Point(641, 92);
             this.dtVencimiento.Name = "dtVencimiento";
             this.dtVencimiento.Size = new System.Drawing.Size(200, 20);
             this.dtVencimiento.TabIndex = 10;
@@ -195,11 +225,11 @@
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnBuscar.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnBuscar.Location = new System.Drawing.Point(599, 313);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(90, 50);
+            this.btnBuscar.Size = new System.Drawing.Size(99, 50);
             this.btnBuscar.TabIndex = 23;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -208,11 +238,11 @@
             // btnRefrescar
             // 
             this.btnRefrescar.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnRefrescar.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefrescar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefrescar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnRefrescar.Location = new System.Drawing.Point(750, 313);
             this.btnRefrescar.Name = "btnRefrescar";
-            this.btnRefrescar.Size = new System.Drawing.Size(90, 50);
+            this.btnRefrescar.Size = new System.Drawing.Size(113, 50);
             this.btnRefrescar.TabIndex = 24;
             this.btnRefrescar.Text = "Refrescar";
             this.btnRefrescar.UseVisualStyleBackColor = false;
@@ -245,7 +275,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(350, 42);
+            this.label4.Location = new System.Drawing.Point(491, 43);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(151, 20);
             this.label4.TabIndex = 27;
@@ -257,7 +287,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(338, 90);
+            this.label5.Location = new System.Drawing.Point(479, 91);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(163, 20);
             this.label5.TabIndex = 28;
@@ -269,7 +299,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(49, 43);
+            this.label1.Location = new System.Drawing.Point(233, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 24);
             this.label1.TabIndex = 29;
@@ -281,7 +311,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(12, 87);
+            this.label2.Location = new System.Drawing.Point(196, 88);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 24);
             this.label2.TabIndex = 30;
@@ -294,49 +324,19 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(44, 133);
+            this.label3.Location = new System.Drawing.Point(228, 134);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 24);
             this.label3.TabIndex = 31;
             this.label3.Text = "Id Estado";
             // 
-            // pruebaGymDataSet2
-            // 
-            this.pruebaGymDataSet2.DataSetName = "PruebaGymDataSet2";
-            this.pruebaGymDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mostrarClienteBindingSource
-            // 
-            this.mostrarClienteBindingSource.DataMember = "MostrarCliente";
-            this.mostrarClienteBindingSource.DataSource = this.pruebaGymDataSet2;
-            // 
             // mostrarClienteTableAdapter
             // 
             this.mostrarClienteTableAdapter.ClearBeforeFill = true;
             // 
-            // pruebaGymDataSet3
-            // 
-            this.pruebaGymDataSet3.DataSetName = "PruebaGymDataSet3";
-            this.pruebaGymDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mostrarMembresiaBindingSource
-            // 
-            this.mostrarMembresiaBindingSource.DataMember = "MostrarMembresia";
-            this.mostrarMembresiaBindingSource.DataSource = this.pruebaGymDataSet3;
-            // 
             // mostrarMembresiaTableAdapter
             // 
             this.mostrarMembresiaTableAdapter.ClearBeforeFill = true;
-            // 
-            // pruebaGymDataSet4
-            // 
-            this.pruebaGymDataSet4.DataSetName = "PruebaGymDataSet4";
-            this.pruebaGymDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mostrarEstadoBindingSource
-            // 
-            this.mostrarEstadoBindingSource.DataMember = "MostrarEstado";
-            this.mostrarEstadoBindingSource.DataSource = this.pruebaGymDataSet4;
             // 
             // mostrarEstadoTableAdapter
             // 
@@ -373,13 +373,13 @@
             this.Name = "CRUDInscripcion";
             this.Text = "CRUDInscripcion";
             this.Load += new System.EventHandler(this.CRUDInscripcion_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgMostrarInscripcion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarClienteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarMembresiaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarEstadoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgMostrarInscripcion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

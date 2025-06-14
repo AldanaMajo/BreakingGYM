@@ -48,17 +48,17 @@
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtDuracion = new System.Windows.Forms.TextBox();
             this.cbxIdServicio = new System.Windows.Forms.ComboBox();
+            this.mostrarServicioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pruebaGymDataSet1 = new BreakingGymUI.PruebaGymDataSet1();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.btnCargarMembresia = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.pruebaGymDataSet1 = new BreakingGymUI.PruebaGymDataSet1();
-            this.mostrarServicioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mostrarServicioTableAdapter = new BreakingGymUI.PruebaGymDataSet1TableAdapters.MostrarServicioTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarMenbresia)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarServicioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -95,12 +95,12 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Location = new System.Drawing.Point(788, 84);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(261, 20);
+            this.label7.Size = new System.Drawing.Size(308, 24);
             this.label7.TabIndex = 40;
             this.label7.Text = "Buscar (Nombre de membresia)";
             // 
@@ -201,12 +201,12 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(136, 61);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 20);
+            this.label6.Size = new System.Drawing.Size(85, 24);
             this.label6.TabIndex = 32;
             this.label6.Text = "Nombre";
             // 
@@ -214,12 +214,12 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(19, 148);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 20);
+            this.label5.Size = new System.Drawing.Size(108, 24);
             this.label5.TabIndex = 31;
             this.label5.Text = "Id Servicio";
             // 
@@ -227,12 +227,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(449, 56);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 20);
+            this.label4.Size = new System.Drawing.Size(87, 24);
             this.label4.TabIndex = 30;
             this.label4.Text = "Precio $";
             // 
@@ -240,12 +240,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(5, 233);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 20);
+            this.label3.Size = new System.Drawing.Size(121, 24);
             this.label3.TabIndex = 29;
             this.label3.Text = "Descripcion";
             // 
@@ -253,19 +253,19 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(440, 146);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 20);
+            this.label2.Size = new System.Drawing.Size(94, 24);
             this.label2.TabIndex = 28;
             this.label2.Text = "Duracion";
             // 
             // txtDescripcion
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(115, 225);
+            this.txtDescripcion.Location = new System.Drawing.Point(129, 233);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(544, 26);
@@ -274,7 +274,7 @@
             // txtDuracion
             // 
             this.txtDuracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDuracion.Location = new System.Drawing.Point(532, 138);
+            this.txtDuracion.Location = new System.Drawing.Point(538, 144);
             this.txtDuracion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDuracion.MaxLength = 10;
             this.txtDuracion.Name = "txtDuracion";
@@ -287,12 +287,22 @@
             this.cbxIdServicio.DisplayMember = "Nombre";
             this.cbxIdServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxIdServicio.FormattingEnabled = true;
-            this.cbxIdServicio.Location = new System.Drawing.Point(115, 143);
+            this.cbxIdServicio.Location = new System.Drawing.Point(129, 144);
             this.cbxIdServicio.Margin = new System.Windows.Forms.Padding(2);
             this.cbxIdServicio.Name = "cbxIdServicio";
             this.cbxIdServicio.Size = new System.Drawing.Size(155, 28);
             this.cbxIdServicio.TabIndex = 25;
             this.cbxIdServicio.ValueMember = "Id";
+            // 
+            // mostrarServicioBindingSource
+            // 
+            this.mostrarServicioBindingSource.DataMember = "MostrarServicio";
+            this.mostrarServicioBindingSource.DataSource = this.pruebaGymDataSet1;
+            // 
+            // pruebaGymDataSet1
+            // 
+            this.pruebaGymDataSet1.DataSetName = "PruebaGymDataSet1";
+            this.pruebaGymDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtNombre
             // 
@@ -317,9 +327,10 @@
             // 
             // btnCargarMembresia
             // 
+            this.btnCargarMembresia.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargarMembresia.Location = new System.Drawing.Point(958, 367);
             this.btnCargarMembresia.Name = "btnCargarMembresia";
-            this.btnCargarMembresia.Size = new System.Drawing.Size(75, 23);
+            this.btnCargarMembresia.Size = new System.Drawing.Size(103, 35);
             this.btnCargarMembresia.TabIndex = 45;
             this.btnCargarMembresia.Text = "Cargar";
             this.btnCargarMembresia.UseVisualStyleBackColor = true;
@@ -327,9 +338,10 @@
             // 
             // btnImprimir
             // 
+            this.btnImprimir.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImprimir.Location = new System.Drawing.Point(762, 367);
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(75, 23);
+            this.btnImprimir.Size = new System.Drawing.Size(117, 35);
             this.btnImprimir.TabIndex = 44;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
@@ -338,16 +350,6 @@
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
-            // pruebaGymDataSet1
-            // 
-            this.pruebaGymDataSet1.DataSetName = "PruebaGymDataSet1";
-            this.pruebaGymDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mostrarServicioBindingSource
-            // 
-            this.mostrarServicioBindingSource.DataMember = "MostrarServicio";
-            this.mostrarServicioBindingSource.DataSource = this.pruebaGymDataSet1;
             // 
             // mostrarServicioTableAdapter
             // 
@@ -388,8 +390,8 @@
             this.Text = "CRUDMembresia";
             this.Load += new System.EventHandler(this.CRUDMembresia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarMenbresia)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarServicioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
