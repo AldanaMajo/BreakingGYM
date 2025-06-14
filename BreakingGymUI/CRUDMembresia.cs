@@ -308,6 +308,40 @@ namespace BreakingGymUI
             int qrX = e.MarginBounds.Left + (e.MarginBounds.Width - qrSize) / 2;
             g.DrawImage(qrCodeImage, new Rectangle(qrX, y, qrSize, qrSize));
         }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            if (membresiaParaImprimir == null)
+            {
+                MessageBox.Show("Cargue primero una membresía.");
+                return;
+            }
+
+            PrintDialog pd = new PrintDialog();
+            pd.Document = printDocument;
+
+        }
+
+        private void btnCargarMembresia_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtId.Text, out int id))
+            {
+                membresiaParaImprimir = MembresiaBL.ObtenerMembresiaPorId(id);
+
+                if (membresiaParaImprimir != null && !string.IsNullOrEmpty(membresiaParaImprimir.Nombre))
+                {
+                    MessageBox.Show("Membresía cargada correctamente para imprimir.");
+                }
+                else
+                {
+                    MessageBox.Show("No se encontró una membresía con ese ID.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ingrese un ID válido.");
+            }
+        }
     }
     
 }

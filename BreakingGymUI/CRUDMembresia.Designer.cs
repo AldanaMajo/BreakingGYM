@@ -315,6 +315,7 @@
             this.btnCargarMembresia.TabIndex = 45;
             this.btnCargarMembresia.Text = "Cargar";
             this.btnCargarMembresia.UseVisualStyleBackColor = true;
+            this.btnCargarMembresia.Click += new System.EventHandler(this.btnCargarMembresia_Click);
             // 
             // btnImprimir
             // 
@@ -324,6 +325,7 @@
             this.btnImprimir.TabIndex = 44;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // printDocument1
             // 
