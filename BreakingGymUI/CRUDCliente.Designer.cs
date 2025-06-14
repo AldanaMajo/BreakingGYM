@@ -66,11 +66,12 @@
             // 
             this.txtDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDocumento.Location = new System.Drawing.Point(756, 208);
-            this.txtDocumento.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDocumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDocumento.MaxLength = 8;
             this.txtDocumento.Name = "txtDocumento";
             this.txtDocumento.Size = new System.Drawing.Size(262, 29);
             this.txtDocumento.TabIndex = 42;
+            this.txtDocumento.TextChanged += new System.EventHandler(this.txtDocumento_TextChanged);
             // 
             // label6
             // 
@@ -84,6 +85,7 @@
             this.label6.Size = new System.Drawing.Size(163, 24);
             this.label6.TabIndex = 41;
             this.label6.Text = "Tipo documento";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // cbxIdTipoDocumento
             // 
@@ -91,11 +93,12 @@
             this.cbxIdTipoDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxIdTipoDocumento.FormattingEnabled = true;
             this.cbxIdTipoDocumento.Location = new System.Drawing.Point(756, 150);
-            this.cbxIdTipoDocumento.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxIdTipoDocumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbxIdTipoDocumento.Name = "cbxIdTipoDocumento";
             this.cbxIdTipoDocumento.Size = new System.Drawing.Size(147, 32);
             this.cbxIdTipoDocumento.TabIndex = 40;
             this.cbxIdTipoDocumento.ValueMember = "Id";
+            this.cbxIdTipoDocumento.SelectedIndexChanged += new System.EventHandler(this.cbxIdTipoDocumento_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -116,6 +119,7 @@
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(104, 29);
             this.txtCelular.TabIndex = 38;
+            this.txtCelular.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtCelular_MaskInputRejected);
             // 
             // label4
             // 
@@ -137,7 +141,6 @@
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 36;
             this.txtId.Visible = false;
-            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // label3
             // 
@@ -164,6 +167,7 @@
             this.label2.Size = new System.Drawing.Size(85, 24);
             this.label2.TabIndex = 34;
             this.label2.Text = "Nombre";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -184,7 +188,7 @@
             this.btnModificar.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnModificar.Location = new System.Drawing.Point(510, 294);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(100, 60);
             this.btnModificar.TabIndex = 32;
@@ -198,7 +202,7 @@
             this.btnEliminar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEliminar.Location = new System.Drawing.Point(328, 294);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(100, 60);
             this.btnEliminar.TabIndex = 31;
@@ -212,7 +216,7 @@
             this.txtGuardar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtGuardar.Location = new System.Drawing.Point(151, 294);
-            this.txtGuardar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtGuardar.Name = "txtGuardar";
             this.txtGuardar.Size = new System.Drawing.Size(100, 60);
             this.txtGuardar.TabIndex = 30;
@@ -224,7 +228,7 @@
             // 
             this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellido.Location = new System.Drawing.Point(226, 159);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(2);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtApellido.MaxLength = 8;
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(262, 29);
@@ -234,7 +238,7 @@
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(226, 50);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.MaxLength = 50;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(262, 29);
@@ -246,7 +250,7 @@
             this.cbxIdRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxIdRol.FormattingEnabled = true;
             this.cbxIdRol.Location = new System.Drawing.Point(756, 41);
-            this.cbxIdRol.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxIdRol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbxIdRol.Name = "cbxIdRol";
             this.cbxIdRol.Size = new System.Drawing.Size(82, 32);
             this.cbxIdRol.TabIndex = 27;
@@ -256,7 +260,7 @@
             // 
             this.dgMostrarCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgMostrarCliente.Location = new System.Drawing.Point(108, 397);
-            this.dgMostrarCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.dgMostrarCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgMostrarCliente.Name = "dgMostrarCliente";
             this.dgMostrarCliente.RowHeadersWidth = 51;
             this.dgMostrarCliente.RowTemplate.Height = 24;
