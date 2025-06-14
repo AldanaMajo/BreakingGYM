@@ -324,6 +324,12 @@ namespace BreakingGymUI
             {
                 printDocument.Print();
             }
+            txtId.Clear();
+            txtNombre.Clear();
+            txtDuracion.Clear();
+            cbxIdServicio.SelectedIndex = -1; // Limpiar selección del ComboBox
+            txtPrecio.Clear();
+            txtDescripcion.Clear();
 
         }
 
