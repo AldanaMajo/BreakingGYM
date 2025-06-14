@@ -152,5 +152,25 @@ namespace BreakingGymUI
                 MessageBox.Show("Servicio modificado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void CRUDServicio_Load(object sender, EventArgs e)
+        {
+            btnModificar.Enabled = false;   //  deshabilitar el botón de modificar al cargar el formulario
+            btnEliminar.Enabled = false;    //  deshabilitar el botón de eliminar al cargar el formulario   
+        }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtId.Text))
+            {
+                btnModificar.Enabled = true; // Habilitar el botón de modificar si hay un ID
+                btnEliminar.Enabled = true;  // Habilitar el botón de eliminar si hay un ID
+            }
+            else
+            {
+                btnModificar.Enabled = false; // Deshabilitar el botón de modificar si no hay ID
+                btnEliminar.Enabled = false;  // Deshabilitar el botón de eliminar si no hay ID
+            }
+        }
     }
 }

@@ -75,6 +75,7 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(112, 22);
             this.txtId.TabIndex = 3;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // btnGuardar
             // 
@@ -168,6 +169,7 @@
             this.Controls.Add(this.dgMostrarServicio);
             this.Name = "CRUDServicio";
             this.Text = "CRUDServicio";
+            this.Load += new System.EventHandler(this.CRUDServicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarServicio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
