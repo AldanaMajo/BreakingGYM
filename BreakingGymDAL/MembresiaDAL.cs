@@ -11,6 +11,35 @@ namespace BreakingGymDAL
 {
     public class MembresiaDAL
     {
+        public static MembresiaEN ObtenerMembresiaPorId(int id)
+        {
+            MembresiaEN membresia = null;
+            using (IDbConnection _conn = ComunBD.ObtenerConexion(ComunBD.TipoBD.SqlServer))
+            {
+                _conn.Open();
+                SqlCommand _comando = new SqlCommand("ObtenerMembresiaPorId", _conn as SqlConnection);
+                _comando.CommandType = CommandType.StoredProcedure;
+                _comando.Parameters.Add(new SqlParameter("@Id", id));
+
+                IDataReader _reader = _comando.ExecuteReader();
+                if (_reader.Read())
+                {
+                    membresia = new MembresiaEN
+                    {
+                        Id = _reader.GetInt32(0),
+                        IdServicio = _reader.GetInt32(1),
+                        Nombre = _reader.GetString(2),
+                        Duracion = _reader.GetString(3),
+                        Precio = _reader.GetInt32(4),
+                        Descripcion = _reader.GetString(5)
+                    };
+                }
+
+                _conn.Close();
+            }
+
+            return membresia;
+        }
         public static  List<MembresiaEN> MostrarMembresia()
         {
             List<MembresiaEN> _Lista = new List<MembresiaEN>();
