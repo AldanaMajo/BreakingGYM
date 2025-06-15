@@ -10,9 +10,9 @@ namespace BreakingGymBL
 {
     public class UsuarioBL
     {
-        public int VerificarUsuarioLogin(UsuarioEN pusuarioEN)
+        public static UsuarioEN IniciarSesion(string cuenta, string contrasenia)
         {
-            return UsuarioDAL.VerificarUsuarioLogin(pusuarioEN);
+            return UsuarioDAL.ValidarUsuario(cuenta, contrasenia);
         }
         public List<UsuarioEN> MostrarUsuario()
         {

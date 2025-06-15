@@ -11,23 +11,34 @@ namespace BreakingGymDAL
 {
     public class UsuarioDAL
     {
-
-        public static int VerificarUsuarioLogin(UsuarioEN pusuarioEN)
+        public static UsuarioEN ValidarUsuario(string cuenta, string contrasenia)
         {
             using (IDbConnection _conn = ComunBD.ObtenerConexion(ComunBD.TipoBD.SqlServer))
             {
                 _conn.Open();
-                SqlCommand _comando =
-                new SqlCommand("VerificarUsuarioLogin", _conn as SqlConnection);
+                SqlCommand _comando = new SqlCommand("ValidarUsuario", _conn as SqlConnection);
                 _comando.CommandType = CommandType.StoredProcedure;
-                _comando.Parameters.Add(new SqlParameter("@IdRol", pusuarioEN.IdRol));
-                _comando.Parameters.Add(new SqlParameter("@Cuenta", pusuarioEN.Cuenta));
-                _comando.Parameters.Add(new SqlParameter("@Contrasenia", pusuarioEN.Contrasenia));
-                int userExiste = (int?)_comando.ExecuteScalar() ?? 0;
+                _comando.Parameters.AddWithValue("@Cuenta", cuenta);
+                _comando.Parameters.AddWithValue("@Contrasenia", contrasenia);
+
+                SqlDataReader reader = _comando.ExecuteReader();
+                UsuarioEN usuario = null;
+
+                if (reader.Read())
+                {
+                    usuario = new UsuarioEN
+                    {
+                        Cuenta = cuenta,
+                        Contrasenia = contrasenia,
+                        IdRol = reader.GetInt32(0) // Asumiendo que solo devuelves IdRol
+                    };
+                }
+
                 _conn.Close();
-                return userExiste;
+                return usuario;
             }
         }
+
         public static List<UsuarioEN> MostrarUsuario()
         {
             List<UsuarioEN> _Lista = new List<UsuarioEN>();

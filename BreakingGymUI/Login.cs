@@ -25,41 +25,43 @@ namespace BreakingGymUI
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            string cuenta = txtCuenta.Text.Trim();
+            string contrasenia = txtContrasenia.Text.Trim();
+
+            // Validar campos vacíos
+            if (string.IsNullOrEmpty(cuenta) || string.IsNullOrEmpty(contrasenia))
             {
-                UsuarioEN usuarioEN = new UsuarioEN();
-                usuarioEN.IdRol = Convert.ToByte(cbIdRol.SelectedValue);
-                usuarioEN.Cuenta = txtCuenta.Text.Trim();
-                usuarioEN.Contrasenia = txtContrasenia.Text.Trim();
+                MessageBox.Show("Por favor, ingrese usuario y contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-                // Validar campos vacíos
-                if (string.IsNullOrEmpty(usuarioEN.Cuenta) || string.IsNullOrEmpty(usuarioEN.Contrasenia))
+            // Intentar iniciar sesión
+            UsuarioEN usuario = UsuarioBL.IniciarSesion(cuenta, contrasenia);
+
+            if (usuario != null)
+            {
+                if (usuario.IdRol == 1) // Administrador
                 {
-                    MessageBox.Show("Por favor, ingrese usuario y contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    InicioAdministrador formAdmi = new InicioAdministrador();
+                    formAdmi.Show();
+                    this.Hide();
                 }
-                if (usuarioEN.IdRol != 1)
+                // Validación correcta, redirigir según el rol
+                else if (usuario.IdRol == 2) // Empleado
                 {
-                    MessageBox.Show("Por favor, Seleccione un rol correcto.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    InicioEmpleado formEmpleado = new InicioEmpleado();
+                    formEmpleado.Show();
+                    this.Hide();
                 }
-
-                // Validar credenciales usando la capa lógica
-                UsuarioBL usuarioBL = new UsuarioBL();
-                int esValido = usuarioBL.VerificarUsuarioLogin(usuarioEN);
-
-                if (esValido == 1)
-                {
-                    // Abrir el formulario principal
-                    InicioAdministrador frm = new InicioAdministrador();
-                    frm.Show();
-                    this.Hide(); // Oculta el login
-                }
-
+               
                 else
                 {
-                    MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Rol no reconocido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

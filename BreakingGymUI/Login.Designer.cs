@@ -100,6 +100,7 @@
             this.cbIdRol.Name = "cbIdRol";
             this.cbIdRol.Size = new System.Drawing.Size(175, 29);
             this.cbIdRol.TabIndex = 4;
+            this.cbIdRol.Visible = false;
             // 
             // pbOcultar
             // 
