@@ -161,5 +161,14 @@ namespace BreakingGymUI
                 btnEliminar.Enabled = false;   //      Deshabilitar el botón de eliminar si no hay Id
             }
         }
+
+        private void dgMostrarTipoDocumento_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgMostrarTipoDocumento.SelectedRows.Count > 0)
+            {
+                txtId.Text = dgMostrarTipoDocumento.CurrentRow.Cells["Id"].Value.ToString();
+                txtNombre.Text = dgMostrarTipoDocumento.CurrentRow.Cells["Nombre"].Value.ToString();
+            }
+        }
     }
 }

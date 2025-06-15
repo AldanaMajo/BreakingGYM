@@ -188,6 +188,7 @@
             this.dgMostrarUsuario.RowHeadersWidth = 51;
             this.dgMostrarUsuario.Size = new System.Drawing.Size(567, 258);
             this.dgMostrarUsuario.TabIndex = 34;
+            this.dgMostrarUsuario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarUsuario_CellClick);
             this.dgMostrarUsuario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarUsuario_CellContentClick);
             // 
             // btnModificar

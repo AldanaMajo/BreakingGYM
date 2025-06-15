@@ -105,6 +105,7 @@
             this.dgMostrarTipoDocumento.RowHeadersWidth = 51;
             this.dgMostrarTipoDocumento.Size = new System.Drawing.Size(510, 289);
             this.dgMostrarTipoDocumento.TabIndex = 21;
+            this.dgMostrarTipoDocumento.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarTipoDocumento_CellClick);
             this.dgMostrarTipoDocumento.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarTipoDocumento_CellContentClick);
             // 
             // label1

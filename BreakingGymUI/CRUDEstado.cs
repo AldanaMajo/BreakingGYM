@@ -159,5 +159,15 @@ namespace BreakingGymUI
                 btnModificar.Enabled = false; // Deshabilitar si no hay Id
             }
         }
+
+        private void dgMostrarEstado_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgMostrarEstado.SelectedRows.Count > 0)
+            {
+                txtId.Text = dgMostrarEstado.CurrentRow.Cells["Id"].Value.ToString();
+                txtEstado.Text = dgMostrarEstado.CurrentRow.Cells["Nombre"].Value.ToString();
+
+            }
+        }
     }
 }

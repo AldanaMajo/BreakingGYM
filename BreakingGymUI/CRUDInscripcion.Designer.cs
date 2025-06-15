@@ -174,6 +174,7 @@
             this.dgMostrarInscripcion.Name = "dgMostrarInscripcion";
             this.dgMostrarInscripcion.Size = new System.Drawing.Size(470, 150);
             this.dgMostrarInscripcion.TabIndex = 13;
+            this.dgMostrarInscripcion.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarInscripcion_CellClick);
             this.dgMostrarInscripcion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarInscripcion_CellContentClick);
             // 
             // btnEliminar

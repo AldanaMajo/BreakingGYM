@@ -31,7 +31,6 @@
             this.lbId = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
-            this.txtIdCliente = new System.Windows.Forms.TextBox();
             this.dgAsistencia = new System.Windows.Forms.DataGridView();
             this.lbFecha = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
@@ -41,6 +40,7 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
+            this.txtIdCliente = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgAsistencia)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,15 +73,6 @@
             this.txtId.Size = new System.Drawing.Size(143, 29);
             this.txtId.TabIndex = 2;
             // 
-            // txtIdCliente
-            // 
-            this.txtIdCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdCliente.Location = new System.Drawing.Point(231, 119);
-            this.txtIdCliente.Name = "txtIdCliente";
-            this.txtIdCliente.Size = new System.Drawing.Size(143, 29);
-            this.txtIdCliente.TabIndex = 3;
-            this.txtIdCliente.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
             // dgAsistencia
             // 
             this.dgAsistencia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -104,9 +95,10 @@
             // dtpFecha
             // 
             this.dtpFecha.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFecha.Location = new System.Drawing.Point(517, 55);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(200, 20);
+            this.dtpFecha.Size = new System.Drawing.Size(200, 29);
             this.dtpFecha.TabIndex = 6;
             // 
             // btnRegistrar
@@ -177,6 +169,15 @@
             this.label7.TabIndex = 42;
             this.label7.Text = "Buscar (Asistencia por fecha)";
             // 
+            // txtIdCliente
+            // 
+            this.txtIdCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdCliente.FormattingEnabled = true;
+            this.txtIdCliente.Location = new System.Drawing.Point(268, 124);
+            this.txtIdCliente.Name = "txtIdCliente";
+            this.txtIdCliente.Size = new System.Drawing.Size(121, 32);
+            this.txtIdCliente.TabIndex = 43;
+            // 
             // CRUDRegistroAsistencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -184,6 +185,7 @@
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources._12;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(889, 589);
+            this.Controls.Add(this.txtIdCliente);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.btnBuscar);
@@ -193,7 +195,6 @@
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.lbFecha);
             this.Controls.Add(this.dgAsistencia);
-            this.Controls.Add(this.txtIdCliente);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbId);
@@ -210,7 +211,6 @@
         private System.Windows.Forms.Label lbId;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.TextBox txtIdCliente;
         private System.Windows.Forms.DataGridView dgAsistencia;
         private System.Windows.Forms.Label lbFecha;
         private System.Windows.Forms.DateTimePicker dtpFecha;
@@ -220,5 +220,6 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox txtIdCliente;
     }
 }

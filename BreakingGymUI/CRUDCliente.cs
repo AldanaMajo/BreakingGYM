@@ -222,5 +222,20 @@ namespace BreakingGymUI
                 btnModificar.Enabled = false; // deshabilitar el botón de modificar si no hay Id
             }  
         }
+
+        private void dgMostrarCliente_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgMostrarCliente.SelectedRows.Count > 0)
+            {
+                txtId.Text = dgMostrarCliente.CurrentRow.Cells["Id"].Value.ToString();
+                cbxIdRol.Text = dgMostrarCliente.CurrentRow.Cells["IdRol"].Value.ToString();
+                cbxIdTipoDocumento.Text = dgMostrarCliente.CurrentRow.Cells["IdTipoDocumento"].Value.ToString();
+                txtNombre.Text = dgMostrarCliente.CurrentRow.Cells["Nombre"].Value.ToString();
+                txtApellido.Text = dgMostrarCliente.CurrentRow.Cells["Apellido"].Value.ToString();
+                txtCelular.Text = dgMostrarCliente.CurrentRow.Cells["Celular"].Value.ToString();
+                txtDocumento.Text = dgMostrarCliente.CurrentRow.Cells["Documento"].Value.ToString();
+
+            }
+        }
     }
 }

@@ -279,6 +279,7 @@
             this.dgMostrarCliente.RowTemplate.Height = 24;
             this.dgMostrarCliente.Size = new System.Drawing.Size(528, 266);
             this.dgMostrarCliente.TabIndex = 26;
+            this.dgMostrarCliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarCliente_CellClick);
             this.dgMostrarCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarCliente_CellContentClick);
             // 
             // mostrarTipoDocumentoTableAdapter

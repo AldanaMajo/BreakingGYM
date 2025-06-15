@@ -231,5 +231,18 @@ namespace BreakingGymUI
                 btnEliminar.Enabled = false;  // Deshabilitar botón eliminar si no hay Id
             }
         }
+
+        private void dgMostrarInscripcion_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgMostrarInscripcion.SelectedRows.Count > 0)
+            {
+                txtId.Text = dgMostrarInscripcion.CurrentRow.Cells["Id"].Value.ToString();
+                cbIdCliente.Text = dgMostrarInscripcion.CurrentRow.Cells["IdCliente"].Value.ToString();
+                cbxIdMembresia.Text = dgMostrarInscripcion.CurrentRow.Cells["IdMembresia"].Value.ToString();
+                cbxIdEstado.Text = dgMostrarInscripcion.CurrentRow.Cells["IdEstado"].Value.ToString();
+                dtInscripcion.Text = dgMostrarInscripcion.CurrentRow.Cells["FechaInscripcion"].Value.ToString();
+                dtVencimiento.Text = dgMostrarInscripcion.CurrentRow.Cells["FechaVencimiento"].Value.ToString();
+            }
+        }
     }
 }

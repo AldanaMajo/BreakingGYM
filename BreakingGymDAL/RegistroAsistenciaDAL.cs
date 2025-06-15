@@ -49,7 +49,7 @@ namespace BreakingGymDAL
                     {
                         Id = _reader.GetInt32(0),
                         IdCliente = _reader.GetInt32(1),
-                        FechaVencimiento = _reader.GetDateTime(2)
+                        FechaAsistencia = _reader.GetDateTime(2)
                     });
                 }
                 _conn.Close();

@@ -73,7 +73,7 @@ namespace BreakingGymUI
             MessageBox.Show("Servicio guardado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void dgMostrarServicio_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgMostrarServicio_CellContentClick(object sender, DataGridViewCellEventArgs e)// evento que se dispara al hacer clic en una celda del DataGridView
         {
 
             if (dgMostrarServicio.SelectedRows.Count > 0)

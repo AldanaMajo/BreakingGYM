@@ -157,7 +157,7 @@ namespace BreakingGymUI
 
         private void txtId_TextChanged(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtId.Text))
+            if (!string.IsNullOrWhiteSpace(txtId.Text))
             {
                 btnEliminar.Enabled = true; // Habilitar botón eliminar si hay un Id
                 btnModificar.Enabled = true; // Habilitar botón modificar si hay un Id
@@ -176,6 +176,16 @@ namespace BreakingGymUI
                 txtId.Text = dgMostrarRol.CurrentRow.Cells["Id"].Value.ToString();// se obtiene el valor de la celda "Id" de la fila seleccionada
                 txtNombre.Text = dgMostrarRol.CurrentRow.Cells["Nombre"].Value.ToString();// se obtiene el valor de la celda "Nombre" de la fila seleccionada
             }
+        }
+
+        private void dgMostrarRol_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgMostrarRol.SelectedRows.Count > 0) // se verifica si hay filas seleccionadas en el DataGridView
+            {
+                txtId.Text = dgMostrarRol.CurrentRow.Cells["Id"].Value.ToString();// se obtiene el valor de la celda "Id" de la fila seleccionada
+                txtNombre.Text = dgMostrarRol.CurrentRow.Cells["Nombre"].Value.ToString();// se obtiene el valor de la celda "Nombre" de la fila seleccionada
+            }
+
         }
     }
 }
