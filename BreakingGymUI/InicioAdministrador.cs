@@ -67,8 +67,9 @@ namespace BreakingGymUI
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
-            this.Dispose();
+           Login C = new Login();
+            C.Show();
+            this.Hide();
 
         }
 

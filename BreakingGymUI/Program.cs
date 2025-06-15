@@ -16,7 +16,7 @@ namespace BreakingGymUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InicioAdministrador());
+            Application.Run(new Login());
         }
     }
 }
