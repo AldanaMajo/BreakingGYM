@@ -68,6 +68,7 @@
             this.dgMostrarRol.RowHeadersWidth = 51;
             this.dgMostrarRol.Size = new System.Drawing.Size(565, 256);
             this.dgMostrarRol.TabIndex = 16;
+            this.dgMostrarRol.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarRol_CellContentClick);
             // 
             // btnModificar
             // 

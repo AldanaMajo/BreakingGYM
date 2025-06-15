@@ -26,5 +26,19 @@ namespace BreakingGymUI
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgMostrarAsistencia(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgAsistencia.SelectedRows.Count > 0) // se verifica si hay filas seleccionadas en el DataGridView
+            {
+                txtId.Text = dgAsistencia.CurrentRow.Cells["Id"].Value.ToString();// se obtiene el valor de la celda "Id" de la fila seleccionada
+                txtIdCliente.Text = dgAsistencia.CurrentRow.Cells["IdCliente"].Value.ToString();// se obtiene el valor de la celda "Nombre" de la fila seleccionada
+            }
+        }
     }
 }

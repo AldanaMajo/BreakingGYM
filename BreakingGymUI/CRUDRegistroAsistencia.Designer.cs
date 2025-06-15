@@ -30,18 +30,18 @@
         {
             this.lbId = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtIdCliente = new System.Windows.Forms.TextBox();
+            this.dgAsistencia = new System.Windows.Forms.DataGridView();
             this.lbFecha = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnRefrescar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgAsistencia)).BeginInit();
             this.SuspendLayout();
             // 
             // lbId
@@ -65,30 +65,31 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Id Cliente";
             // 
-            // textBox1
+            // txtId
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(231, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 29);
-            this.textBox1.TabIndex = 2;
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.Location = new System.Drawing.Point(231, 50);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(143, 29);
+            this.txtId.TabIndex = 2;
             // 
-            // textBox2
+            // txtIdCliente
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(231, 119);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(143, 29);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtIdCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdCliente.Location = new System.Drawing.Point(231, 119);
+            this.txtIdCliente.Name = "txtIdCliente";
+            this.txtIdCliente.Size = new System.Drawing.Size(143, 29);
+            this.txtIdCliente.TabIndex = 3;
+            this.txtIdCliente.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // dataGridView1
+            // dgAsistencia
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(52, 284);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(521, 278);
-            this.dataGridView1.TabIndex = 4;
+            this.dgAsistencia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgAsistencia.Location = new System.Drawing.Point(52, 284);
+            this.dgAsistencia.Name = "dgAsistencia";
+            this.dgAsistencia.Size = new System.Drawing.Size(521, 278);
+            this.dgAsistencia.TabIndex = 4;
+            this.dgAsistencia.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarAsistencia);
             // 
             // lbFecha
             // 
@@ -100,13 +101,13 @@
             this.lbFecha.TabIndex = 5;
             this.lbFecha.Text = "Fecha";
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(517, 55);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 6;
+            this.dtpFecha.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Location = new System.Drawing.Point(517, 55);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(200, 20);
+            this.dtpFecha.TabIndex = 6;
             // 
             // btnRegistrar
             // 
@@ -120,41 +121,41 @@
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnModificar
             // 
-            this.button1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button1.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(239, 227);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 37);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Modificar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnModificar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnModificar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnModificar.Location = new System.Drawing.Point(239, 227);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(135, 37);
+            this.btnModificar.TabIndex = 8;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnRefrescar
             // 
-            this.button2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button2.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(427, 227);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 37);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Refrescar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnRefrescar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnRefrescar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefrescar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRefrescar.Location = new System.Drawing.Point(427, 227);
+            this.btnRefrescar.Name = "btnRefrescar";
+            this.btnRefrescar.Size = new System.Drawing.Size(135, 37);
+            this.btnRefrescar.TabIndex = 9;
+            this.btnRefrescar.Text = "Refrescar";
+            this.btnRefrescar.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnBuscar
             // 
-            this.button3.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button3.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(663, 412);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(135, 37);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Buscar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnBuscar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnBuscar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBuscar.Location = new System.Drawing.Point(663, 412);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(135, 37);
+            this.btnBuscar.TabIndex = 10;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // dateTimePicker2
             // 
@@ -185,20 +186,20 @@
             this.ClientSize = new System.Drawing.Size(889, 589);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.btnRefrescar);
+            this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnRegistrar);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.lbFecha);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dgAsistencia);
+            this.Controls.Add(this.txtIdCliente);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbId);
             this.Name = "CRUDRegistroAsistencia";
             this.Text = "CRUDRegistroAsistencia";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgAsistencia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,15 +209,15 @@
 
         private System.Windows.Forms.Label lbId;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtIdCliente;
+        private System.Windows.Forms.DataGridView dgAsistencia;
         private System.Windows.Forms.Label lbFecha;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnRefrescar;
+        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label7;
     }
