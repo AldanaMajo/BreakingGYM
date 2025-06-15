@@ -156,6 +156,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PruebaGymDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PruebaGymDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PruebaGymDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PruebaGymDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PruebaGymDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PruebaGymDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PruebaGymDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PruebaGymDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PruebaGymDataSet9.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CRUDCliente.resx">
       <DependentUpon>CRUDCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -292,6 +312,50 @@
     </None>
     <None Include="PruebaGymDataSet5.xss">
       <DependentUpon>PruebaGymDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet6.xsc">
+      <DependentUpon>PruebaGymDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PruebaGymDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PruebaGymDataSet6.xss">
+      <DependentUpon>PruebaGymDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet7.xsc">
+      <DependentUpon>PruebaGymDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PruebaGymDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PruebaGymDataSet7.xss">
+      <DependentUpon>PruebaGymDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet8.xsc">
+      <DependentUpon>PruebaGymDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PruebaGymDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PruebaGymDataSet8.xss">
+      <DependentUpon>PruebaGymDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet9.xsc">
+      <DependentUpon>PruebaGymDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="PruebaGymDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PruebaGymDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PruebaGymDataSet9.xss">
+      <DependentUpon>PruebaGymDataSet9.xsd</DependentUpon>
     </None>
     <None Include="Resources\Loginn.png" />
   </ItemGroup>

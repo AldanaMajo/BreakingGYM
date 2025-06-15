@@ -41,7 +41,7 @@ namespace BreakingGymDAL
                 _conn.Open();
                 SqlCommand _comando = new SqlCommand("BuscarAsistencia", _conn as SqlConnection);
                 _comando.CommandType = CommandType.StoredProcedure;
-                _comando.Parameters.Add(new SqlParameter("@IdCliente", fechaAsistencia));
+                _comando.Parameters.Add(new SqlParameter("@fechaAsistencia", fechaAsistencia));
                 IDataReader _reader = _comando.ExecuteReader();
                 while (_reader.Read())
                 {
