@@ -168,5 +168,7 @@ namespace BreakingGymUI
                 btnModificar.Enabled = false; // Deshabilitar si no hay Id
             }
         }
+
+     
     }
 }

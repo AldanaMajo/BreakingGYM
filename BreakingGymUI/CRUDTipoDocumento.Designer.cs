@@ -43,7 +43,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(721, 204);
+            this.label2.Location = new System.Drawing.Point(958, 110);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(16, 13);
             this.label2.TabIndex = 26;
@@ -52,9 +52,9 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtNombre.Location = new System.Drawing.Point(346, 53);
+            this.txtNombre.Location = new System.Drawing.Point(447, 99);
             this.txtNombre.MaxLength = 50;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(366, 29);
@@ -64,7 +64,7 @@
             // 
             this.txtId.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtId.Location = new System.Drawing.Point(758, 188);
+            this.txtId.Location = new System.Drawing.Point(995, 94);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 29);
             this.txtId.TabIndex = 24;
@@ -74,11 +74,12 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnEliminar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEliminar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEliminar.Location = new System.Drawing.Point(362, 124);
+            this.btnEliminar.Location = new System.Drawing.Point(463, 170);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(100, 60);
+            this.btnEliminar.Size = new System.Drawing.Size(135, 37);
             this.btnEliminar.TabIndex = 23;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -87,11 +88,12 @@
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnModificar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnModificar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModificar.Location = new System.Drawing.Point(553, 124);
+            this.btnModificar.Location = new System.Drawing.Point(654, 170);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(100, 60);
+            this.btnModificar.Size = new System.Drawing.Size(135, 37);
             this.btnModificar.TabIndex = 22;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -100,7 +102,7 @@
             // dgMostrarTipoDocumento
             // 
             this.dgMostrarTipoDocumento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgMostrarTipoDocumento.Location = new System.Drawing.Point(172, 218);
+            this.dgMostrarTipoDocumento.Location = new System.Drawing.Point(260, 301);
             this.dgMostrarTipoDocumento.Name = "dgMostrarTipoDocumento";
             this.dgMostrarTipoDocumento.RowHeadersWidth = 51;
             this.dgMostrarTipoDocumento.Size = new System.Drawing.Size(510, 289);
@@ -113,7 +115,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(116, 53);
+            this.label1.Location = new System.Drawing.Point(217, 99);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 24);
             this.label1.TabIndex = 20;
@@ -122,11 +124,12 @@
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardar.Location = new System.Drawing.Point(172, 124);
+            this.btnGuardar.Location = new System.Drawing.Point(273, 170);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(100, 60);
+            this.btnGuardar.Size = new System.Drawing.Size(135, 37);
             this.btnGuardar.TabIndex = 19;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -138,7 +141,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Cuenta__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(975, 560);
+            this.ClientSize = new System.Drawing.Size(1093, 690);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtId);

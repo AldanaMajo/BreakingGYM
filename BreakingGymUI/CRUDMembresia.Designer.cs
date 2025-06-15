@@ -65,7 +65,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(718, 238);
+            this.label1.Location = new System.Drawing.Point(709, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(16, 13);
             this.label1.TabIndex = 43;
@@ -75,7 +75,7 @@
             // txtPrecio
             // 
             this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(532, 57);
+            this.txtPrecio.Location = new System.Drawing.Point(627, 90);
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecio.Mask = "00000";
             this.txtPrecio.Name = "txtPrecio";
@@ -85,7 +85,7 @@
             // btnRegresar
             // 
             this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(1126, 11);
+            this.btnRegresar.Location = new System.Drawing.Point(941, 12);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(103, 71);
             this.btnRegresar.TabIndex = 41;
@@ -97,7 +97,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(788, 84);
+            this.label7.Location = new System.Drawing.Point(736, 442);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(308, 24);
@@ -107,10 +107,10 @@
             // txtBuscarMembresia
             // 
             this.txtBuscarMembresia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarMembresia.Location = new System.Drawing.Point(744, 132);
+            this.txtBuscarMembresia.Location = new System.Drawing.Point(692, 490);
             this.txtBuscarMembresia.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscarMembresia.Name = "txtBuscarMembresia";
-            this.txtBuscarMembresia.Size = new System.Drawing.Size(348, 26);
+            this.txtBuscarMembresia.Size = new System.Drawing.Size(381, 26);
             this.txtBuscarMembresia.TabIndex = 39;
             this.txtBuscarMembresia.TextChanged += new System.EventHandler(this.txtBuscarMembresia_TextChanged);
             // 
@@ -119,10 +119,10 @@
             this.btnRefrescar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnRefrescar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefrescar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRefrescar.Location = new System.Drawing.Point(979, 171);
+            this.btnRefrescar.Location = new System.Drawing.Point(927, 529);
             this.btnRefrescar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRefrescar.Name = "btnRefrescar";
-            this.btnRefrescar.Size = new System.Drawing.Size(100, 60);
+            this.btnRefrescar.Size = new System.Drawing.Size(135, 37);
             this.btnRefrescar.TabIndex = 38;
             this.btnRefrescar.Text = "Refrescar";
             this.btnRefrescar.UseVisualStyleBackColor = false;
@@ -133,10 +133,10 @@
             this.btnMembresiaBuscar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnMembresiaBuscar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMembresiaBuscar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMembresiaBuscar.Location = new System.Drawing.Point(749, 171);
+            this.btnMembresiaBuscar.Location = new System.Drawing.Point(697, 529);
             this.btnMembresiaBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnMembresiaBuscar.Name = "btnMembresiaBuscar";
-            this.btnMembresiaBuscar.Size = new System.Drawing.Size(100, 60);
+            this.btnMembresiaBuscar.Size = new System.Drawing.Size(135, 37);
             this.btnMembresiaBuscar.TabIndex = 37;
             this.btnMembresiaBuscar.Text = "Buscar";
             this.btnMembresiaBuscar.UseVisualStyleBackColor = false;
@@ -145,12 +145,13 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEliminar.Location = new System.Drawing.Point(236, 347);
+            this.btnEliminar.Location = new System.Drawing.Point(406, 328);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(100, 60);
+            this.btnEliminar.Size = new System.Drawing.Size(135, 37);
             this.btnEliminar.TabIndex = 36;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -159,12 +160,13 @@
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnModificar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModificar.Location = new System.Drawing.Point(422, 347);
+            this.btnModificar.Location = new System.Drawing.Point(592, 328);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(100, 60);
+            this.btnModificar.Size = new System.Drawing.Size(135, 37);
             this.btnModificar.TabIndex = 35;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -173,12 +175,13 @@
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardar.Location = new System.Drawing.Point(49, 347);
+            this.btnGuardar.Location = new System.Drawing.Point(219, 328);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(100, 60);
+            this.btnGuardar.Size = new System.Drawing.Size(135, 37);
             this.btnGuardar.TabIndex = 34;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -187,7 +190,7 @@
             // dgMostrarMenbresia
             // 
             this.dgMostrarMenbresia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgMostrarMenbresia.Location = new System.Drawing.Point(38, 464);
+            this.dgMostrarMenbresia.Location = new System.Drawing.Point(59, 423);
             this.dgMostrarMenbresia.Margin = new System.Windows.Forms.Padding(2);
             this.dgMostrarMenbresia.Name = "dgMostrarMenbresia";
             this.dgMostrarMenbresia.RowHeadersWidth = 51;
@@ -203,7 +206,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(136, 61);
+            this.label6.Location = new System.Drawing.Point(131, 96);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 24);
@@ -216,7 +219,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(19, 148);
+            this.label5.Location = new System.Drawing.Point(109, 179);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 24);
@@ -229,7 +232,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(449, 56);
+            this.label4.Location = new System.Drawing.Point(544, 89);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 24);
@@ -242,7 +245,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(5, 233);
+            this.label3.Location = new System.Drawing.Point(96, 266);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 24);
@@ -255,7 +258,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(440, 146);
+            this.label2.Location = new System.Drawing.Point(535, 179);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 24);
@@ -265,7 +268,7 @@
             // txtDescripcion
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(129, 233);
+            this.txtDescripcion.Location = new System.Drawing.Point(219, 264);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(544, 26);
@@ -274,7 +277,7 @@
             // txtDuracion
             // 
             this.txtDuracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDuracion.Location = new System.Drawing.Point(538, 144);
+            this.txtDuracion.Location = new System.Drawing.Point(633, 177);
             this.txtDuracion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDuracion.MaxLength = 10;
             this.txtDuracion.Name = "txtDuracion";
@@ -287,7 +290,7 @@
             this.cbxIdServicio.DisplayMember = "Nombre";
             this.cbxIdServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxIdServicio.FormattingEnabled = true;
-            this.cbxIdServicio.Location = new System.Drawing.Point(129, 144);
+            this.cbxIdServicio.Location = new System.Drawing.Point(219, 175);
             this.cbxIdServicio.Margin = new System.Windows.Forms.Padding(2);
             this.cbxIdServicio.Name = "cbxIdServicio";
             this.cbxIdServicio.Size = new System.Drawing.Size(155, 28);
@@ -307,7 +310,7 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(222, 57);
+            this.txtNombre.Location = new System.Drawing.Point(217, 92);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.MaxLength = 30;
             this.txtNombre.Name = "txtNombre";
@@ -317,7 +320,7 @@
             // txtId
             // 
             this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(749, 235);
+            this.txtId.Location = new System.Drawing.Point(740, 27);
             this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
@@ -328,9 +331,9 @@
             // btnCargarMembresia
             // 
             this.btnCargarMembresia.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarMembresia.Location = new System.Drawing.Point(958, 367);
+            this.btnCargarMembresia.Location = new System.Drawing.Point(697, 625);
             this.btnCargarMembresia.Name = "btnCargarMembresia";
-            this.btnCargarMembresia.Size = new System.Drawing.Size(103, 35);
+            this.btnCargarMembresia.Size = new System.Drawing.Size(135, 37);
             this.btnCargarMembresia.TabIndex = 45;
             this.btnCargarMembresia.Text = "Cargar";
             this.btnCargarMembresia.UseVisualStyleBackColor = true;
@@ -339,9 +342,9 @@
             // btnImprimir
             // 
             this.btnImprimir.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImprimir.Location = new System.Drawing.Point(762, 367);
+            this.btnImprimir.Location = new System.Drawing.Point(926, 625);
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(117, 35);
+            this.btnImprimir.Size = new System.Drawing.Size(135, 37);
             this.btnImprimir.TabIndex = 44;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
@@ -361,7 +364,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Cuenta__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1251, 681);
+            this.ClientSize = new System.Drawing.Size(1092, 690);
             this.Controls.Add(this.btnCargarMembresia);
             this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.label1);
