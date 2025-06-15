@@ -45,9 +45,9 @@
             // 
             this.dgMostrarServicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgMostrarServicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dgMostrarServicio.Location = new System.Drawing.Point(364, 355);
+            this.dgMostrarServicio.Location = new System.Drawing.Point(273, 275);
             this.dgMostrarServicio.Name = "dgMostrarServicio";
-            this.dgMostrarServicio.Size = new System.Drawing.Size(355, 177);
+            this.dgMostrarServicio.Size = new System.Drawing.Size(504, 244);
             this.dgMostrarServicio.TabIndex = 0;
             this.dgMostrarServicio.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarServicio_CellContentClick);
             this.dgMostrarServicio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarServicio_CellContentClick);
@@ -81,7 +81,6 @@
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnGuardar.Location = new System.Drawing.Point(273, 219);
@@ -95,7 +94,6 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEliminar.Location = new System.Drawing.Point(455, 219);
@@ -109,7 +107,6 @@
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnModificar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnModificar.Location = new System.Drawing.Point(642, 219);

@@ -114,7 +114,6 @@
             // 
             this.btnRefrescar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnRefrescar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnRefrescar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRefrescar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefrescar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnRefrescar.Location = new System.Drawing.Point(940, 482);
@@ -129,7 +128,6 @@
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnBuscar.Location = new System.Drawing.Point(748, 482);
@@ -196,7 +194,6 @@
             // 
             this.btnModificar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnModificar.Location = new System.Drawing.Point(522, 302);
@@ -211,7 +208,6 @@
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEliminar.Location = new System.Drawing.Point(341, 302);
@@ -226,7 +222,6 @@
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;

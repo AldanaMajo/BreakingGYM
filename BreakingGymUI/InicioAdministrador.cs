@@ -76,5 +76,11 @@ namespace BreakingGymUI
         {
             Application.Exit();
         }
+
+        private void toolStripLabel5_Click(object sender, EventArgs e)
+        {
+            CRUDRegistroAsistencia cRUDRegistroAsistencia = new CRUDRegistroAsistencia();
+            cRUDRegistroAsistencia.ShowDialog();
+        }
     }
 }

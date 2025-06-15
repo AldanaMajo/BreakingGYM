@@ -40,5 +40,11 @@ namespace BreakingGymUI
 
             Application.Exit(); // Cierra la aplicación y libera todos los recursos utilizados por ella.
         }
+
+        private void toolStripLabel3_Click(object sender, EventArgs e)
+        {
+            CRUDRegistroAsistencia cRUDRegistroAsistencia = new CRUDRegistroAsistencia();
+            cRUDRegistroAsistencia.ShowDialog();
+        }
     }
 }
