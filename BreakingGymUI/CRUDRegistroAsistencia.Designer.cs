@@ -99,6 +99,7 @@
             this.dgAsistencia.Name = "dgAsistencia";
             this.dgAsistencia.Size = new System.Drawing.Size(521, 278);
             this.dgAsistencia.TabIndex = 4;
+            this.dgAsistencia.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarAsistencia);
             this.dgAsistencia.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarAsistencia);
             // 
             // lbFecha

@@ -77,6 +77,7 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(112, 22);
             this.txtId.TabIndex = 3;
+            this.txtId.Visible = false;
             this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // btnGuardar
@@ -150,6 +151,7 @@
             this.lbID.Size = new System.Drawing.Size(18, 16);
             this.lbID.TabIndex = 9;
             this.lbID.Text = "Id";
+            this.lbID.Visible = false;
             this.lbID.Click += new System.EventHandler(this.lbID_Click);
             // 
             // btnRegresar
