@@ -31,8 +31,9 @@ namespace BreakingGymUI
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();// Cierra el formulario actual, liberando los recursos utilizados por él 
-            this.Dispose();
+            Login C = new Login();
+            C.Show();
+            this.Hide();
         }
 
         private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
