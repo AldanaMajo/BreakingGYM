@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.dgMostrarRol = new System.Windows.Forms.DataGridView();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -51,15 +50,6 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Id";
             this.label1.Visible = false;
-            // 
-            // btnRegresar
-            // 
-            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(857, 454);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(109, 80);
-            this.btnRegresar.TabIndex = 17;
-            this.btnRegresar.UseVisualStyleBackColor = true;
             // 
             // dgMostrarRol
             // 
@@ -167,7 +157,6 @@
             this.ClientSize = new System.Drawing.Size(1008, 624);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.dgMostrarRol);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);
@@ -187,7 +176,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.DataGridView dgMostrarRol;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;

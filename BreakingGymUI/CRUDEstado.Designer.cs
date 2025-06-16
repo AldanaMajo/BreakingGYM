@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -106,7 +107,11 @@
             this.dgMostrarEstado.Location = new System.Drawing.Point(124, 280);
             this.dgMostrarEstado.Name = "dgMostrarEstado";
             this.dgMostrarEstado.RowHeadersWidth = 51;
-            this.dgMostrarEstado.Size = new System.Drawing.Size(263, 140);
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgMostrarEstado.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgMostrarEstado.Size = new System.Drawing.Size(480, 140);
             this.dgMostrarEstado.TabIndex = 13;
             this.dgMostrarEstado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarEstado_CellClick);
             this.dgMostrarEstado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarEstado_CellContentClick);
