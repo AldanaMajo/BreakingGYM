@@ -129,5 +129,10 @@ namespace BreakingGymUI
             this.Close();
             this.Dispose();
         }
+
+        private void txtCuenta_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

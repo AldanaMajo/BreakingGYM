@@ -32,7 +32,6 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.txtCuenta = new System.Windows.Forms.TextBox();
             this.txtContrasenia = new System.Windows.Forms.TextBox();
-            this.cbIdRol = new System.Windows.Forms.ComboBox();
             this.pbOcultar = new System.Windows.Forms.PictureBox();
             this.pbMostrar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbOcultar)).BeginInit();
@@ -75,6 +74,7 @@
             this.txtCuenta.Size = new System.Drawing.Size(175, 26);
             this.txtCuenta.TabIndex = 2;
             this.txtCuenta.Text = "Nombre de cuenta";
+            this.txtCuenta.TextChanged += new System.EventHandler(this.txtCuenta_TextChanged);
             this.txtCuenta.Enter += new System.EventHandler(this.txtCuenta_Enter);
             this.txtCuenta.Leave += new System.EventHandler(this.txtCuenta_Leave);
             // 
@@ -90,17 +90,6 @@
             this.txtContrasenia.Text = "Contraseña";
             this.txtContrasenia.Enter += new System.EventHandler(this.txtContrasenia_Enter);
             this.txtContrasenia.Leave += new System.EventHandler(this.txtContrasenia_Leave);
-            // 
-            // cbIdRol
-            // 
-            this.cbIdRol.BackColor = System.Drawing.SystemColors.Window;
-            this.cbIdRol.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbIdRol.FormattingEnabled = true;
-            this.cbIdRol.Location = new System.Drawing.Point(761, 221);
-            this.cbIdRol.Name = "cbIdRol";
-            this.cbIdRol.Size = new System.Drawing.Size(175, 29);
-            this.cbIdRol.TabIndex = 4;
-            this.cbIdRol.Visible = false;
             // 
             // pbOcultar
             // 
@@ -133,7 +122,6 @@
             this.ClientSize = new System.Drawing.Size(1200, 650);
             this.Controls.Add(this.pbOcultar);
             this.Controls.Add(this.pbMostrar);
-            this.Controls.Add(this.cbIdRol);
             this.Controls.Add(this.txtContrasenia);
             this.Controls.Add(this.txtCuenta);
             this.Controls.Add(this.btnSalir);
@@ -155,7 +143,6 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.TextBox txtCuenta;
         private System.Windows.Forms.TextBox txtContrasenia;
-        private System.Windows.Forms.ComboBox cbIdRol;
         private System.Windows.Forms.PictureBox pbOcultar;
         private System.Windows.Forms.PictureBox pbMostrar;
     }
