@@ -73,10 +73,11 @@
             // 
             this.cbIdCliente.DataSource = this.mostrarClienteBindingSource;
             this.cbIdCliente.DisplayMember = "Documento";
+            this.cbIdCliente.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbIdCliente.FormattingEnabled = true;
-            this.cbIdCliente.Location = new System.Drawing.Point(312, 78);
+            this.cbIdCliente.Location = new System.Drawing.Point(237, 56);
             this.cbIdCliente.Name = "cbIdCliente";
-            this.cbIdCliente.Size = new System.Drawing.Size(121, 21);
+            this.cbIdCliente.Size = new System.Drawing.Size(140, 29);
             this.cbIdCliente.TabIndex = 5;
             this.cbIdCliente.ValueMember = "Id";
             // 
@@ -102,10 +103,11 @@
             // 
             this.cbxIdMembresia.DataSource = this.mostrarMembresiaBindingSource;
             this.cbxIdMembresia.DisplayMember = "Nombre";
+            this.cbxIdMembresia.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxIdMembresia.FormattingEnabled = true;
-            this.cbxIdMembresia.Location = new System.Drawing.Point(312, 126);
+            this.cbxIdMembresia.Location = new System.Drawing.Point(237, 104);
             this.cbxIdMembresia.Name = "cbxIdMembresia";
-            this.cbxIdMembresia.Size = new System.Drawing.Size(121, 21);
+            this.cbxIdMembresia.Size = new System.Drawing.Size(140, 29);
             this.cbxIdMembresia.TabIndex = 7;
             this.cbxIdMembresia.ValueMember = "Id";
             this.cbxIdMembresia.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
@@ -124,10 +126,11 @@
             // 
             this.cbxIdEstado.DataSource = this.mostrarEstadoBindingSource;
             this.cbxIdEstado.DisplayMember = "Nombre";
+            this.cbxIdEstado.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxIdEstado.FormattingEnabled = true;
-            this.cbxIdEstado.Location = new System.Drawing.Point(312, 172);
+            this.cbxIdEstado.Location = new System.Drawing.Point(237, 150);
             this.cbxIdEstado.Name = "cbxIdEstado";
-            this.cbxIdEstado.Size = new System.Drawing.Size(121, 21);
+            this.cbxIdEstado.Size = new System.Drawing.Size(140, 29);
             this.cbxIdEstado.TabIndex = 8;
             this.cbxIdEstado.ValueMember = "Id";
             // 
@@ -143,16 +146,18 @@
             // 
             // dtInscripcion
             // 
-            this.dtInscripcion.Location = new System.Drawing.Point(628, 79);
+            this.dtInscripcion.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtInscripcion.Location = new System.Drawing.Point(633, 58);
             this.dtInscripcion.Name = "dtInscripcion";
-            this.dtInscripcion.Size = new System.Drawing.Size(200, 20);
+            this.dtInscripcion.Size = new System.Drawing.Size(254, 29);
             this.dtInscripcion.TabIndex = 9;
             // 
             // dtVencimiento
             // 
-            this.dtVencimiento.Location = new System.Drawing.Point(630, 127);
+            this.dtVencimiento.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtVencimiento.Location = new System.Drawing.Point(633, 106);
             this.dtVencimiento.Name = "dtVencimiento";
-            this.dtVencimiento.Size = new System.Drawing.Size(200, 20);
+            this.dtVencimiento.Size = new System.Drawing.Size(254, 29);
             this.dtVencimiento.TabIndex = 10;
             // 
             // btnGuardar
@@ -208,20 +213,20 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Location = new System.Drawing.Point(629, 256);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(159, 20);
+            this.label7.Size = new System.Drawing.Size(165, 22);
             this.label7.TabIndex = 20;
             this.label7.Text = "Buscar (Id Cliente)";
             // 
             // txtBuscarInscripcion
             // 
-            this.txtBuscarInscripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarInscripcion.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscarInscripcion.Location = new System.Drawing.Point(609, 289);
             this.txtBuscarInscripcion.Name = "txtBuscarInscripcion";
-            this.txtBuscarInscripcion.Size = new System.Drawing.Size(192, 26);
+            this.txtBuscarInscripcion.Size = new System.Drawing.Size(217, 29);
             this.txtBuscarInscripcion.TabIndex = 22;
             // 
             // btnBuscar
@@ -275,11 +280,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(480, 78);
+            this.label4.Location = new System.Drawing.Point(430, 63);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(151, 20);
+            this.label4.Size = new System.Drawing.Size(156, 22);
             this.label4.TabIndex = 27;
             this.label4.Text = "Fecha Inscripcion";
             // 
@@ -287,11 +292,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(468, 126);
+            this.label5.Location = new System.Drawing.Point(430, 111);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(163, 20);
+            this.label5.Size = new System.Drawing.Size(164, 22);
             this.label5.TabIndex = 28;
             this.label5.Text = "Fecha Vencimiento";
             // 
@@ -299,38 +304,38 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(222, 79);
+            this.label1.Location = new System.Drawing.Point(107, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 24);
+            this.label1.Size = new System.Drawing.Size(68, 22);
             this.label1.TabIndex = 29;
-            this.label1.Text = "Id Cliente";
+            this.label1.Text = "Cliente";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(185, 123);
+            this.label2.Location = new System.Drawing.Point(107, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 24);
+            this.label2.Size = new System.Drawing.Size(102, 22);
             this.label2.TabIndex = 30;
-            this.label2.Text = "Id Membresia";
+            this.label2.Text = "Membresia";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(217, 169);
+            this.label3.Location = new System.Drawing.Point(107, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 24);
+            this.label3.Size = new System.Drawing.Size(67, 22);
             this.label3.TabIndex = 31;
-            this.label3.Text = "Id Estado";
+            this.label3.Text = "Estado";
             // 
             // mostrarClienteTableAdapter
             // 

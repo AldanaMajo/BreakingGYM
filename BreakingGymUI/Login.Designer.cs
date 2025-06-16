@@ -44,9 +44,9 @@
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogin.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(697, 412);
+            this.btnLogin.Location = new System.Drawing.Point(796, 355);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(302, 31);
+            this.btnLogin.Size = new System.Drawing.Size(115, 31);
             this.btnLogin.TabIndex = 0;
             this.btnLogin.Text = "Ingresar";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -57,9 +57,9 @@
             this.btnSalir.BackColor = System.Drawing.Color.Salmon;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSalir.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(772, 501);
+            this.btnSalir.Location = new System.Drawing.Point(814, 410);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(142, 31);
+            this.btnSalir.Size = new System.Drawing.Size(80, 31);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -67,7 +67,7 @@
             // 
             // txtCuenta
             // 
-            this.txtCuenta.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCuenta.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCuenta.ForeColor = System.Drawing.Color.Gray;
             this.txtCuenta.Location = new System.Drawing.Point(739, 213);
             this.txtCuenta.Name = "txtCuenta";
@@ -81,12 +81,12 @@
             // 
             // txtContrasenia
             // 
-            this.txtContrasenia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContrasenia.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasenia.ForeColor = System.Drawing.Color.Gray;
             this.txtContrasenia.Location = new System.Drawing.Point(739, 296);
             this.txtContrasenia.Name = "txtContrasenia";
             this.txtContrasenia.PasswordChar = '*';
-            this.txtContrasenia.Size = new System.Drawing.Size(137, 27);
+            this.txtContrasenia.Size = new System.Drawing.Size(137, 26);
             this.txtContrasenia.TabIndex = 3;
             this.txtContrasenia.Text = "Contraseña";
             this.txtContrasenia.Enter += new System.EventHandler(this.txtContrasenia_Enter);
@@ -96,9 +96,9 @@
             // 
             this.pbOcultar.BackgroundImage = global::BreakingGymUI.Properties.Resources.Musculoso;
             this.pbOcultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbOcultar.Location = new System.Drawing.Point(898, 299);
+            this.pbOcultar.Location = new System.Drawing.Point(894, 296);
             this.pbOcultar.Name = "pbOcultar";
-            this.pbOcultar.Size = new System.Drawing.Size(32, 24);
+            this.pbOcultar.Size = new System.Drawing.Size(32, 27);
             this.pbOcultar.TabIndex = 9;
             this.pbOcultar.TabStop = false;
             this.pbOcultar.Click += new System.EventHandler(this.pbOcultar_Click);
@@ -107,9 +107,9 @@
             // 
             this.pbMostrar.BackgroundImage = global::BreakingGymUI.Properties.Resources.bra;
             this.pbMostrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbMostrar.Location = new System.Drawing.Point(898, 299);
+            this.pbMostrar.Location = new System.Drawing.Point(894, 296);
             this.pbMostrar.Name = "pbMostrar";
-            this.pbMostrar.Size = new System.Drawing.Size(32, 24);
+            this.pbMostrar.Size = new System.Drawing.Size(32, 27);
             this.pbMostrar.TabIndex = 10;
             this.pbMostrar.TabStop = false;
             this.pbMostrar.Click += new System.EventHandler(this.pbMostrar_Click);

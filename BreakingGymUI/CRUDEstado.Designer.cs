@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -44,22 +44,22 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(94, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 24);
+            this.label1.Size = new System.Drawing.Size(158, 22);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nombre de estado";
             // 
             // txtEstado
             // 
-            this.txtEstado.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstado.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtEstado.Location = new System.Drawing.Point(330, 64);
             this.txtEstado.MaxLength = 50;
             this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(366, 32);
+            this.txtEstado.Size = new System.Drawing.Size(325, 29);
             this.txtEstado.TabIndex = 9;
             // 
             // btnGuardar
@@ -107,10 +107,10 @@
             this.dgMostrarEstado.Location = new System.Drawing.Point(124, 280);
             this.dgMostrarEstado.Name = "dgMostrarEstado";
             this.dgMostrarEstado.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgMostrarEstado.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgMostrarEstado.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgMostrarEstado.Size = new System.Drawing.Size(480, 140);
             this.dgMostrarEstado.TabIndex = 13;
             this.dgMostrarEstado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMostrarEstado_CellClick);

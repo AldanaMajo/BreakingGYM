@@ -64,10 +64,10 @@
             // lbId
             // 
             this.lbId.AutoSize = true;
-            this.lbId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbId.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbId.Location = new System.Drawing.Point(653, 214);
             this.lbId.Name = "lbId";
-            this.lbId.Size = new System.Drawing.Size(27, 24);
+            this.lbId.Size = new System.Drawing.Size(27, 22);
             this.lbId.TabIndex = 0;
             this.lbId.Text = "Id";
             this.lbId.Visible = false;
@@ -76,16 +76,16 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(118, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(220, 24);
+            this.label2.Size = new System.Drawing.Size(190, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Documento del cliente";
             // 
             // txtId
             // 
-            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(723, 211);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(143, 29);
@@ -106,20 +106,20 @@
             // 
             this.lbFecha.AutoSize = true;
             this.lbFecha.BackColor = System.Drawing.Color.Transparent;
-            this.lbFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFecha.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFecha.Location = new System.Drawing.Point(143, 144);
             this.lbFecha.Name = "lbFecha";
-            this.lbFecha.Size = new System.Drawing.Size(69, 24);
+            this.lbFecha.Size = new System.Drawing.Size(60, 22);
             this.lbFecha.TabIndex = 5;
             this.lbFecha.Text = "Fecha";
             // 
             // dtpFecha
             // 
             this.dtpFecha.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFecha.Location = new System.Drawing.Point(218, 142);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(344, 29);
+            this.dtpFecha.Size = new System.Drawing.Size(268, 29);
             this.dtpFecha.TabIndex = 6;
             // 
             // btnRegistrar
@@ -176,7 +176,7 @@
             // 
             // txtBuscarFecha
             // 
-            this.txtBuscarFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarFecha.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscarFecha.Location = new System.Drawing.Point(599, 380);
             this.txtBuscarFecha.Name = "txtBuscarFecha";
             this.txtBuscarFecha.Size = new System.Drawing.Size(279, 29);
@@ -186,12 +186,12 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Location = new System.Drawing.Point(595, 344);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(283, 24);
+            this.label7.Size = new System.Drawing.Size(250, 22);
             this.label7.TabIndex = 42;
             this.label7.Text = "Buscar (Asistencia por fecha)";
             // 
@@ -199,11 +199,11 @@
             // 
             this.txtIdCliente.DataSource = this.mostrarClienteBindingSource1;
             this.txtIdCliente.DisplayMember = "Documento";
-            this.txtIdCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdCliente.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdCliente.FormattingEnabled = true;
             this.txtIdCliente.Location = new System.Drawing.Point(344, 70);
             this.txtIdCliente.Name = "txtIdCliente";
-            this.txtIdCliente.Size = new System.Drawing.Size(185, 32);
+            this.txtIdCliente.Size = new System.Drawing.Size(201, 30);
             this.txtIdCliente.TabIndex = 43;
             this.txtIdCliente.ValueMember = "Id";
             // 
