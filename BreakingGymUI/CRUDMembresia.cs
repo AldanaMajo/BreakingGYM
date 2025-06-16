@@ -266,45 +266,53 @@ namespace BreakingGymUI
             }
 
             Graphics g = e.Graphics;
-            Font font = new Font("Times New Roman", 12);
-            Font titleFont = new Font("Times New Roman", 14, FontStyle.Bold);
             int y = e.MarginBounds.Top;
 
-            // ----- TÍTULO CENTRADO -----
-            string titulo = "BREAKING GYM - TICKET MEMBRESÍA";
-            SizeF tituloSize = g.MeasureString(titulo, titleFont);
-            float tituloX = e.MarginBounds.Left + (e.MarginBounds.Width - tituloSize.Width) / 2;
-            g.DrawString(titulo, titleFont, Brushes.Black, tituloX, y);
-            y += (int)tituloSize.Height + 20;
+            // ----- TÍTULO EN DOS LÍNEAS CENTRADAS -----
+            string titulo1 = "BREAKING GYM";
+            string titulo2 = "TICKET MEMBRESÍA";
 
-            // ----- DATOS CENTRADOS -----
-            string[] datos =
-            {
-        $"Numero de membresia: {membresiaParaImprimir.Id}",
-        $"Membresia: {membresiaParaImprimir.Nombre}",
-        $"Servicio ID: {membresiaParaImprimir.IdServicio}",
-        $"Precio: ${membresiaParaImprimir.Precio}",
-        $"Duración: {membresiaParaImprimir.Duracion}",
-        $"Descripción: {membresiaParaImprimir.Descripcion}"
-    };
+            Font fontTitulo1 = new Font("Times New Roman", 16, FontStyle.Bold);
+            Font fontTitulo2 = new Font("Times New Roman", 12, FontStyle.Bold);
 
-            foreach (string linea in datos)
+            SizeF sizeTitulo1 = g.MeasureString(titulo1, fontTitulo1);
+            float xTitulo1 = e.MarginBounds.Left + (e.MarginBounds.Width - sizeTitulo1.Width) / 2;
+            g.DrawString(titulo1, fontTitulo1, Brushes.Black, xTitulo1, y);
+            y += (int)sizeTitulo1.Height + 5;
+
+            SizeF sizeTitulo2 = g.MeasureString(titulo2, fontTitulo2);
+            float xTitulo2 = e.MarginBounds.Left + (e.MarginBounds.Width - sizeTitulo2.Width) / 2;
+            g.DrawString(titulo2, fontTitulo2, Brushes.Black, xTitulo2, y);
+            y += (int)sizeTitulo2.Height + 20;
+
+            // ----- DATOS CENTRADOS CON FUENTES PERSONALIZADAS -----
+            var datosConFuente = new List<(string Texto, Font Fuente, Brush Color)>
+{
+    ($"Número de membresía: {membresiaParaImprimir.Id}", new Font("Arial", 12, FontStyle.Bold), Brushes.Black),
+    ($"Membresía: {membresiaParaImprimir.Nombre}", new Font("Times New Roman", 12, FontStyle.Italic), Brushes.DarkBlue),
+    ($"Servicio ID: {membresiaParaImprimir.IdServicio}", new Font("Verdana", 11), Brushes.Black),
+    ($"Precio: ${membresiaParaImprimir.Precio}", new Font("Calibri", 12, FontStyle.Bold), Brushes.Green),
+    ($"Duración: {membresiaParaImprimir.Duracion}", new Font("Consolas", 11), Brushes.Black),
+    ($"Descripción: {membresiaParaImprimir.Descripcion}", new Font("Georgia", 10), Brushes.Gray)
+};
+
+            foreach (var dato in datosConFuente)
             {
-                SizeF size = g.MeasureString(linea, font);
+                SizeF size = g.MeasureString(dato.Texto, dato.Fuente);
                 float x = e.MarginBounds.Left + (e.MarginBounds.Width - size.Width) / 2;
-                g.DrawString(linea, font, Brushes.Black, x, y);
+                g.DrawString(dato.Texto, dato.Fuente, dato.Color, x, y);
                 y += (int)size.Height + 10;
             }
 
             // ----- CÓDIGO QR CENTRADO -----
-            string contenidoQR = string.Join("\n", datos); // Reutiliza los datos para el QR
+            string contenidoQR = string.Join("\n", datosConFuente.Select(d => d.Texto));
 
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(contenidoQR, QRCodeGenerator.ECCLevel.Q);
             QRCode qrCode = new QRCode(qrCodeData);
             Bitmap qrCodeImage = qrCode.GetGraphic(5); // Escala del QR
 
-            int qrSize = 120; // Tamaño del código QR
+            int qrSize = 120;
             int qrX = e.MarginBounds.Left + (e.MarginBounds.Width - qrSize) / 2;
             g.DrawImage(qrCodeImage, new Rectangle(qrX, y, qrSize, qrSize));
         }
