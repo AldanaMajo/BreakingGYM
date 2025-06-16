@@ -102,7 +102,7 @@
             this.cbxIdTipoDocumento.Location = new System.Drawing.Point(729, 150);
             this.cbxIdTipoDocumento.Margin = new System.Windows.Forms.Padding(2);
             this.cbxIdTipoDocumento.Name = "cbxIdTipoDocumento";
-            this.cbxIdTipoDocumento.Size = new System.Drawing.Size(135, 29);
+            this.cbxIdTipoDocumento.Size = new System.Drawing.Size(226, 29);
             this.cbxIdTipoDocumento.TabIndex = 40;
             this.cbxIdTipoDocumento.ValueMember = "Id";
             // 
@@ -130,10 +130,10 @@
             // txtCelular
             // 
             this.txtCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCelular.Location = new System.Drawing.Point(756, 94);
+            this.txtCelular.Location = new System.Drawing.Point(729, 96);
             this.txtCelular.Mask = "0000-0000";
             this.txtCelular.Name = "txtCelular";
-            this.txtCelular.Size = new System.Drawing.Size(104, 29);
+            this.txtCelular.Size = new System.Drawing.Size(94, 29);
             this.txtCelular.TabIndex = 38;
             // 
             // label4
@@ -267,7 +267,7 @@
             this.cbxIdRol.Location = new System.Drawing.Point(729, 41);
             this.cbxIdRol.Margin = new System.Windows.Forms.Padding(2);
             this.cbxIdRol.Name = "cbxIdRol";
-            this.cbxIdRol.Size = new System.Drawing.Size(82, 32);
+            this.cbxIdRol.Size = new System.Drawing.Size(135, 29);
             this.cbxIdRol.TabIndex = 27;
             this.cbxIdRol.ValueMember = "Id";
             // 
