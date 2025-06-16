@@ -44,7 +44,7 @@
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogin.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(689, 483);
+            this.btnLogin.Location = new System.Drawing.Point(697, 412);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(302, 31);
             this.btnLogin.TabIndex = 0;
@@ -57,7 +57,7 @@
             this.btnSalir.BackColor = System.Drawing.Color.Salmon;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSalir.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(772, 553);
+            this.btnSalir.Location = new System.Drawing.Point(772, 501);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(142, 31);
             this.btnSalir.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             this.txtCuenta.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCuenta.ForeColor = System.Drawing.Color.Gray;
-            this.txtCuenta.Location = new System.Drawing.Point(761, 301);
+            this.txtCuenta.Location = new System.Drawing.Point(739, 213);
             this.txtCuenta.Name = "txtCuenta";
             this.txtCuenta.Size = new System.Drawing.Size(175, 26);
             this.txtCuenta.TabIndex = 2;
@@ -82,7 +82,7 @@
             // 
             this.txtContrasenia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasenia.ForeColor = System.Drawing.Color.Gray;
-            this.txtContrasenia.Location = new System.Drawing.Point(761, 380);
+            this.txtContrasenia.Location = new System.Drawing.Point(739, 296);
             this.txtContrasenia.Name = "txtContrasenia";
             this.txtContrasenia.PasswordChar = '*';
             this.txtContrasenia.Size = new System.Drawing.Size(137, 27);
@@ -95,7 +95,7 @@
             // 
             this.pbOcultar.BackgroundImage = global::BreakingGymUI.Properties.Resources.Musculoso;
             this.pbOcultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbOcultar.Location = new System.Drawing.Point(904, 382);
+            this.pbOcultar.Location = new System.Drawing.Point(898, 299);
             this.pbOcultar.Name = "pbOcultar";
             this.pbOcultar.Size = new System.Drawing.Size(32, 24);
             this.pbOcultar.TabIndex = 9;
@@ -106,7 +106,7 @@
             // 
             this.pbMostrar.BackgroundImage = global::BreakingGymUI.Properties.Resources.bra;
             this.pbMostrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbMostrar.Location = new System.Drawing.Point(904, 382);
+            this.pbMostrar.Location = new System.Drawing.Point(898, 299);
             this.pbMostrar.Name = "pbMostrar";
             this.pbMostrar.Size = new System.Drawing.Size(32, 24);
             this.pbMostrar.TabIndex = 10;
@@ -117,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Cuenta__2_;
+            this.BackgroundImage = global::BreakingGymUI.Properties.Resources.LoginMejor;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1200, 650);
             this.Controls.Add(this.pbOcultar);

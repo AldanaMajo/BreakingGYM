@@ -213,6 +213,16 @@ namespace BreakingGymUI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LoginMejor {
+            get {
+                object obj = ResourceManager.GetObject("LoginMejor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Loginn {
             get {
                 object obj = ResourceManager.GetObject("Loginn", resourceCulture);
