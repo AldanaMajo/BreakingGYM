@@ -70,10 +70,6 @@ namespace BreakingGymUI
             RolBL rolBL = new RolBL();
             List<RolEN> listaRoles = rolBL.MostrarRol();
 
-            cbIdRol.DataSource = listaRoles;
-            cbIdRol.DisplayMember = "Nombre";  // Nombre debe ser una propiedad de ClienteEN
-            cbIdRol.ValueMember = "Id";        // Id debe ser una propiedad de RolEN
-            cbIdRol.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void pbMostrar_Click(object sender, EventArgs e)
