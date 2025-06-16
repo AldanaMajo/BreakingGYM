@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BreakingGymEN;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,9 +32,15 @@ namespace BreakingGymUI
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Login C = new Login();
-            C.Show();
-            this.Hide();
+            UsuarioActual.Cuenta = null;
+            UsuarioActual.UsuarioLogueado = null;
+
+            // Mostrar nuevo login limpio
+            Login nuevoLogin = new Login();
+            nuevoLogin.Show();
+
+            // Cerrar el formulario actual (InicioAdministrador o InicioEmpleado)
+            this.Close();
         }
 
         private void salirToolStripMenuItem1_Click(object sender, EventArgs e)

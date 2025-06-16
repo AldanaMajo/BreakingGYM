@@ -124,10 +124,10 @@
             // 
             this.lbNombre.AutoSize = true;
             this.lbNombre.BackColor = System.Drawing.Color.Transparent;
-            this.lbNombre.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombre.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNombre.Location = new System.Drawing.Point(186, 64);
             this.lbNombre.Name = "lbNombre";
-            this.lbNombre.Size = new System.Drawing.Size(71, 21);
+            this.lbNombre.Size = new System.Drawing.Size(76, 22);
             this.lbNombre.TabIndex = 7;
             this.lbNombre.Text = "Nombre";
             // 
@@ -135,10 +135,10 @@
             // 
             this.lbDescripcion.AutoSize = true;
             this.lbDescripcion.BackColor = System.Drawing.Color.Transparent;
-            this.lbDescripcion.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDescripcion.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDescripcion.Location = new System.Drawing.Point(170, 146);
             this.lbDescripcion.Name = "lbDescripcion";
-            this.lbDescripcion.Size = new System.Drawing.Size(100, 21);
+            this.lbDescripcion.Size = new System.Drawing.Size(107, 22);
             this.lbDescripcion.TabIndex = 8;
             this.lbDescripcion.Text = "Descripción";
             // 

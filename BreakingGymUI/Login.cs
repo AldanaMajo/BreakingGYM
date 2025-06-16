@@ -65,6 +65,8 @@ namespace BreakingGymUI
             {
                 MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            txtContrasenia.Clear(); // Limpiar contraseña después de intentar iniciar sesión
+            txtCuenta.Clear();
         }
 
         private void Login_Load(object sender, EventArgs e)
