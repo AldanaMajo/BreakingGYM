@@ -82,10 +82,10 @@ namespace BreakingGymUI
                 return;
             }
 
-            byte idEliminar = Convert.ToByte(txtId.Text);
+            string cuentaSeleccionada = txtCuenta.Text.Trim();
 
-            // 🛑 Validación: No permitir eliminar usuario logueado
-            if (SesionActual.UsuarioLogueado != null && idEliminar == SesionActual.UsuarioLogueado.Id)
+            // ✅ Validar que no sea la cuenta del usuario logueado
+            if (cuentaSeleccionada.Equals(UsuarioActual.Cuenta, StringComparison.OrdinalIgnoreCase))
             {
                 MessageBox.Show("No puedes eliminar el usuario con el que estás logueado.", "Acción no permitida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -99,7 +99,7 @@ namespace BreakingGymUI
             if (confirmResult == DialogResult.No)
                 return;
 
-            var usuarioEliminar = new UsuarioEN { Id = idEliminar };
+            var usuarioEliminar = new UsuarioEN { Id = Convert.ToByte(txtId.Text) };
             _usuarioBL.EliminarUsuario(usuarioEliminar);
 
             txtId.Clear();
@@ -112,6 +112,18 @@ namespace BreakingGymUI
             CargarGrid();
             MessageBox.Show("Usuario eliminado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void LimpiarCampos()
+        {
+            txtId.Clear();
+            txtNombre.Clear();
+            txtApellido.Clear();
+            txtCelular.Clear();
+            txtCuenta.Clear();
+            txtContrasenia.Clear();
+            cbxIdRol.SelectedIndex = -1;
+        }
+        
 
         private void btnModificar_Click(object sender, EventArgs e)
         {

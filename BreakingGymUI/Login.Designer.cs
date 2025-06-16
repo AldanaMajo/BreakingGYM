@@ -76,6 +76,7 @@
             this.txtCuenta.Text = "Nombre de cuenta";
             this.txtCuenta.TextChanged += new System.EventHandler(this.txtCuenta_TextChanged);
             this.txtCuenta.Enter += new System.EventHandler(this.txtCuenta_Enter);
+            this.txtCuenta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCuenta_KeyPress);
             this.txtCuenta.Leave += new System.EventHandler(this.txtCuenta_Leave);
             // 
             // txtContrasenia

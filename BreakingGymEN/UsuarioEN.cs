@@ -16,8 +16,4 @@ namespace BreakingGymEN
         public string Cuenta { get; set; }
         public string Contrasenia { get; set; }
     }
-    public static class SesionActual
-    {
-        public static UsuarioEN UsuarioLogueado { get; set; }
-    }
 }

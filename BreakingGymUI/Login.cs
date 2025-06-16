@@ -40,20 +40,22 @@ namespace BreakingGymUI
 
             if (usuario != null)
             {
+                // ✅ Guardar cuenta del usuario logueado
+                UsuarioActual.Cuenta = usuario.Cuenta;
+                UsuarioActual.UsuarioLogueado = usuario;
+
                 if (usuario.IdRol == 1) // Administrador
                 {
                     InicioAdministrador formAdmi = new InicioAdministrador();
                     formAdmi.Show();
                     this.Hide();
                 }
-                // Validación correcta, redirigir según el rol
                 else if (usuario.IdRol == 2) // Empleado
                 {
                     InicioEmpleado formEmpleado = new InicioEmpleado();
                     formEmpleado.Show();
                     this.Hide();
                 }
-               
                 else
                 {
                     MessageBox.Show("Rol no reconocido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -67,8 +69,18 @@ namespace BreakingGymUI
 
         private void Login_Load(object sender, EventArgs e)
         {
-            RolBL rolBL = new RolBL();
-            List<RolEN> listaRoles = rolBL.MostrarRol();
+            if (UsuarioActual.UsuarioLogueado != null)
+            {
+                txtCuenta.Text = UsuarioActual.UsuarioLogueado.Cuenta;
+                txtCuenta.ReadOnly = true;  // No permitirá borrar ni modificar
+                txtCuenta.ForeColor = Color.Black;
+            }
+            else
+            {
+                txtCuenta.Text = "Nombre de cuenta";
+                txtCuenta.ForeColor = Color.Gray;
+                txtCuenta.ReadOnly = false;
+            }
 
         }
 
@@ -129,6 +141,14 @@ namespace BreakingGymUI
         private void txtCuenta_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtCuenta_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (txtCuenta.ReadOnly)
+            {
+                e.Handled = true; // Bloquea cualquier tecla
+            }
         }
     }
 }
