@@ -296,24 +296,27 @@ namespace BreakingGymUI
             // ----- DATOS CENTRADOS -----
             string[] datos =
             {
-        $"Numero de membresia: {membresiaParaImprimir.Id}",
-        $"Membresia: {membresiaParaImprimir.Nombre}",
-        $"Servicio ID: {membresiaParaImprimir.IdServicio}",
-        $"Precio: ${membresiaParaImprimir.Precio}",
-        $"Duración: {membresiaParaImprimir.Duracion}",
-        $"Descripción: {membresiaParaImprimir.Descripcion}"
-    };
+    $"Numero de membresia: {membresiaParaImprimir.Id}",
+    $"Membresia: {membresiaParaImprimir.Nombre}",
+    $"Servicio ID: {membresiaParaImprimir.IdServicio}",
+    $"Precio: ${membresiaParaImprimir.Precio}",
+    $"Duración: {membresiaParaImprimir.Duracion}",
+    $"Descripción: {membresiaParaImprimir.Descripcion}"
+};
 
-            foreach (var dato in datosConFuente)
+            Font fuenteDatos = new Font("Times New Roman", 10);
+            Brush colorDatos = Brushes.Black;
+
+            foreach (var texto in datos)
             {
-                SizeF size = g.MeasureString(dato.Texto, dato.Fuente);
+                SizeF size = g.MeasureString(texto, fuenteDatos);
                 float x = e.MarginBounds.Left + (e.MarginBounds.Width - size.Width) / 2;
-                g.DrawString(dato.Texto, dato.Fuente, dato.Color, x, y);
+                g.DrawString(texto, fuenteDatos, colorDatos, x, y);
                 y += (int)size.Height + 10;
             }
 
             // ----- CÓDIGO QR CENTRADO -----
-            string contenidoQR = string.Join("\n", datosConFuente.Select(d => d.Texto));
+            string contenidoQR = string.Join("\n", datos);
 
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(contenidoQR, QRCodeGenerator.ECCLevel.Q);
