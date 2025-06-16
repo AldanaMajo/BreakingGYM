@@ -428,5 +428,8 @@
   <ItemGroup>
     <None Include="Resources\flecha.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogitoGod.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

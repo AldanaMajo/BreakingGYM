@@ -268,6 +268,14 @@ namespace BreakingGymUI
             Graphics g = e.Graphics;
             int y = e.MarginBounds.Top;
 
+            // ----- IMAGEN (LOGO) EN LA PARTE SUPERIOR CENTRADA -----
+            Image logito = Properties.Resources.LogitoGod; // Asegúrate de que está en Resources
+            int logoWidth = 100;  // Tamaño deseado del logo
+            int logoHeight = 100;
+            int logoX = e.MarginBounds.Left + (e.MarginBounds.Width - logoWidth) / 2;
+            g.DrawImage(logito, new Rectangle(logoX, y, logoWidth, logoHeight));
+            y += logoHeight + 10; // Espacio debajo del logo
+
             // ----- TÍTULO EN DOS LÍNEAS CENTRADAS -----
             string titulo1 = "BREAKING GYM";
             string titulo2 = "TICKET MEMBRESÍA";
@@ -285,16 +293,16 @@ namespace BreakingGymUI
             g.DrawString(titulo2, fontTitulo2, Brushes.Black, xTitulo2, y);
             y += (int)sizeTitulo2.Height + 20;
 
-            // ----- DATOS CENTRADOS CON FUENTES PERSONALIZADAS -----
-            var datosConFuente = new List<(string Texto, Font Fuente, Brush Color)>
-{
-    ($"Número de membresía: {membresiaParaImprimir.Id}", new Font("Arial", 12, FontStyle.Bold), Brushes.Black),
-    ($"Membresía: {membresiaParaImprimir.Nombre}", new Font("Times New Roman", 12, FontStyle.Italic), Brushes.DarkBlue),
-    ($"Servicio ID: {membresiaParaImprimir.IdServicio}", new Font("Verdana", 11), Brushes.Black),
-    ($"Precio: ${membresiaParaImprimir.Precio}", new Font("Calibri", 12, FontStyle.Bold), Brushes.Green),
-    ($"Duración: {membresiaParaImprimir.Duracion}", new Font("Consolas", 11), Brushes.Black),
-    ($"Descripción: {membresiaParaImprimir.Descripcion}", new Font("Georgia", 10), Brushes.Gray)
-};
+            // ----- DATOS CENTRADOS -----
+            string[] datos =
+            {
+        $"Numero de membresia: {membresiaParaImprimir.Id}",
+        $"Membresia: {membresiaParaImprimir.Nombre}",
+        $"Servicio ID: {membresiaParaImprimir.IdServicio}",
+        $"Precio: ${membresiaParaImprimir.Precio}",
+        $"Duración: {membresiaParaImprimir.Duracion}",
+        $"Descripción: {membresiaParaImprimir.Descripcion}"
+    };
 
             foreach (var dato in datosConFuente)
             {
