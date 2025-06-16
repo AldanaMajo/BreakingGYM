@@ -39,6 +39,7 @@
             this.lbDescripcion = new System.Windows.Forms.Label();
             this.lbID = new System.Windows.Forms.Label();
             this.btnRegresar = new System.Windows.Forms.Button();
+            this.txtLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarServicio)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             // 
             this.dgMostrarServicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgMostrarServicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dgMostrarServicio.Location = new System.Drawing.Point(273, 275);
+            this.dgMostrarServicio.Location = new System.Drawing.Point(190, 288);
             this.dgMostrarServicio.Name = "dgMostrarServicio";
             this.dgMostrarServicio.Size = new System.Drawing.Size(504, 244);
             this.dgMostrarServicio.TabIndex = 0;
@@ -56,7 +57,7 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(391, 48);
+            this.txtNombre.Location = new System.Drawing.Point(308, 61);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(182, 29);
             this.txtNombre.TabIndex = 1;
@@ -65,7 +66,7 @@
             // txtDescripcion
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(391, 130);
+            this.txtDescripcion.Location = new System.Drawing.Point(308, 143);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(386, 29);
             this.txtDescripcion.TabIndex = 2;
@@ -73,7 +74,7 @@
             // txtId
             // 
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(870, 442);
+            this.txtId.Location = new System.Drawing.Point(787, 455);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(112, 22);
             this.txtId.TabIndex = 3;
@@ -85,7 +86,7 @@
             this.btnGuardar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnGuardar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardar.Location = new System.Drawing.Point(273, 219);
+            this.btnGuardar.Location = new System.Drawing.Point(190, 232);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(135, 37);
             this.btnGuardar.TabIndex = 4;
@@ -98,7 +99,7 @@
             this.btnEliminar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnEliminar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEliminar.Location = new System.Drawing.Point(455, 219);
+            this.btnEliminar.Location = new System.Drawing.Point(372, 232);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(135, 37);
             this.btnEliminar.TabIndex = 5;
@@ -111,7 +112,7 @@
             this.btnModificar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnModificar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModificar.Location = new System.Drawing.Point(642, 219);
+            this.btnModificar.Location = new System.Drawing.Point(559, 232);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(135, 37);
             this.btnModificar.TabIndex = 6;
@@ -124,7 +125,7 @@
             this.lbNombre.AutoSize = true;
             this.lbNombre.BackColor = System.Drawing.Color.Transparent;
             this.lbNombre.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNombre.Location = new System.Drawing.Point(269, 51);
+            this.lbNombre.Location = new System.Drawing.Point(186, 64);
             this.lbNombre.Name = "lbNombre";
             this.lbNombre.Size = new System.Drawing.Size(71, 21);
             this.lbNombre.TabIndex = 7;
@@ -135,7 +136,7 @@
             this.lbDescripcion.AutoSize = true;
             this.lbDescripcion.BackColor = System.Drawing.Color.Transparent;
             this.lbDescripcion.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDescripcion.Location = new System.Drawing.Point(253, 133);
+            this.lbDescripcion.Location = new System.Drawing.Point(170, 146);
             this.lbDescripcion.Name = "lbDescripcion";
             this.lbDescripcion.Size = new System.Drawing.Size(100, 21);
             this.lbDescripcion.TabIndex = 8;
@@ -146,7 +147,7 @@
             this.lbID.AutoSize = true;
             this.lbID.BackColor = System.Drawing.Color.Transparent;
             this.lbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbID.Location = new System.Drawing.Point(836, 442);
+            this.lbID.Location = new System.Drawing.Point(753, 455);
             this.lbID.Name = "lbID";
             this.lbID.Size = new System.Drawing.Size(18, 16);
             this.lbID.TabIndex = 9;
@@ -169,6 +170,20 @@
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // txtLimpiar
+            // 
+            this.txtLimpiar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.txtLimpiar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLimpiar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLimpiar.Location = new System.Drawing.Point(572, 550);
+            this.txtLimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLimpiar.Name = "txtLimpiar";
+            this.txtLimpiar.Size = new System.Drawing.Size(122, 37);
+            this.txtLimpiar.TabIndex = 49;
+            this.txtLimpiar.Text = "Limpiar";
+            this.txtLimpiar.UseVisualStyleBackColor = false;
+            this.txtLimpiar.Click += new System.EventHandler(this.txtLimpiar_Click);
+            // 
             // CRUDServicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -176,6 +191,7 @@
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Cuenta__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1054, 627);
+            this.Controls.Add(this.txtLimpiar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.lbID);
             this.Controls.Add(this.lbDescripcion);
@@ -209,5 +225,6 @@
         private System.Windows.Forms.Label lbDescripcion;
         private System.Windows.Forms.Label lbID;
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Button txtLimpiar;
     }
 }

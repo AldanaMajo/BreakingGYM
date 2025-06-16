@@ -55,6 +55,7 @@
             this.pruebaGymDataSet = new BreakingGymUI.PruebaGymDataSet();
             this.mostrarRolTableAdapter = new BreakingGymUI.PruebaGymDataSetTableAdapters.MostrarRolTableAdapter();
             this.btnRegresar = new System.Windows.Forms.Button();
+            this.txtLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarRolBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet)).BeginInit();
@@ -184,7 +185,7 @@
             // dgMostrarUsuario
             // 
             this.dgMostrarUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgMostrarUsuario.Location = new System.Drawing.Point(139, 420);
+            this.dgMostrarUsuario.Location = new System.Drawing.Point(128, 356);
             this.dgMostrarUsuario.Name = "dgMostrarUsuario";
             this.dgMostrarUsuario.RowHeadersWidth = 51;
             this.dgMostrarUsuario.Size = new System.Drawing.Size(567, 258);
@@ -309,7 +310,7 @@
             this.cbxIdRol.FormattingEnabled = true;
             this.cbxIdRol.Location = new System.Drawing.Point(198, 95);
             this.cbxIdRol.Name = "cbxIdRol";
-            this.cbxIdRol.Size = new System.Drawing.Size(119, 30);
+            this.cbxIdRol.Size = new System.Drawing.Size(151, 30);
             this.cbxIdRol.TabIndex = 24;
             this.cbxIdRol.ValueMember = "Id";
             // 
@@ -342,6 +343,20 @@
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // txtLimpiar
+            // 
+            this.txtLimpiar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.txtLimpiar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLimpiar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLimpiar.Location = new System.Drawing.Point(573, 628);
+            this.txtLimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLimpiar.Name = "txtLimpiar";
+            this.txtLimpiar.Size = new System.Drawing.Size(122, 37);
+            this.txtLimpiar.TabIndex = 49;
+            this.txtLimpiar.Text = "Limpiar";
+            this.txtLimpiar.UseVisualStyleBackColor = false;
+            this.txtLimpiar.Click += new System.EventHandler(this.txtLimpiar_Click);
+            // 
             // CRUDUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -349,6 +364,7 @@
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Cuenta__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1093, 690);
+            this.Controls.Add(this.txtLimpiar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.txtContrasenia);
             this.Controls.Add(this.txtCuenta);
@@ -411,5 +427,6 @@
         private PruebaGymDataSet pruebaGymDataSet;
         private PruebaGymDataSetTableAdapters.MostrarRolTableAdapter mostrarRolTableAdapter;
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Button txtLimpiar;
     }
 }

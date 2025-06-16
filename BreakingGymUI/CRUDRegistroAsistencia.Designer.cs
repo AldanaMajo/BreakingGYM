@@ -52,6 +52,7 @@
             this.mostrarClienteTableAdapter = new BreakingGymUI.PruebaGymDataSet8TableAdapters.MostrarClienteTableAdapter();
             this.mostrarClienteTableAdapter1 = new BreakingGymUI.PruebaGymDataSet9TableAdapters.MostrarClienteTableAdapter();
             this.btnRegresar = new System.Windows.Forms.Button();
+            this.txtLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgAsistencia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarClienteBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet9)).BeginInit();
@@ -77,7 +78,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(118, 70);
+            this.label2.Location = new System.Drawing.Point(144, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(190, 22);
             this.label2.TabIndex = 1;
@@ -95,7 +96,7 @@
             // dgAsistencia
             // 
             this.dgAsistencia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgAsistencia.Location = new System.Drawing.Point(52, 284);
+            this.dgAsistencia.Location = new System.Drawing.Point(50, 233);
             this.dgAsistencia.Name = "dgAsistencia";
             this.dgAsistencia.Size = new System.Drawing.Size(521, 278);
             this.dgAsistencia.TabIndex = 4;
@@ -106,7 +107,7 @@
             // 
             this.lbFecha.AutoSize = true;
             this.lbFecha.BackColor = System.Drawing.Color.Transparent;
-            this.lbFecha.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFecha.Location = new System.Drawing.Point(143, 144);
             this.lbFecha.Name = "lbFecha";
             this.lbFecha.Size = new System.Drawing.Size(60, 22);
@@ -116,7 +117,7 @@
             // dtpFecha
             // 
             this.dtpFecha.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFecha.Location = new System.Drawing.Point(218, 142);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(268, 29);
@@ -127,7 +128,7 @@
             this.btnRegistrar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnRegistrar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRegistrar.Location = new System.Drawing.Point(122, 209);
+            this.btnRegistrar.Location = new System.Drawing.Point(123, 175);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(135, 37);
             this.btnRegistrar.TabIndex = 7;
@@ -140,7 +141,7 @@
             this.btnModificar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnModificar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModificar.Location = new System.Drawing.Point(394, 214);
+            this.btnModificar.Location = new System.Drawing.Point(293, 175);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(135, 37);
             this.btnModificar.TabIndex = 8;
@@ -201,7 +202,7 @@
             this.txtIdCliente.DisplayMember = "Documento";
             this.txtIdCliente.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdCliente.FormattingEnabled = true;
-            this.txtIdCliente.Location = new System.Drawing.Point(344, 70);
+            this.txtIdCliente.Location = new System.Drawing.Point(345, 36);
             this.txtIdCliente.Name = "txtIdCliente";
             this.txtIdCliente.Size = new System.Drawing.Size(201, 30);
             this.txtIdCliente.TabIndex = 43;
@@ -264,6 +265,20 @@
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // txtLimpiar
+            // 
+            this.txtLimpiar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.txtLimpiar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLimpiar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLimpiar.Location = new System.Drawing.Point(449, 528);
+            this.txtLimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLimpiar.Name = "txtLimpiar";
+            this.txtLimpiar.Size = new System.Drawing.Size(122, 37);
+            this.txtLimpiar.TabIndex = 49;
+            this.txtLimpiar.Text = "Limpiar";
+            this.txtLimpiar.UseVisualStyleBackColor = false;
+            this.txtLimpiar.Click += new System.EventHandler(this.txtLimpiar_Click);
+            // 
             // CRUDRegistroAsistencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,6 +286,7 @@
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources._12;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(889, 589);
+            this.Controls.Add(this.txtLimpiar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.txtIdCliente);
             this.Controls.Add(this.label7);
@@ -325,5 +341,6 @@
         private PruebaGymDataSet9 pruebaGymDataSet9;
         private PruebaGymDataSet9TableAdapters.MostrarClienteTableAdapter mostrarClienteTableAdapter1;
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Button txtLimpiar;
     }
 }

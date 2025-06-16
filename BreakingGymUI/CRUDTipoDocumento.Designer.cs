@@ -37,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
+            this.txtLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarTipoDocumento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +45,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(926, 161);
+            this.label2.Location = new System.Drawing.Point(925, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(16, 13);
             this.label2.TabIndex = 26;
@@ -65,7 +66,7 @@
             // 
             this.txtId.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtId.Location = new System.Drawing.Point(961, 152);
+            this.txtId.Location = new System.Drawing.Point(965, 99);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 29);
             this.txtId.TabIndex = 24;
@@ -101,7 +102,7 @@
             // dgMostrarTipoDocumento
             // 
             this.dgMostrarTipoDocumento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgMostrarTipoDocumento.Location = new System.Drawing.Point(260, 301);
+            this.dgMostrarTipoDocumento.Location = new System.Drawing.Point(259, 227);
             this.dgMostrarTipoDocumento.Name = "dgMostrarTipoDocumento";
             this.dgMostrarTipoDocumento.RowHeadersWidth = 51;
             this.dgMostrarTipoDocumento.Size = new System.Drawing.Size(510, 289);
@@ -149,6 +150,20 @@
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // txtLimpiar
+            // 
+            this.txtLimpiar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.txtLimpiar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLimpiar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLimpiar.Location = new System.Drawing.Point(647, 531);
+            this.txtLimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLimpiar.Name = "txtLimpiar";
+            this.txtLimpiar.Size = new System.Drawing.Size(122, 37);
+            this.txtLimpiar.TabIndex = 49;
+            this.txtLimpiar.Text = "Limpiar";
+            this.txtLimpiar.UseVisualStyleBackColor = false;
+            this.txtLimpiar.Click += new System.EventHandler(this.txtLimpiar_Click);
+            // 
             // CRUDTipoDocumento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -156,6 +171,7 @@
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Cuenta__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1093, 690);
+            this.Controls.Add(this.txtLimpiar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNombre);
@@ -185,5 +201,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Button txtLimpiar;
     }
 }

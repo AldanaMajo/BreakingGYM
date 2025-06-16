@@ -192,7 +192,8 @@ namespace BreakingGymUI
         private void CRUDInscripcion_Load(object sender, EventArgs e)
         {
             btnModificar.Enabled = false;   // boton modificar deshabilitado al inicio
-            btnEliminar.Enabled = false;    // boton eliminar deshabilitado al inicio   
+            btnEliminar.Enabled = false;    // boton eliminar deshabilitado al inicio
+            txtLimpiar.Enabled = false; // Deshabilitar el botón de limpiar al cargar el formulario
             //Mostrar Cliente en Combobox
             ClienteBL clienteBL = new ClienteBL();
             List<ClienteEN> listaClientes = clienteBL.MostrarCliente();
@@ -224,11 +225,13 @@ namespace BreakingGymUI
             {
                 btnModificar.Enabled = true;  // Habilitar botón modificar si hay un Id
                 btnEliminar.Enabled = true;   // Habilitar botón eliminar si hay un Id
+                txtLimpiar.Enabled = true; // Deshabilitar el botón de limpiar al cargar el formulario
             }
             else
             {
                 btnModificar.Enabled = false; // Deshabilitar botón modificar si no hay Id
                 btnEliminar.Enabled = false;  // Deshabilitar botón eliminar si no hay Id
+                txtLimpiar.Enabled = false; // Deshabilitar el botón de limpiar al cargar el formulario
             }
         }
 
@@ -249,6 +252,15 @@ namespace BreakingGymUI
         {
             this.Close();
             this.Dispose();
+        }
+
+        private void txtLimpiar_Click(object sender, EventArgs e)
+        {
+            txtId.Clear();
+            cbIdCliente.SelectedIndex = -1; // Limpiar selección del ComboBox
+            cbxIdMembresia.SelectedIndex = -1; // Limpiar selección del ComboBox
+            cbxIdEstado.SelectedIndex = -1; // Limpiar selección del ComboBox
+
         }
     }
 }

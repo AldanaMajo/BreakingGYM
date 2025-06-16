@@ -178,6 +178,7 @@ namespace BreakingGymUI
         {
             btnEliminar.Enabled = false;    // deshabilitar el botón de eliminar al cargar el formulario
             btnModificar.Enabled = false; // deshabilitar el botón de modificar al cargar el formulario
+            txtLimpiar.Enabled = false; // Deshabilitar el botón de limpiar al cargar el formulario
             RolBL rolBL = new RolBL();
             List<RolEN> listaRoles = rolBL.MostrarRol();
 
@@ -215,11 +216,13 @@ namespace BreakingGymUI
             {
                 btnEliminar.Enabled = true; // habilitar el botón de eliminar si hay un Id
                 btnModificar.Enabled = true; // habilitar el botón de modificar si hay un Id
+                txtLimpiar.Enabled = true; // Deshabilitar el botón de limpiar al cargar el formulario
             }
             else
             {
                 btnEliminar.Enabled = false; // deshabilitar el botón de eliminar si no hay Id
                 btnModificar.Enabled = false; // deshabilitar el botón de modificar si no hay Id
+                txtLimpiar.Enabled = false; // Deshabilitar el botón de limpiar al cargar el formulario
             }  
         }
 
@@ -242,6 +245,18 @@ namespace BreakingGymUI
         {
             this.Close();
             this.Dispose();
+        }
+
+        private void txtLimpiar_Click(object sender, EventArgs e)
+        {
+            txtId.Clear();
+            cbxIdRol.SelectedIndex = -1; // Limpiar selección del ComboBox
+            cbxIdTipoDocumento.SelectedIndex = -1; // Limpiar selección del ComboBox
+            txtNombre.Clear();
+            txtApellido.Clear();
+            txtCelular.Clear();
+            txtDocumento.Clear();
+
         }
     }
 }

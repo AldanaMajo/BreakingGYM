@@ -37,6 +37,7 @@
             this.dgMostrarEstado = new System.Windows.Forms.DataGridView();
             this.txtId = new System.Windows.Forms.TextBox();
             this.btnRegresar = new System.Windows.Forms.Button();
+            this.txtLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarEstado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,7 +70,7 @@
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnGuardar.Location = new System.Drawing.Point(132, 177);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(114, 60);
+            this.btnGuardar.Size = new System.Drawing.Size(135, 37);
             this.btnGuardar.TabIndex = 10;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -80,9 +81,9 @@
             this.btnEliminar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnEliminar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEliminar.Location = new System.Drawing.Point(330, 177);
+            this.btnEliminar.Location = new System.Drawing.Point(289, 177);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(114, 60);
+            this.btnEliminar.Size = new System.Drawing.Size(135, 37);
             this.btnEliminar.TabIndex = 11;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -93,9 +94,9 @@
             this.btnModificar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnModificar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModificar.Location = new System.Drawing.Point(515, 177);
+            this.btnModificar.Location = new System.Drawing.Point(446, 177);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(114, 60);
+            this.btnModificar.Size = new System.Drawing.Size(135, 37);
             this.btnModificar.TabIndex = 12;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -104,7 +105,7 @@
             // dgMostrarEstado
             // 
             this.dgMostrarEstado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgMostrarEstado.Location = new System.Drawing.Point(124, 280);
+            this.dgMostrarEstado.Location = new System.Drawing.Point(119, 251);
             this.dgMostrarEstado.Name = "dgMostrarEstado";
             this.dgMostrarEstado.RowHeadersWidth = 51;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
@@ -143,6 +144,20 @@
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // txtLimpiar
+            // 
+            this.txtLimpiar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.txtLimpiar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLimpiar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLimpiar.Location = new System.Drawing.Point(464, 402);
+            this.txtLimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLimpiar.Name = "txtLimpiar";
+            this.txtLimpiar.Size = new System.Drawing.Size(135, 37);
+            this.txtLimpiar.TabIndex = 49;
+            this.txtLimpiar.Text = "Limpiar";
+            this.txtLimpiar.UseVisualStyleBackColor = false;
+            this.txtLimpiar.Click += new System.EventHandler(this.txtLimpiar_Click);
+            // 
             // CRUDEstado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -150,6 +165,7 @@
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Cuenta__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtLimpiar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.dgMostrarEstado);
@@ -178,5 +194,6 @@
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Button txtLimpiar;
     }
 }

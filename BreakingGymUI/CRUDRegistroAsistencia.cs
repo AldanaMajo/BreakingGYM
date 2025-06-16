@@ -131,5 +131,14 @@ namespace BreakingGymUI
             this.Close();
             this.Dispose();
         }
+
+        private void txtLimpiar_Click(object sender, EventArgs e)
+        {
+            txtId.Clear();
+            txtIdCliente.SelectedIndex = -1; // Limpiar selección del ComboBox
+            dtpFecha.Value = DateTime.Now; // Resetear fecha a la actual
+            txtBuscarFecha.Value = DateTime.Now; // Resetear fecha de búsqueda a la actual
+
+        }
     }
 }

@@ -57,6 +57,7 @@
             this.mostrarServicioTableAdapter = new BreakingGymUI.PruebaGymDataSet1TableAdapters.MostrarServicioTableAdapter();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.txtLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarMenbresia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarServicioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet1)).BeginInit();
@@ -179,7 +180,7 @@
             // dgMostrarMenbresia
             // 
             this.dgMostrarMenbresia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgMostrarMenbresia.Location = new System.Drawing.Point(59, 423);
+            this.dgMostrarMenbresia.Location = new System.Drawing.Point(62, 383);
             this.dgMostrarMenbresia.Margin = new System.Windows.Forms.Padding(2);
             this.dgMostrarMenbresia.Name = "dgMostrarMenbresia";
             this.dgMostrarMenbresia.RowHeadersWidth = 51;
@@ -379,6 +380,20 @@
             this.label8.TabIndex = 48;
             this.label8.Text = "Imprimir ticket";
             // 
+            // txtLimpiar
+            // 
+            this.txtLimpiar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.txtLimpiar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLimpiar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLimpiar.Location = new System.Drawing.Point(487, 643);
+            this.txtLimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLimpiar.Name = "txtLimpiar";
+            this.txtLimpiar.Size = new System.Drawing.Size(135, 37);
+            this.txtLimpiar.TabIndex = 49;
+            this.txtLimpiar.Text = "Limpiar";
+            this.txtLimpiar.UseVisualStyleBackColor = false;
+            this.txtLimpiar.Click += new System.EventHandler(this.txtLimpiar_Click);
+            // 
             // CRUDMembresia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -386,6 +401,7 @@
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources._12;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1092, 690);
+            this.Controls.Add(this.txtLimpiar);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnCargarMembresia);
@@ -452,5 +468,6 @@
         private PruebaGymDataSet1TableAdapters.MostrarServicioTableAdapter mostrarServicioTableAdapter;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button txtLimpiar;
     }
 }

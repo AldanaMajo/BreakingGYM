@@ -144,6 +144,7 @@ namespace BreakingGymUI
         {
             btnEliminar.Enabled = false;// boton eliminar deshabilitado al inicio
             btnModificar.Enabled = false; // boton modificar deshabilitado al inicio
+            txtLimpiar.Enabled = false; // Deshabilitar el botón de limpiar al cargar el formulario
         }
 
         private void txtId_TextChanged(object sender, EventArgs e)
@@ -152,11 +153,13 @@ namespace BreakingGymUI
             {
                 btnEliminar.Enabled = true; // Habilitar botón eliminar si hay un Id
                 btnModificar.Enabled = true; // Habilitar botón modificar si hay un Id
+                txtLimpiar.Enabled = true; // Deshabilitar el botón de limpiar al cargar el formulario
             }
             else
             {
                 btnEliminar.Enabled = false; // Deshabilitar si no hay Id
                 btnModificar.Enabled = false; // Deshabilitar si no hay Id
+                txtLimpiar.Enabled = false; // Deshabilitar el botón de limpiar al cargar el formulario
             }
         }
 
@@ -174,6 +177,13 @@ namespace BreakingGymUI
         {
             this.Close();
             this.Dispose();
+        }
+
+        private void txtLimpiar_Click(object sender, EventArgs e)
+        {
+            txtId.Clear();
+            txtEstado.Clear();
+
         }
     }
 }
