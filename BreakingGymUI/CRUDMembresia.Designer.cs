@@ -56,6 +56,7 @@
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.mostrarServicioTableAdapter = new BreakingGymUI.PruebaGymDataSet1TableAdapters.MostrarServicioTableAdapter();
             this.btnRegresar = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarMenbresia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarServicioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet1)).BeginInit();
@@ -318,24 +319,28 @@
             // 
             // btnCargarMembresia
             // 
+            this.btnCargarMembresia.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnCargarMembresia.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarMembresia.ForeColor = System.Drawing.Color.White;
             this.btnCargarMembresia.Location = new System.Drawing.Point(697, 625);
             this.btnCargarMembresia.Name = "btnCargarMembresia";
             this.btnCargarMembresia.Size = new System.Drawing.Size(135, 37);
             this.btnCargarMembresia.TabIndex = 45;
             this.btnCargarMembresia.Text = "Cargar";
-            this.btnCargarMembresia.UseVisualStyleBackColor = true;
+            this.btnCargarMembresia.UseVisualStyleBackColor = false;
             this.btnCargarMembresia.Click += new System.EventHandler(this.btnCargarMembresia_Click);
             // 
             // btnImprimir
             // 
+            this.btnImprimir.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnImprimir.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimir.ForeColor = System.Drawing.Color.White;
             this.btnImprimir.Location = new System.Drawing.Point(926, 625);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(135, 37);
             this.btnImprimir.TabIndex = 44;
             this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.UseVisualStyleBackColor = false;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // printDocument1
@@ -361,6 +366,19 @@
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(814, 582);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(139, 24);
+            this.label8.TabIndex = 48;
+            this.label8.Text = "Imprimir ticket";
+            // 
             // CRUDMembresia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -368,6 +386,7 @@
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources._12;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1092, 690);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnCargarMembresia);
             this.Controls.Add(this.btnImprimir);
@@ -432,5 +451,6 @@
         private PruebaGymDataSet1 pruebaGymDataSet1;
         private PruebaGymDataSet1TableAdapters.MostrarServicioTableAdapter mostrarServicioTableAdapter;
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Label label8;
     }
 }
