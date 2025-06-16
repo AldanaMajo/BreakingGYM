@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.MaskedTextBox();
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtBuscarMembresia = new System.Windows.Forms.TextBox();
             this.btnRefrescar = new System.Windows.Forms.Button();
@@ -56,6 +55,7 @@
             this.btnImprimir = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.mostrarServicioTableAdapter = new BreakingGymUI.PruebaGymDataSet1TableAdapters.MostrarServicioTableAdapter();
+            this.btnRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarMenbresia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarServicioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet1)).BeginInit();
@@ -81,15 +81,6 @@
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(76, 26);
             this.txtPrecio.TabIndex = 42;
-            // 
-            // btnRegresar
-            // 
-            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(941, 12);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(103, 71);
-            this.btnRegresar.TabIndex = 41;
-            this.btnRegresar.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -355,6 +346,20 @@
             // 
             this.mostrarServicioTableAdapter.ClearBeforeFill = true;
             // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegresar.BackgroundImage = global::BreakingGymUI.Properties.Resources.logout;
+            this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.Color.IndianRed;
+            this.btnRegresar.Location = new System.Drawing.Point(983, -1);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(108, 35);
+            this.btnRegresar.TabIndex = 47;
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
             // CRUDMembresia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -362,11 +367,11 @@
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Cuenta__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1092, 690);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnCargarMembresia);
             this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPrecio);
-            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtBuscarMembresia);
             this.Controls.Add(this.btnRefrescar);
@@ -401,7 +406,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox txtPrecio;
-        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtBuscarMembresia;
         private System.Windows.Forms.Button btnRefrescar;
@@ -426,5 +430,6 @@
         private System.Windows.Forms.BindingSource mostrarServicioBindingSource;
         private PruebaGymDataSet1 pruebaGymDataSet1;
         private PruebaGymDataSet1TableAdapters.MostrarServicioTableAdapter mostrarServicioTableAdapter;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

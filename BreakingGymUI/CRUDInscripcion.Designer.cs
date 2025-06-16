@@ -59,6 +59,7 @@
             this.mostrarClienteTableAdapter = new BreakingGymUI.PruebaGymDataSet2TableAdapters.MostrarClienteTableAdapter();
             this.mostrarMembresiaTableAdapter = new BreakingGymUI.PruebaGymDataSet3TableAdapters.MostrarMembresiaTableAdapter();
             this.mostrarEstadoTableAdapter = new BreakingGymUI.PruebaGymDataSet4TableAdapters.MostrarEstadoTableAdapter();
+            this.btnRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarClienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarMembresiaBindingSource)).BeginInit();
@@ -73,7 +74,7 @@
             this.cbIdCliente.DataSource = this.mostrarClienteBindingSource;
             this.cbIdCliente.DisplayMember = "Documento";
             this.cbIdCliente.FormattingEnabled = true;
-            this.cbIdCliente.Location = new System.Drawing.Point(323, 43);
+            this.cbIdCliente.Location = new System.Drawing.Point(312, 78);
             this.cbIdCliente.Name = "cbIdCliente";
             this.cbIdCliente.Size = new System.Drawing.Size(121, 21);
             this.cbIdCliente.TabIndex = 5;
@@ -92,7 +93,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(383, 219);
+            this.label6.Location = new System.Drawing.Point(372, 254);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 13);
             this.label6.TabIndex = 6;
@@ -102,7 +103,7 @@
             this.cbxIdMembresia.DataSource = this.mostrarMembresiaBindingSource;
             this.cbxIdMembresia.DisplayMember = "Nombre";
             this.cbxIdMembresia.FormattingEnabled = true;
-            this.cbxIdMembresia.Location = new System.Drawing.Point(323, 91);
+            this.cbxIdMembresia.Location = new System.Drawing.Point(312, 126);
             this.cbxIdMembresia.Name = "cbxIdMembresia";
             this.cbxIdMembresia.Size = new System.Drawing.Size(121, 21);
             this.cbxIdMembresia.TabIndex = 7;
@@ -124,7 +125,7 @@
             this.cbxIdEstado.DataSource = this.mostrarEstadoBindingSource;
             this.cbxIdEstado.DisplayMember = "Nombre";
             this.cbxIdEstado.FormattingEnabled = true;
-            this.cbxIdEstado.Location = new System.Drawing.Point(323, 137);
+            this.cbxIdEstado.Location = new System.Drawing.Point(312, 172);
             this.cbxIdEstado.Name = "cbxIdEstado";
             this.cbxIdEstado.Size = new System.Drawing.Size(121, 21);
             this.cbxIdEstado.TabIndex = 8;
@@ -142,14 +143,14 @@
             // 
             // dtInscripcion
             // 
-            this.dtInscripcion.Location = new System.Drawing.Point(639, 44);
+            this.dtInscripcion.Location = new System.Drawing.Point(628, 79);
             this.dtInscripcion.Name = "dtInscripcion";
             this.dtInscripcion.Size = new System.Drawing.Size(200, 20);
             this.dtInscripcion.TabIndex = 9;
             // 
             // dtVencimiento
             // 
-            this.dtVencimiento.Location = new System.Drawing.Point(641, 92);
+            this.dtVencimiento.Location = new System.Drawing.Point(630, 127);
             this.dtVencimiento.Name = "dtVencimiento";
             this.dtVencimiento.Size = new System.Drawing.Size(200, 20);
             this.dtVencimiento.TabIndex = 10;
@@ -159,7 +160,7 @@
             this.btnGuardar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnGuardar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardar.Location = new System.Drawing.Point(92, 201);
+            this.btnGuardar.Location = new System.Drawing.Point(81, 236);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(100, 60);
             this.btnGuardar.TabIndex = 11;
@@ -170,7 +171,7 @@
             // dgMostrarInscripcion
             // 
             this.dgMostrarInscripcion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgMostrarInscripcion.Location = new System.Drawing.Point(64, 271);
+            this.dgMostrarInscripcion.Location = new System.Drawing.Point(53, 306);
             this.dgMostrarInscripcion.Name = "dgMostrarInscripcion";
             this.dgMostrarInscripcion.Size = new System.Drawing.Size(470, 150);
             this.dgMostrarInscripcion.TabIndex = 13;
@@ -182,7 +183,7 @@
             this.btnEliminar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnEliminar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEliminar.Location = new System.Drawing.Point(248, 202);
+            this.btnEliminar.Location = new System.Drawing.Point(237, 237);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(100, 60);
             this.btnEliminar.TabIndex = 14;
@@ -195,7 +196,7 @@
             this.btnModificar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnModificar.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModificar.Location = new System.Drawing.Point(406, 201);
+            this.btnModificar.Location = new System.Drawing.Point(395, 236);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(100, 60);
             this.btnModificar.TabIndex = 15;
@@ -209,7 +210,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(640, 221);
+            this.label7.Location = new System.Drawing.Point(629, 256);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(159, 20);
             this.label7.TabIndex = 20;
@@ -218,7 +219,7 @@
             // txtBuscarInscripcion
             // 
             this.txtBuscarInscripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarInscripcion.Location = new System.Drawing.Point(620, 254);
+            this.txtBuscarInscripcion.Location = new System.Drawing.Point(609, 289);
             this.txtBuscarInscripcion.Name = "txtBuscarInscripcion";
             this.txtBuscarInscripcion.Size = new System.Drawing.Size(192, 26);
             this.txtBuscarInscripcion.TabIndex = 22;
@@ -228,7 +229,7 @@
             this.btnBuscar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnBuscar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBuscar.Location = new System.Drawing.Point(599, 313);
+            this.btnBuscar.Location = new System.Drawing.Point(588, 348);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(99, 50);
             this.btnBuscar.TabIndex = 23;
@@ -241,7 +242,7 @@
             this.btnRefrescar.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnRefrescar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefrescar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRefrescar.Location = new System.Drawing.Point(750, 313);
+            this.btnRefrescar.Location = new System.Drawing.Point(739, 348);
             this.btnRefrescar.Name = "btnRefrescar";
             this.btnRefrescar.Size = new System.Drawing.Size(113, 50);
             this.btnRefrescar.TabIndex = 24;
@@ -252,7 +253,7 @@
             // txtId
             // 
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(704, 383);
+            this.txtId.Location = new System.Drawing.Point(693, 418);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(66, 29);
             this.txtId.TabIndex = 25;
@@ -263,7 +264,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(682, 392);
+            this.label8.Location = new System.Drawing.Point(671, 427);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(16, 13);
             this.label8.TabIndex = 26;
@@ -276,7 +277,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(491, 43);
+            this.label4.Location = new System.Drawing.Point(480, 78);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(151, 20);
             this.label4.TabIndex = 27;
@@ -288,7 +289,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(479, 91);
+            this.label5.Location = new System.Drawing.Point(468, 126);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(163, 20);
             this.label5.TabIndex = 28;
@@ -300,7 +301,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(233, 44);
+            this.label1.Location = new System.Drawing.Point(222, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 24);
             this.label1.TabIndex = 29;
@@ -312,7 +313,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(196, 88);
+            this.label2.Location = new System.Drawing.Point(185, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 24);
             this.label2.TabIndex = 30;
@@ -325,7 +326,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(228, 134);
+            this.label3.Location = new System.Drawing.Point(217, 169);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 24);
             this.label3.TabIndex = 31;
@@ -343,6 +344,20 @@
             // 
             this.mostrarEstadoTableAdapter.ClearBeforeFill = true;
             // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegresar.BackgroundImage = global::BreakingGymUI.Properties.Resources.logout;
+            this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.Color.IndianRed;
+            this.btnRegresar.Location = new System.Drawing.Point(810, 0);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(108, 35);
+            this.btnRegresar.TabIndex = 47;
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
             // CRUDInscripcion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -350,6 +365,7 @@
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Cuenta__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(918, 495);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -417,5 +433,6 @@
         private PruebaGymDataSet2TableAdapters.MostrarClienteTableAdapter mostrarClienteTableAdapter;
         private PruebaGymDataSet3TableAdapters.MostrarMembresiaTableAdapter mostrarMembresiaTableAdapter;
         private PruebaGymDataSet4TableAdapters.MostrarEstadoTableAdapter mostrarEstadoTableAdapter;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

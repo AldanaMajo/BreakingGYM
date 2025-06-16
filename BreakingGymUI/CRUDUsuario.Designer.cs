@@ -54,6 +54,7 @@
             this.mostrarRolBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pruebaGymDataSet = new BreakingGymUI.PruebaGymDataSet();
             this.mostrarRolTableAdapter = new BreakingGymUI.PruebaGymDataSetTableAdapters.MostrarRolTableAdapter();
+            this.btnRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarRolBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet)).BeginInit();
@@ -326,6 +327,20 @@
             // 
             this.mostrarRolTableAdapter.ClearBeforeFill = true;
             // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegresar.BackgroundImage = global::BreakingGymUI.Properties.Resources.logout;
+            this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.Color.IndianRed;
+            this.btnRegresar.Location = new System.Drawing.Point(983, 1);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(108, 35);
+            this.btnRegresar.TabIndex = 46;
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
             // CRUDUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -333,6 +348,7 @@
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Cuenta__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1093, 690);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.txtContrasenia);
             this.Controls.Add(this.txtCuenta);
             this.Controls.Add(this.label7);
@@ -393,5 +409,6 @@
         private System.Windows.Forms.BindingSource mostrarRolBindingSource;
         private PruebaGymDataSet pruebaGymDataSet;
         private PruebaGymDataSetTableAdapters.MostrarRolTableAdapter mostrarRolTableAdapter;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

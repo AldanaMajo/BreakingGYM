@@ -38,6 +38,7 @@
             this.lbNombre = new System.Windows.Forms.Label();
             this.lbDescripcion = new System.Windows.Forms.Label();
             this.lbID = new System.Windows.Forms.Label();
+            this.btnRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarServicio)).BeginInit();
             this.SuspendLayout();
             // 
@@ -151,6 +152,20 @@
             this.lbID.Text = "Id";
             this.lbID.Click += new System.EventHandler(this.lbID_Click);
             // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegresar.BackgroundImage = global::BreakingGymUI.Properties.Resources.logout;
+            this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.Color.IndianRed;
+            this.btnRegresar.Location = new System.Drawing.Point(945, -1);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(108, 35);
+            this.btnRegresar.TabIndex = 47;
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
             // CRUDServicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,6 +173,7 @@
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Cuenta__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1054, 627);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.lbID);
             this.Controls.Add(this.lbDescripcion);
             this.Controls.Add(this.lbNombre);
@@ -189,5 +205,6 @@
         private System.Windows.Forms.Label lbNombre;
         private System.Windows.Forms.Label lbDescripcion;
         private System.Windows.Forms.Label lbID;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

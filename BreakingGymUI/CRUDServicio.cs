@@ -172,5 +172,11 @@ namespace BreakingGymUI
                 btnEliminar.Enabled = false;  // Deshabilitar el botón de eliminar si no hay ID
             }
         }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.Dispose();
+        }
     }
 }

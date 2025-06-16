@@ -244,5 +244,11 @@ namespace BreakingGymUI
                 dtVencimiento.Text = dgMostrarInscripcion.CurrentRow.Cells["FechaVencimiento"].Value.ToString();
             }
         }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.Dispose();
+        }
     }
 }

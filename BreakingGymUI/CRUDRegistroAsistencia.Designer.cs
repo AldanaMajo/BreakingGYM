@@ -42,22 +42,23 @@
             this.txtBuscarFecha = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.txtIdCliente = new System.Windows.Forms.ComboBox();
+            this.mostrarClienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.pruebaGymDataSet9 = new BreakingGymUI.PruebaGymDataSet9();
             this.mostrarClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pruebaGymDataSet8 = new BreakingGymUI.PruebaGymDataSet8();
             this.pruebaGymDataSet6 = new BreakingGymUI.PruebaGymDataSet6();
             this.mostrarAsistenciaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mostrarAsistenciaTableAdapter = new BreakingGymUI.PruebaGymDataSet6TableAdapters.MostrarAsistenciaTableAdapter();
             this.mostrarClienteTableAdapter = new BreakingGymUI.PruebaGymDataSet8TableAdapters.MostrarClienteTableAdapter();
-            this.pruebaGymDataSet9 = new BreakingGymUI.PruebaGymDataSet9();
-            this.mostrarClienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.mostrarClienteTableAdapter1 = new BreakingGymUI.PruebaGymDataSet9TableAdapters.MostrarClienteTableAdapter();
+            this.btnRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgAsistencia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarClienteBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarClienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarAsistenciaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mostrarClienteBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbId
@@ -205,6 +206,16 @@
             this.txtIdCliente.TabIndex = 43;
             this.txtIdCliente.ValueMember = "Id";
             // 
+            // mostrarClienteBindingSource1
+            // 
+            this.mostrarClienteBindingSource1.DataMember = "MostrarCliente";
+            this.mostrarClienteBindingSource1.DataSource = this.pruebaGymDataSet9;
+            // 
+            // pruebaGymDataSet9
+            // 
+            this.pruebaGymDataSet9.DataSetName = "PruebaGymDataSet9";
+            this.pruebaGymDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // mostrarClienteBindingSource
             // 
             this.mostrarClienteBindingSource.DataMember = "MostrarCliente";
@@ -233,19 +244,23 @@
             // 
             this.mostrarClienteTableAdapter.ClearBeforeFill = true;
             // 
-            // pruebaGymDataSet9
-            // 
-            this.pruebaGymDataSet9.DataSetName = "PruebaGymDataSet9";
-            this.pruebaGymDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mostrarClienteBindingSource1
-            // 
-            this.mostrarClienteBindingSource1.DataMember = "MostrarCliente";
-            this.mostrarClienteBindingSource1.DataSource = this.pruebaGymDataSet9;
-            // 
             // mostrarClienteTableAdapter1
             // 
             this.mostrarClienteTableAdapter1.ClearBeforeFill = true;
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegresar.BackgroundImage = global::BreakingGymUI.Properties.Resources.logout;
+            this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.Color.IndianRed;
+            this.btnRegresar.Location = new System.Drawing.Point(781, 0);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(108, 35);
+            this.btnRegresar.TabIndex = 47;
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // CRUDRegistroAsistencia
             // 
@@ -254,6 +269,7 @@
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources._12;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(889, 589);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.txtIdCliente);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtBuscarFecha);
@@ -271,12 +287,12 @@
             this.Text = "CRUDRegistroAsistencia";
             this.Load += new System.EventHandler(this.CRUDRegistroAsistencia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgAsistencia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarClienteBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarClienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarAsistenciaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pruebaGymDataSet9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mostrarClienteBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,5 +322,6 @@
         private System.Windows.Forms.BindingSource mostrarClienteBindingSource1;
         private PruebaGymDataSet9 pruebaGymDataSet9;
         private PruebaGymDataSet9TableAdapters.MostrarClienteTableAdapter mostrarClienteTableAdapter1;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

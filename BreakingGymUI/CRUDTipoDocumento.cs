@@ -170,5 +170,11 @@ namespace BreakingGymUI
                 txtNombre.Text = dgMostrarTipoDocumento.CurrentRow.Cells["Nombre"].Value.ToString();
             }
         }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.Dispose();
+        }
     }
 }

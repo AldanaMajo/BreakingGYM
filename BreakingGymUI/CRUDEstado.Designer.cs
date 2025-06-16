@@ -35,6 +35,7 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.dgMostrarEstado = new System.Windows.Forms.DataGridView();
             this.txtId = new System.Windows.Forms.TextBox();
+            this.btnRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgMostrarEstado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,6 +122,20 @@
             this.txtId.TabIndex = 14;
             this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegresar.BackgroundImage = global::BreakingGymUI.Properties.Resources.logout;
+            this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.Color.IndianRed;
+            this.btnRegresar.Location = new System.Drawing.Point(691, 1);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(108, 35);
+            this.btnRegresar.TabIndex = 47;
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
             // CRUDEstado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -128,6 +143,7 @@
             this.BackgroundImage = global::BreakingGymUI.Properties.Resources.Cuenta__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.dgMostrarEstado);
             this.Controls.Add(this.btnModificar);
@@ -154,5 +170,6 @@
         private System.Windows.Forms.DataGridView dgMostrarEstado;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }
