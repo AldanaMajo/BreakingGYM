@@ -74,7 +74,7 @@
             this.txtDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDocumento.Location = new System.Drawing.Point(756, 208);
             this.txtDocumento.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDocumento.MaxLength = 8;
+            this.txtDocumento.MaxLength = 10;
             this.txtDocumento.Name = "txtDocumento";
             this.txtDocumento.Size = new System.Drawing.Size(262, 29);
             this.txtDocumento.TabIndex = 42;
