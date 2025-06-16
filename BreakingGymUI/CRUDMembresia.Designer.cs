@@ -65,7 +65,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(709, 30);
+            this.label1.Location = new System.Drawing.Point(737, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(16, 13);
             this.label1.TabIndex = 43;
@@ -308,7 +308,7 @@
             // txtId
             // 
             this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(740, 27);
+            this.txtId.Location = new System.Drawing.Point(768, 38);
             this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
@@ -348,12 +348,13 @@
             // 
             // btnRegresar
             // 
-            this.btnRegresar.BackColor = System.Drawing.Color.Transparent;
-            this.btnRegresar.BackgroundImage = global::BreakingGymUI.Properties.Resources.logout;
+            this.btnRegresar.BackColor = System.Drawing.Color.White;
+            this.btnRegresar.BackgroundImage = global::BreakingGymUI.Properties.Resources.flecha;
             this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.ForeColor = System.Drawing.Color.IndianRed;
-            this.btnRegresar.Location = new System.Drawing.Point(983, -1);
+            this.btnRegresar.Location = new System.Drawing.Point(982, 2);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(108, 35);
             this.btnRegresar.TabIndex = 47;

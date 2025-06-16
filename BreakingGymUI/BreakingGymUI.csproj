@@ -425,5 +425,8 @@
   <ItemGroup>
     <None Include="Resources\LoginMejor.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

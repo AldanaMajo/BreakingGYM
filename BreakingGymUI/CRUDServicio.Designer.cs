@@ -156,12 +156,13 @@
             // 
             // btnRegresar
             // 
-            this.btnRegresar.BackColor = System.Drawing.Color.Transparent;
-            this.btnRegresar.BackgroundImage = global::BreakingGymUI.Properties.Resources.logout;
+            this.btnRegresar.BackColor = System.Drawing.Color.White;
+            this.btnRegresar.BackgroundImage = global::BreakingGymUI.Properties.Resources.flecha;
             this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.ForeColor = System.Drawing.Color.IndianRed;
-            this.btnRegresar.Location = new System.Drawing.Point(945, -1);
+            this.btnRegresar.Location = new System.Drawing.Point(944, 2);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(108, 35);
             this.btnRegresar.TabIndex = 47;

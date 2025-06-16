@@ -145,12 +145,13 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::BreakingGymUI.Properties.Resources.logout;
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImage = global::BreakingGymUI.Properties.Resources.flecha;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.IndianRed;
-            this.button1.Location = new System.Drawing.Point(901, 0);
+            this.button1.Location = new System.Drawing.Point(898, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 35);
             this.button1.TabIndex = 47;
