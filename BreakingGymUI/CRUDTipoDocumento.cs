@@ -48,7 +48,7 @@ namespace BreakingGymUI
 
             if (yaExiste)
             {
-                MessageBox.Show("Ya existe un estado con ese nombre. No se puede duplicar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Ya existe un Documento con ese nombre. No se puede duplicar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

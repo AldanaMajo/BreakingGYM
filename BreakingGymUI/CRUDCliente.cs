@@ -50,11 +50,14 @@ namespace BreakingGymUI
                 Nombre = txtNombre.Text.Trim(),
                 Apellido = txtApellido.Text.Trim(),
                 Celular = txtCelular.Text.Trim(),
-
             };
 
             // Validar campos obligatorios
-            if (cliente.IdRol <= 0 || cliente.IdTipoDocumento <= 0 || string.IsNullOrEmpty(cliente.Documento) || string.IsNullOrEmpty(cliente.Nombre) || string.IsNullOrEmpty(cliente.Apellido) || string.IsNullOrEmpty(cliente.Celular))
+            if (cliente.IdRol <= 0 || cliente.IdTipoDocumento <= 0 ||
+                string.IsNullOrEmpty(cliente.Documento) ||
+                string.IsNullOrEmpty(cliente.Nombre) ||
+                string.IsNullOrEmpty(cliente.Apellido) ||
+                string.IsNullOrEmpty(cliente.Celular))
             {
                 MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -63,17 +66,14 @@ namespace BreakingGymUI
             // Obtener lista de clientes existentes
             var listaClientes = _clienteBL.MostrarCliente(); // Este método debe devolver la lista completa de clientes
 
-            // Validar duplicado (mismo Nombre + Apellido + Celular, ignorando mayúsculas/minúsculas)
+            // Validar duplicado (solo por Documento, ignorando mayúsculas/minúsculas)
             bool yaExiste = listaClientes.Any(c =>
-                c.Nombre.Equals(cliente.Nombre, StringComparison.OrdinalIgnoreCase) &&
-                c.Apellido.Equals(cliente.Apellido, StringComparison.OrdinalIgnoreCase) &&
-                c.Celular.Equals(cliente.Celular, StringComparison.OrdinalIgnoreCase) &&
                 c.Documento.Equals(cliente.Documento, StringComparison.OrdinalIgnoreCase)
             );
 
             if (yaExiste)
             {
-                MessageBox.Show("Ya existe un cliente con esos datos. No se puede duplicar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Ya existe un cliente con ese documento. No se puede duplicar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
